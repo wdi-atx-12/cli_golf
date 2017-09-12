@@ -1,0 +1,258 @@
+Granny@-Granny- ~
+$ mkdir kitchen
+
+Granny@-Granny- ~
+$ cd kitchen
+
+Granny@-Granny- ~/kitchen
+$ touch cans.txt
+
+Granny@-Granny- ~/kitchen
+$ mkdir fridge pantry
+
+Granny@-Granny- ~/kitchen
+$ ls
+cans.txt  fridge  pantry
+
+Granny@-Granny- ~/kitchen
+$ cd fridge
+
+Granny@-Granny- ~/kitchen/fridge
+$ touch diapers.txt milk.txt
+
+Granny@-Granny- ~/kitchen/fridge
+$ mkdir freezer trashcan
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd freezer
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ touch couch.txt frozenpeas.txt icecream.txt
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ cd..
+-bash: cd..: command not found
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ cd..
+-bash: cd..: command not found
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ cd ..
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd trashcan
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ touch bb
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ rm bb
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ ls
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ touch banana-peels.txt chicken-bones.txt egg-shells.txt
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ mkdir sink
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ cd sink
+
+Granny@-Granny- ~/kitchen/fridge/trashcan/sink
+$ touch clean-dishes.txt delete-me.txt dirty-dishes.txt
+
+Granny@-Granny- ~/kitchen/fridge/trashcan/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+
+Granny@-Granny- ~/kitchen/fridge/trashcan/sink
+$ cd ..
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink
+
+Granny@-Granny- ~/kitchen/fridge/trashcan
+$ cd ..
+
+Granny@-Granny- ~/kitchen/fridge
+$ ls
+diapers.txt  freezer  milk.txt  trashcan
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd freezer
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ cd ..
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd ..
+
+Granny@-Granny- ~/kitchen
+$ cd pantry
+
+Granny@-Granny- ~/kitchen/pantry
+$ touch cans.txt cereal.txt
+
+Granny@-Granny- ~/kitchen/pantry
+$ mkdir crisper-drawer
+
+Granny@-Granny- ~/kitchen/pantry
+$ cd crisper-drawer
+
+Granny@-Granny- ~/kitchen/pantry/crisper-drawer
+$ touch lettuce.txt
+
+Granny@-Granny- ~/kitchen/pantry/crisper-drawer
+$ ls
+lettuce.txt
+
+Granny@-Granny- ~/kitchen/pantry/crisper-drawer
+$ cd ..
+
+Granny@-Granny- ~/kitchen/pantry
+$ mv crisper-drawer /kitchen/fridge
+mv: cannot move 'crisper-drawer' to '/kitchen/fridge': No such file or directory
+
+Granny@-Granny- ~/kitchen/pantry
+$ mv crisper-drawer ~/kitchen/fridge
+
+Granny@-Granny- ~/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+
+Granny@-Granny- ~/kitchen/pantry
+$ cd..
+-bash: cd..: command not found
+
+Granny@-Granny- ~/kitchen/pantry
+$ cd ..
+
+Granny@-Granny- ~/kitchen
+$ rm cans.txt
+
+Granny@-Granny- ~/kitchen
+$ cd fridge
+
+Granny@-Granny- ~/kitchen/fridge
+$ rm diapers.txt
+
+Granny@-Granny- ~/kitchen/fridge
+$ mv trashcan ~/kitchen
+
+Granny@-Granny- ~/kitchen/fridge
+$ ls
+crisper-drawer  freezer  milk.txt
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd ..
+
+Granny@-Granny- ~/kitchen
+$ cd trashcan
+
+Granny@-Granny- ~/kitchen/trashcan
+$ mv sink ~/kitchen
+
+Granny@-Granny- ~/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+
+Granny@-Granny- ~/kitchen/trashcan
+$ cd ..
+
+Granny@-Granny- ~/kitchen
+$ cd sink
+
+Granny@-Granny- ~/kitchen/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+
+Granny@-Granny- ~/kitchen/sink
+$ mkdir drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ mv clean-dishes.txt /drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ ls
+delete-me.txt  dirty-dishes.txt  drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ rm delete-me.txt
+
+Granny@-Granny- ~/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ cd drying-rack/
+
+Granny@-Granny- ~/kitchen/sink/drying-rack
+$ ls
+
+Granny@-Granny- ~/kitchen/sink/drying-rack
+$ cd ..
+
+Granny@-Granny- ~/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ touch clean-dishes.txt
+
+Granny@-Granny- ~/kitchen/sink
+$ mv clean-dishes.txt ~/kitchen/sink/drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ cd drying-rack/
+
+Granny@-Granny- ~/kitchen/sink/drying-rack
+$ ls
+clean-dishes.txt
+
+Granny@-Granny- ~/kitchen/sink/drying-rack
+$ cd ..
+
+Granny@-Granny- ~/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack
+
+Granny@-Granny- ~/kitchen/sink
+$ cd ..
+
+Granny@-Granny- ~/kitchen
+$ ls
+fridge  pantry  sink  trashcan
+
+Granny@-Granny- ~/kitchen
+$ cd fridge
+
+Granny@-Granny- ~/kitchen/fridge
+$ ls
+crisper-drawer  freezer  milk.txt
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd crisper-drawer
+
+Granny@-Granny- ~/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+
+Granny@-Granny- ~/kitchen/fridge/crisper-drawer
+$ cd ..
+
+Granny@-Granny- ~/kitchen/fridge
+$ cd freezer
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+
+Granny@-Granny- ~/kitchen/fridge/freezer
+$ rm couch.txt
