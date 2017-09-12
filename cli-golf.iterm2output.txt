@@ -1,0 +1,103 @@
+Last login: Mon Sep 11 15:10:05 on ttys001
+ GA General Assembly  Web Development Immersive
+------------------------------------------
+git version 2.14.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 93cbd; last commit 2017-09-11)
+ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin14]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+peterkong ~
+$ cd ~/workspace/wdi/
+peterkong ~/workspace/wdi
+$ ls
+cli_golf/  fundamentals/
+peterkong ~/workspace/wdi
+$ cd cli_golf/
+peterkong ~/workspace/wdi/cli_golf on master[?]
+$ ls
+LICENSE.txt  README.md	kitchen/  kitchen.zip
+peterkong ~/workspace/wdi/cli_golf on master[?]
+$ cd kitchen/
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ rm fridge/diapers.txt
+removed 'fridge/diapers.txt'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ rm fridge/freezer/couch.txt
+removed 'fridge/freezer/couch.txt'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ rm cans.txt
+removed 'cans.txt'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ rm fridge/trashcan/sink/delete-me.txt
+removed 'fridge/trashcan/sink/delete-me.txt'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ mv fridge/trashcan/ trashcan/
+renamed 'fridge/trashcan/' -> 'trashcan/'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ mv trashcan/sink/ sink/
+renamed 'trashcan/sink/' -> 'sink/'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ mv pantry/crisper-drawer/ fridge/crisper-drawer/
+renamed 'pantry/crisper-drawer/' -> 'fridge/crisper-drawer/'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ touch fridge/crisper-drawer/apples.txt
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ mkdir sink/drying-rack
+gmkdir: created directory 'sink/drying-rack'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ mv sink/clean-dishes.txt sink/drying-rack/
+renamed 'sink/clean-dishes.txt' -> 'sink/drying-rack/clean-dishes.txt'
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+peterkong ~/workspace/wdi/cli_golf/kitchen on master[?]
+$
