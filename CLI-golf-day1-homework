@@ -1,0 +1,793 @@
+Last login: Mon Sep 11 18:32:10 on console
+nat ~
+$ ls
+Applications/  Documents/  Library/  Music/	Public/
+Desktop/       Downloads/  Movies/   Pictures/	code/
+nat ~
+$ cd Library
+nat ~/Library
+$ mkdir homework-day1
+gmkdir: created directory 'homework-day1'
+nat ~/Library
+$ cd homework-day1
+nat ~/Library/homework-day1
+$ mkdir kitchen
+gmkdir: created directory 'kitchen'
+nat ~/Library/homework-day1
+$ mkdir pantry
+gmkdir: created directory 'pantry'
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ touch cans.txt
+nat ~/Library/homework-day1/kitchen
+$ mkdir fridge
+gmkdir: created directory 'fridge'
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+├── cans.txt
+└── fridge
+
+1 directory, 1 file
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ touch diapers.txt
+nat ~/Library/homework-day1/kitchen/fridge
+$ mkdir freezer
+gmkdir: created directory 'freezer'
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── diapers.txt
+└── freezer
+
+1 directory, 1 file
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd freezer
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ touch couch.txt
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ touch frozenpeas.txt
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ touch icecream.txt
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ tree
+.
+├── couch.txt
+├── frozenpeas.txt
+└── icecream.txt
+
+0 directories, 3 files
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── diapers.txt
+└── freezer
+    ├── couch.txt
+    ├── frozenpeas.txt
+    └── icecream.txt
+
+1 directory, 4 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ touch milk.txt
+nat ~/Library/homework-day1/kitchen/fridge
+$ mkdir trashcan
+gmkdir: created directory 'trashcan'
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── diapers.txt
+├── freezer
+│   ├── couch.txt
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── milk.txt
+└── trashcan
+
+2 directories, 5 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd trashcan
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ touch banana-peels.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ touch chicken-bones.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ touch egg-shells.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ mkdir sink
+gmkdir: created directory 'sink'
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ tree
+.
+├── banana-peels.txt
+├── chicken-bones.txt
+├── egg-shells.txt
+└── sink
+
+1 directory, 3 files
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ cd sink
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ touch clean-dishes.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ touch delete-me.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ touch dirty-dishes.txt
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ tree
+.
+├── clean-dishes.txt
+├── delete-me.txt
+└── dirty-dishes.txt
+
+0 directories, 3 files
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ tree
+.
+├── banana-peels.txt
+├── chicken-bones.txt
+├── egg-shells.txt
+└── sink
+    ├── clean-dishes.txt
+    ├── delete-me.txt
+    └── dirty-dishes.txt
+
+1 directory, 6 files
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+├── cans.txt
+└── fridge
+    ├── diapers.txt
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 12 files
+nat ~/Library/homework-day1/kitchen
+$ cd pantry
+-bash: cd: pantry: No such file or directory
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   ├── cans.txt
+│   └── fridge
+│       ├── diapers.txt
+│       ├── freezer
+│       │   ├── couch.txt
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               ├── delete-me.txt
+│               └── dirty-dishes.txt
+└── pantry
+
+6 directories, 12 files
+nat ~/Library/homework-day1
+$ cd pantry
+nat ~/Library/homework-day1/pantry
+$ touch cans.txt
+nat ~/Library/homework-day1/pantry
+$ touch cereal.txt
+nat ~/Library/homework-day1/pantry
+$ mkdir crisper-drawer
+gmkdir: created directory 'crisper-drawer'
+nat ~/Library/homework-day1/pantry
+$ cd crisper-drawer
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ touch lettuce.txt
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cd ..
+nat ~/Library/homework-day1/pantry
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   ├── cans.txt
+│   └── fridge
+│       ├── diapers.txt
+│       ├── freezer
+│       │   ├── couch.txt
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               ├── delete-me.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+7 directories, 15 files
+nat ~/Library/homework-day1
+$ mv /kitchen/cans.txt /fridge/trashcan
+gmv: cannot stat '/kitchen/cans.txt': No such file or directory
+nat ~/Library/homework-day1
+$ mv cans.txt /trashcan
+gmv: cannot stat 'cans.txt': No such file or directory
+nat ~/Library/homework-day1
+$ mv cans.txt fridge/trashcan
+gmv: cannot stat 'cans.txt': No such file or directory
+nat ~/Library/homework-day1
+$ mv cans.txt trashcan
+gmv: cannot stat 'cans.txt': No such file or directory
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+├── cans.txt
+└── fridge
+    ├── diapers.txt
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 12 files
+nat ~/Library/homework-day1/kitchen
+$ mv cans.txt trashcan
+renamed 'cans.txt' -> 'trashcan'
+nat ~/Library/homework-day1/kitchen
+$ mv trashcan cans.txt
+renamed 'trashcan' -> 'cans.txt'
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+├── cans.txt
+└── fridge
+    ├── diapers.txt
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 12 files
+nat ~/Library/homework-day1/kitchen
+$ mv cans.txt /trashcan
+gmv: cannot move 'cans.txt' to '/trashcan': Permission denied
+nat ~/Library/homework-day1/kitchen
+$ cans.txt /trashcan
+-bash: cans.txt: command not found
+nat ~/Library/homework-day1/kitchen
+$ mv cans.txt /trashcan
+gmv: cannot move 'cans.txt' to '/trashcan': Permission denied
+nat ~/Library/homework-day1/kitchen
+$ sudo mv cans.txt /trashcan
+Password:
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+└── fridge
+    ├── diapers.txt
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 11 files
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   └── fridge
+│       ├── diapers.txt
+│       ├── freezer
+│       │   ├── couch.txt
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               ├── delete-me.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+7 directories, 14 files
+nat ~/Library/homework-day1
+$ mv diapers.txt /pantry
+gmv: cannot stat 'diapers.txt': No such file or directory
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ mv diapers.txt /trashcan
+gmv: cannot stat 'diapers.txt': No such file or directory
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+└── fridge
+    ├── diapers.txt
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 11 files
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ mv diapers.txt /kitchen
+gmv: cannot move 'diapers.txt' to '/kitchen': Permission denied
+nat ~/Library/homework-day1/kitchen/fridge
+$ sudo mv diapers.txt /kitchen
+nat ~/Library/homework-day1/kitchen/fridge 
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+└── fridge
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            ├── delete-me.txt
+            └── dirty-dishes.txt
+
+4 directories, 10 files
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   └── fridge
+│       ├── freezer
+│       │   ├── couch.txt
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               ├── delete-me.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+7 directories, 13 files
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd sink
+-bash: cd: sink: No such file or directory
+nat ~/Library/homework-day1/kitchen/fridge
+$ rm delete-me.txt
+grm: cannot remove 'delete-me.txt': No such file or directory
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── freezer
+│   ├── couch.txt
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+3 directories, 10 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd trashcan
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ cd sink
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ rm delete-me.txt
+removed 'delete-me.txt'
+nat ~/Library/homework-day1/kitchen/fridge/trashcan/sink
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge/trashcan
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+└── fridge
+    ├── freezer
+    │   ├── couch.txt
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            └── dirty-dishes.txt
+
+4 directories, 9 files
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd freezer
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+nat ~/Library/homework-day1/kitchen/fridge/freezer
+$ cd ..
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   └── fridge
+│       ├── freezer
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+7 directories, 11 files
+nat ~/Library/homework-day1
+$ cd pantry
+nat ~/Library/homework-day1/pantry
+$ cd crisper-drawer
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cp lettuce.txt
+gcp: missing destination file operand after 'lettuce.txt'
+Try 'gcp --help' for more information.
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cp lettuce.txt /kitchen/fridge
+gcp: failed to access '/kitchen/fridge': Not a directory
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cp lettuce.txt kitchen/fridge
+'lettuce.txt' -> 'kitchen/fridge'
+gcp: cannot create regular file 'kitchen/fridge': No such file or directory
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ tree
+.
+└── lettuce.txt
+
+0 directories, 1 file
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cd ..
+nat ~/Library/homework-day1/pantry
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   └── fridge
+│       ├── freezer
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+7 directories, 11 files
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ cp lettuce.txt
+gcp: missing destination file operand after 'lettuce.txt'
+Try 'gcp --help' for more information.
+nat ~/Library/homework-day1/kitchen/fridge
+$ touch lettuce.txt
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ cd pantry
+nat ~/Library/homework-day1/pantry
+$ cd crisper-drawer
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ rm lettuce.txt
+removed 'lettuce.txt'
+nat ~/Library/homework-day1/pantry/crisper-drawer
+$ cd ..
+nat ~/Library/homework-day1/pantry
+$ rmkdir crisper-drawer
+-bash: rmkdir: command not found
+nat ~/Library/homework-day1/pantry
+$ rmdir crisper-drawer
+nat ~/Library/homework-day1/pantry
+$ tree
+.
+├── cans.txt
+└── cereal.txt
+
+0 directories, 2 files
+nat ~/Library/homework-day1/pantry
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   └── fridge
+│       ├── freezer
+│       │   ├── frozenpeas.txt
+│       │   └── icecream.txt
+│       ├── lettuce.txt
+│       ├── milk.txt
+│       └── trashcan
+│           ├── banana-peels.txt
+│           ├── chicken-bones.txt
+│           ├── egg-shells.txt
+│           └── sink
+│               ├── clean-dishes.txt
+│               └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 11 files
+nat ~/Library/homework-day1
+$ cd kitchen
+nat ~/Library/homework-day1/kitchen
+$ cd fridge
+nat ~/Library/homework-day1/kitchen/fridge
+$ mv trashcan kitchen/
+renamed 'trashcan' -> 'kitchen/'
+nat ~/Library/homework-day1/kitchen/fridge
+$ mv kitchen/ trashcan
+renamed 'kitchen/' -> 'trashcan'
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── freezer
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── lettuce.txt
+├── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        └── dirty-dishes.txt
+
+3 directories, 9 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ mv trashcan ~/Library/homework-day1/kitchen
+renamed 'trashcan' -> '/Users/nat/Library/homework-day1/kitchen/trashcan'
+nat ~/Library/homework-day1/kitchen/fridge
+$ mv /Users/nat/Library/homework-day1/kitchen/trashcan trashcan
+renamed '/Users/nat/Library/homework-day1/kitchen/trashcan' -> 'trashcan'
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── freezer
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── lettuce.txt
+├── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        └── dirty-dishes.txt
+
+3 directories, 9 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ cp trashcan
+gcp: missing destination file operand after 'trashcan'
+Try 'gcp --help' for more information.
+nat ~/Library/homework-day1/kitchen/fridge
+$ cp trashcan ~/Library/homework-day1/kitchen
+gcp: -r not specified; omitting directory 'trashcan'
+nat ~/Library/homework-day1/kitchen/fridge
+$ tree
+.
+├── freezer
+│   ├── frozenpeas.txt
+│   └── icecream.txt
+├── lettuce.txt
+├── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        └── dirty-dishes.txt
+
+3 directories, 9 files
+nat ~/Library/homework-day1/kitchen/fridge
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+└── fridge
+    ├── freezer
+    │   ├── frozenpeas.txt
+    │   └── icecream.txt
+    ├── lettuce.txt
+    ├── milk.txt
+    └── trashcan
+        ├── banana-peels.txt
+        ├── chicken-bones.txt
+        ├── egg-shells.txt
+        └── sink
+            ├── clean-dishes.txt
+            └── dirty-dishes.txt
+
+4 directories, 9 files
+nat ~/Library/homework-day1/kitchen
+$ mv ~/Library/homework-day1/kitchen/fridge/trashcan ~/Library/homework-day1/kitchen
+renamed '/Users/nat/Library/homework-day1/kitchen/fridge/trashcan' -> '/Users/nat/Library/homework-day1/kitchen/trashcan'
+nat ~/Library/homework-day1/kitchen
+$ tree
+.
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── lettuce.txt
+│   └── milk.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        └── dirty-dishes.txt
+
+4 directories, 9 files
+nat ~/Library/homework-day1/kitchen
+$ cd trashcan
+nat ~/Library/homework-day1/kitchen/trashcan
+$ mv ~/Library/homework-day1/kitchen/trashcan/sink ~/Library/homework-day1/kitchen
+renamed '/Users/nat/Library/homework-day1/kitchen/trashcan/sink' -> '/Users/nat/Library/homework-day1/kitchen/sink'
+nat ~/Library/homework-day1/kitchen/trashcan
+$ cd ..
+nat ~/Library/homework-day1/kitchen
+$ cd ..
+nat ~/Library/homework-day1
+$ tree
+.
+├── kitchen
+│   ├── fridge
+│   │   ├── freezer
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   ├── lettuce.txt
+│   │   └── milk.txt
+│   ├── sink
+│   │   ├── clean-dishes.txt
+│   │   └── dirty-dishes.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       └── egg-shells.txt
+└── pantry
+    ├── cans.txt
+    └── cereal.txt
+
+6 directories, 11 files
+nat ~/Library/homework-day1
+$ 
