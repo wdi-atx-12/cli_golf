@@ -1,0 +1,113 @@
+Last login: Mon Sep 11 12:16:14 on ttys000
+ GA General Assembly  Web Development Immersive
+------------------------------------------
+git version 2.14.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 9166; last commit 2017-09-11)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin16]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+TheTeejers ~
+$ ls
+2	       Desktop/    Downloads/	  Library/  Music/     Public/
+Applications/  Documents/  Fundamentals/  Movies/   Pictures/  code/
+TheTeejers ~
+$ cd desktop
+TheTeejers ~/desktop
+$ ls
+Homework/  Labyrinth/  Notes/  exercises/  practice/  profile.jpg
+TheTeejers ~/desktop
+$ cd homework
+TheTeejers ~/desktop/homework
+$ ls
+'week 1'/
+TheTeejers ~/desktop/homework
+$ cd week 1
+-bash: cd: week: No such file or directory
+TheTeejers ~/desktop/homework
+$ cd 'week 1'
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/fridge/freezer
+gmkdir: created directory 'kitchen'
+gmkdir: created directory 'kitchen/fridge'
+gmkdir: created directory 'kitchen/fridge/freezer'
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/fridge/trashcan
+gmkdir: created directory 'kitchen/fridge/trashcan'
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/pantry
+gmkdir: created directory 'kitchen/pantry'
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/pantry/crisper-drawer
+gmkdir: created directory 'kitchen/pantry/crisper-drawer'
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/cans.txt
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/fridge/trashcan/sink
+gmkdir: created directory 'kitchen/fridge/trashcan/sink'
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/sink/clean-dishes.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/sink/delete-me.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/sink/dirty-dishes.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/banana-peels.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/chicken-bones.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/trashcan/egg-shells.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/freezer/couch.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/freezer/frozenpeas.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/freezer/icecream.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/pantry/cans.txt
+touch: kitchen/fridge/pantry/cans.txt: No such file or directory
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/pantry/cans.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/pantry/cereal.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/pantry/crisper-drawer/lettuce.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/diapers.txt
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/milk.txt
+TheTeejers ~/desktop/homework/week 1
+$ rm kitchen/fridge/diapers.txt
+removed 'kitchen/fridge/diapers.txt'
+TheTeejers ~/desktop/homework/week 1
+$ mv kitchen/fridge/trashcan kitchen/trashcan
+renamed 'kitchen/fridge/trashcan' -> 'kitchen/trashcan'
+TheTeejers ~/desktop/homework/week 1
+$ mv kitchen/trashcan/sink kitchen/sink
+renamed 'kitchen/trashcan/sink' -> 'kitchen/sink'
+TheTeejers ~/desktop/homework/week 1
+$ mv kitchen/pantry/crisper-drawer kitchen/fridge/crisper-drawer
+renamed 'kitchen/pantry/crisper-drawer' -> 'kitchen/fridge/crisper-drawer'
+TheTeejers ~/desktop/homework/week 1
+$ mv kitchen/sink/clean-dishes.txt kitchen/sink/drying-rack/clean-dishes.txt
+gmv: cannot move 'kitchen/sink/clean-dishes.txt' to 'kitchen/sink/drying-rack/clean-dishes.txt': No such file or directory
+TheTeejers ~/desktop/homework/week 1
+$ mkdir kitchen/sink/drying-rack
+gmkdir: created directory 'kitchen/sink/drying-rack'
+TheTeejers ~/desktop/homework/week 1
+$ mv kitchen/sink/clean-dishes.txt kitchen/sink/drying-rack/clean-dishes.txt
+renamed 'kitchen/sink/clean-dishes.txt' -> 'kitchen/sink/drying-rack/clean-dishes.txt'
+TheTeejers ~/desktop/homework/week 1
+$ rm kitchen/fridge/freezer/couch.txt
+removed 'kitchen/fridge/freezer/couch.txt'
+TheTeejers ~/desktop/homework/week 1
+$ touch kitchen/fridge/crisper-drawer/apples.txt
+TheTeejers ~/desktop/homework/week 1
+$ rm kitchen/sink/delete-me.txt
+removed 'kitchen/sink/delete-me.txt'
+TheTeejers ~/desktop/homework/week 1
+$ rm kitchen/cans.txt
+removed 'kitchen/cans.txt'
+TheTeejers ~/desktop/homework/week 1
+$
