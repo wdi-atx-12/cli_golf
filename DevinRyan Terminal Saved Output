@@ -1,0 +1,163 @@
+Last login: Mon Sep 11 22:50:44 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.13.0
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 5e28; last commit 2017-09-11)
+lruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+node v8.4.0
+spsql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+devinryan ~
+$ ls
+2	       Downloads/  Music/	     Splice/	 fundamentals/
+Applications/  Dropbox/    Pictures/	     World/	 funny_things/
+Desktop/       Library/    Public/	     code/	 kitchen/
+Documents/     Movies/	   PycharmProjects/  devinryan@  work/
+devinryan ~
+$ cd Desktop
+devinryan ~/Desktop
+$ ls
+'Just Like Heaven.pdf'	 Labyrinth/   TomorrowNight.terminal   kitchen/
+devinryan ~/Desktop
+$ cd kitchen
+devinryan ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+devinryan ~/Desktop/kitchen
+$ cd pantry
+devinryan ~/Desktop/kitchen/pantry
+$ mv crisper-drawer ~Desktop/kitchen/fridge/
+gmv: cannot move 'crisper-drawer' to '~Desktop/kitchen/fridge/': No such file or directory
+devinryan ~/Desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+devinryan ~/Desktop/kitchen/pantry
+$ cd ..
+devinryan ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+devinryan ~/Desktop/kitchen
+$ cd fridge
+devinryan ~/Desktop/kitchen/fridge
+$ mv crisper-drawer ~/Desktop/kitchen/fridge/
+gmv: cannot stat 'crisper-drawer': No such file or directory
+devinryan ~/Desktop/kitchen/fridge
+$ mv crisper-drawer ~/Desktop/kitchen/fridge
+gmv: cannot stat 'crisper-drawer': No such file or directory
+devinryan ~/Desktop/kitchen/fridge
+$ mv crisper-drawer ~/Desktop/kitchen/fridge/crisper-drawer/
+gmv: cannot stat 'crisper-drawer': No such file or directory
+devinryan ~/Desktop/kitchen/fridge
+$ mv crisper-drawer ~/Desktop/kitchen/fridge/crisper-drawer
+gmv: cannot stat 'crisper-drawer': No such file or directory
+devinryan ~/Desktop/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+devinryan ~/Desktop/kitchen/fridge
+$ pwd
+/Users/devinryan/Desktop/kitchen/fridge
+devinryan ~/Desktop/kitchen/fridge
+$ cd ..
+devinryan ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+devinryan ~/Desktop/kitchen
+$ mv pantry/crisper-drawer/ fridge/
+renamed 'pantry/crisper-drawer/' -> 'fridge/crisper-drawer'
+devinryan ~/Desktop/kitchen
+$ cd fridge/crisper-drawer/
+devinryan ~/Desktop/kitchen/fridge/crisper-drawer
+$ touch lettuce.txt
+devinryan ~/Desktop/kitchen/fridge/crisper-drawer
+$ cd ..
+devinryan ~/Desktop/kitchen/fridge
+$ cd freezer
+devinryan ~/Desktop/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+devinryan ~/Desktop/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+devinryan ~/Desktop/kitchen/fridge/freezer
+$ cd ..
+devinryan ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+devinryan ~/Desktop/kitchen/fridge
+$ mv trashcan/ ~/Desktop/kitchen/
+renamed 'trashcan/' -> '/Users/devinryan/Desktop/kitchen/trashcan'
+devinryan ~/Desktop/kitchen/fridge
+$ cd sink
+-bash: cd: sink: No such file or directory
+devinryan ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt
+devinryan ~/Desktop/kitchen/fridge
+$ cd ~/Desktop/kitchen/trashcan/sink/ ~/Desktop/kitchen/
+devinryan ~/Desktop/kitchen/trashcan/sink
+$ mv ~/Desktop/kitchen/trashcan/sink/ ~/Desktop/kitchen/
+renamed '/Users/devinryan/Desktop/kitchen/trashcan/sink/' -> '/Users/devinryan/Desktop/kitchen/sink'
+devinryan ~/Desktop/kitchen/trashcan/sink
+$ cd ../..
+devinryan ~/Desktop
+$ cd kitchen/sin
+-bash: cd: kitchen/sin: No such file or directory
+devinryan ~/Desktop
+$ cd kitchen/sink/
+devinryan ~/Desktop/kitchen/sink
+$ rm delete-me.txt 
+removed 'delete-me.txt'
+devinryan ~/Desktop/kitchen/sink
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+devinryan ~/Desktop/kitchen/sink
+$ mv clean-dishes.txt drying-rack/
+renamed 'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+devinryan ~/Desktop/kitchen/sink
+$ cd ..
+devinryan ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+devinryan ~/Desktop/kitchen
+$ cd trashcan/
+devinryan ~/Desktop/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+devinryan ~/Desktop/kitchen/trashcan
+$ tree
+.
+├── banana-peels.txt
+├── chicken-bones.txt
+└── egg-shells.txt
+
+0 directories, 3 files
+devinryan ~/Desktop/kitchen/trashcan
+$ cd ..
+devinryan ~/Desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 13 files
+devinryan ~/Desktop/kitchen
+$ 
