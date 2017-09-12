@@ -1,0 +1,140 @@
+Last login: Mon Sep 11 18:44:02 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.13.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 93cb; last commit 2017-09-11)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin16]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+sophiachow ~
+$ mv  ~/desktop/cli_golf-master/kitchen/fridge/trashcan ~/desktop/cli_golf-master/kitchen
+renamed '/Users/sophiachow/desktop/cli_golf-master/kitchen/fridge/trashcan' -> '/Users/sophiachow/desktop/cli_golf-master/kitchen/trashcan'
+sophiachow ~
+$ pwd
+/Users/sophiachow
+sophiachow ~
+$ ls
+2	       Downloads/  OResume/   code/
+Applications/  Library/    Pictures/  funny_things/
+Desktop/       Movies/	   Public/    github/
+Documents/     Music/	   World/     installfest-master/
+sophiachow ~
+$ cd desktop
+sophiachow ~/desktop
+$ ls
+'GA Immersive'/
+ Labyrinth/
+'Screen Shot 2017-09-11 at 6.16.16 PM.png'
+'Screen Shot 2017-09-11 at 6.16.22 PM.png'
+ TomorrowNight.terminal
+ cli_golf-master/
+'cli_golf-master (1).zip'
+ exercises/
+'installfest-master alias'
+ wdi-fundamentals-memorygame_shortcut@
+'~$core + architecture in NB writing.docx'
+'~$itten commentary Questions.docx'
+'~$owledge of Students .docx'
+sophiachow ~/desktop
+$ cd cli_golf-master/
+sophiachow ~/desktop/cli_golf-master
+$ ls
+LICENSE.txt*  README.md*  kitchen/  kitchen.zip*
+sophiachow ~/desktop/cli_golf-master
+$ cd kitchen
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ rm cans.txt
+removed 'cans.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ ls
+fridge/  pantry/  trashcan/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ clear
+
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ pwd
+/Users/sophiachow/desktop/cli_golf-master/kitchen
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ ls
+fridge/  pantry/  trashcan/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ mkdir sink/
+gmkdir: created directory 'sink/'
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ rmdir sink/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ ls
+fridge/  pantry/  trashcan/
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ mv  ~/desktop/cli_golf-master/kitchen/trashcan/sink ~/desktop/cli_golf-master/kitchen
+renamed '/Users/sophiachow/desktop/cli_golf-master/kitchen/trashcan/sink' -> '/Users/sophiachow/desktop/cli_golf-master/kitchen/sink'
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ cd fridge
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ rm diapers.txt
+removed 'diapers.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ mv  ~/desktop/cli_golf-master/kitchen/pantry/crisper-drawer ~/desktop/cli_golf-master/kitchen/fridge
+renamed '/Users/sophiachow/desktop/cli_golf-master/kitchen/pantry/crisper-drawer' -> '/Users/sophiachow/desktop/cli_golf-master/kitchen/fridge/crisper-drawer'
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ pwd
+/Users/sophiachow/desktop/cli_golf-master/kitchen/fridge
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ cd crisper-drawer/
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge/crisper-drawer
+$ cd ..
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ cd freezer/
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge/freezer
+$ cd ..
+sophiachow ~/desktop/cli_golf-master/kitchen/fridge
+$ cd ..
+sophiachow ~/desktop/cli_golf-master/kitchen
+$ cd sink/
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ rm delete-me.txt
+removed 'delete-me.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ mkdir drying-rack/
+gmkdir: created directory 'drying-rack/'
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ mv dirty-dishes.txt drying-rack/dirty-dishes.txt
+renamed 'dirty-dishes.txt' -> 'drying-rack/dirty-dishes.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ mv clean-dishes.txt drying-rack/clean-dishes.txt
+renamed 'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/sink
+$ cd drying-rack
+sophiachow ~/desktop/cli_golf-master/kitchen/sink/drying-rack
+$ mv dirty-dishes.txt sink/dirty-dishes.txt
+gmv: cannot move 'dirty-dishes.txt' to 'sink/dirty-dishes.txt': No such file or directory
+sophiachow ~/desktop/cli_golf-master/kitchen/sink/drying-rack
+$ mv  ~/desktop/cli_golf-master/kitchen/sink/drying-rack/dirty-dishes ~/desktop/cli_golf-master/kitchen/sink
+gmv: cannot stat '/Users/sophiachow/desktop/cli_golf-master/kitchen/sink/drying-rack/dirty-dishes': No such file or directory
+sophiachow ~/desktop/cli_golf-master/kitchen/sink/drying-rack
+$ mv ~/desktop/cli_golf-master/kitchen/sink/drying-rack/dirty-dishes.txt ~/desktop/cli_golf-master/kitchen/sink/
+renamed '/Users/sophiachow/desktop/cli_golf-master/kitchen/sink/drying-rack/dirty-dishes.txt' -> '/Users/sophiachow/desktop/cli_golf-master/kitchen/sink/dirty-dishes.txt'
+sophiachow ~/desktop/cli_golf-master/kitchen/sink/drying-rack
+$ 
