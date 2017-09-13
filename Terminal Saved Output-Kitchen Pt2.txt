@@ -1,0 +1,204 @@
+Last login: Tue Sep 12 10:01:30 on ttys001
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ pwd
+/Users/ulrikebernheisel
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ cd Documents
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ ls
+Terminal Saved Output-Kitchen	kitchen
+example
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ cd kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd crisper-drawer
+-bash: cd: crisper-drawer: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls fridge
+ls: fridge: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+diapers.txt	freezer		trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ mv crisper-drawer fridge/crisper-drawer
+mv: rename crisper-drawer to fridge/crisper-drawer: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ mv crisper-drawer/ fridge/crisper-drawer
+mv: rename crisper-drawer/ to fridge/crisper-drawer: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ git branch
+* master
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+diapers.txt	freezer		trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ tree
+-bash: tree: command not found
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv pantry/crisper-drawer/ fridge/crisper-drawer
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv pwd
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd crisper-drawer
+-bash: cd: crisper-drawer: No such file or directory
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge/crisper-drawer/
+Ulrikes-MacBook-Pro:crisper-drawer ulrikebernheisel$ touch apples.tx lettuce.txt
+Ulrikes-MacBook-Pro:crisper-drawer ulrikebernheisel$ ls
+apples.tx	lettuce.txt
+Ulrikes-MacBook-Pro:crisper-drawer ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd cd ..
+-bash: cd: cd: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv fridge/freezer/ ~
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge/freezer
+-bash: cd: fridge/freezer: No such file or directory
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+crisper-drawer	diapers.txt	trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ tree
+-bash: tree: command not found
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ install tree
+usage: install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 file2
+       install [-bCcpSsv] [-B suffix] [-f flags] [-g group] [-m mode]
+               [-o owner] file1 ... fileN directory
+       install -d [-v] [-g group] [-m mode] [-o owner] directory ...
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ tree
+-bash: tree: command not found
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+crisper-drawer	diapers.txt	trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd pantry
+-bash: cd: pantry: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd pantry
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ ls
+cans.txt	cereal.txt
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ cd ~
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ pwd
+/Users/ulrikebernheisel
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ ls
+2		Documents	Movies		Public		ssh
+Applications	Downloads	Music		code		ssh.pub
+Desktop		Library		Pictures	freezer
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ rm freezer
+rm: freezer: is a directory
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ rm freezer/
+rm: freezer/: is a directory
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ rm -f freezer/
+rm: freezer/: is a directory
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ rmdir freezer/
+rmdir: freezer/: Directory not empty
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ rmdir -r freezer/
+rmdir: illegal option -- r
+usage: rmdir [-p] directory ...
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ ls
+2		Documents	Movies		Public		ssh
+Applications	Downloads	Music		code		ssh.pub
+Desktop		Library		Pictures	freezer
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ mv freezer/ D
+Desktop/   Documents/ Downloads/ 
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ mv freezer/ Documents/kitchen/
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ cd Documents/kitchen/
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	freezer		fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd freezer
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ ls
+couch.txt	frozenpeas.txt	icecream.txt
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ rm couch.txt
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ cd ../..
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ cd kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge/trashcan/
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ ls
+bana-peels.txt		egg-shells.txt
+chicken-bones.txt	{sink}
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$  rm {sink}
+rm: {sink}: is a directory
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ rmdir \{sink\}/
+rmdir: {sink}/: Directory not empty
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv cans.txt pantry/
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+freezer	fridge	pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd pantry/ ls
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ ls
+cans.txt	cereal.txt
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+freezer	fridge	pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fr
+freezer/ fridge/  
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd pwd
+-bash: cd: pwd: No such file or directory
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+crisper-drawer	diapers.txt	trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv fr
+freezer/ fridge/  
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+Terminal Saved Output-Kitchen	fridge
+freezer				pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mv fridge/trashcan/ ../
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+Terminal Saved Output-Kitchen	fridge
+freezer				pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ rm fr
+freezer/ fridge/  
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mkdir trashcan
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+Terminal Saved Output-Kitchen	pantry
+freezer				trashcan
+fridge
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ mkdir sink
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd sink
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ ls
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ mkdir drying-rack
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ cd drying-rack/
+Ulrikes-MacBook-Pro:drying-rack ulrikebernheisel$ touch clean-dishes.txt
+Ulrikes-MacBook-Pro:drying-rack ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/sink
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ ls
+drying-rack
+Ulrikes-MacBook-Pro:sink ulrikebernheisel$ cd drying-rack/
+Ulrikes-MacBook-Pro:drying-rack ulrikebernheisel$ ls
+clean-dishes.txt
+Ulrikes-MacBook-Pro:drying-rack ulrikebernheisel$ cd ../..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd trashcan/
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ ls
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ touch banana-peels.txt
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ touch chicken-bones.txt
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ touch egg-shells.txt
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ ls
+banana-peels.txt	chicken-bones.txt	egg-shells.txt
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ 
