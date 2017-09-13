@@ -1,6 +1,6 @@
 # CLI Golf
 
-1. **Read:** [ProGit, Chapter 1.1](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
+1. **Read:** [ProGit, Chapter 1.](http://git-scm.com/book/en/Getting-Started-About-Version-Control)
 2. Using `mv`, `cp`, `rm` and `mkdir`, reorganize the kitchen in as few steps as possible!
 3. Once you're finished, go up to the file menu at the top and click `Shell` -> `Export Text As...` and save the output to your desktop. Tomorrow you'll submit this file to your homework repository. 
 
