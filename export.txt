@@ -1,0 +1,64 @@
+Script started on Tue 12 Sep 2017 09:17:54 PM CDT
+0;deathnaut@karla-ubeantu: ~01;32mdeathnaut@karla-ubeantu00m:01;34m~00m$ cd DesktiKop/cli_golf-master/kitchen
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ rm cans.txt
+A;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ rm fridge/diapers.xKtxt
+ch.txthnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ rm fridgeK/freezer/cou
+werefridge/@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv pantry/crsipKisper-dKra
+dKrawer/apples.txtubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ touch frdigKidge/crisper-
+tchen/hnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv fridge/trashcan ki
+hen/athnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv trashcan/sink kitc
+mv: cannot stat 'trashcan/sink': No such file or directory
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ ls
+0m01;34mfridge0m  01;34mkitchen0m  01;34mpantry0m
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv kitchen trsKashcan
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ ls
+0m01;34mfridge0m  01;34mpantry0m  01;34mtrashcan0m
+hen/sinkaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv trashcan/sink kitc
+mv: cannot move 'trashcan/sink' to 'kitchen/sink': No such file or directory
+henK/thnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv trashcan/sink kitc
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ ls
+0m01;34mfridge0m  01;34mkitchen0m  01;34mpantry0m  01;34mtrashcan0m
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ mv kitchen sink
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ ls
+0m01;34mfridge0m  01;34mpantry0m  01;34msink0m	01;34mtrashcan0m
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ Kcd sink
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+A;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ rm delete-me.txt
+k;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ mkdir drying-cKrac
+txtedrying-rack/a-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ mv clean-dishes.t
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ ls
+dirty-dishes.txt  0m01;34mdrying-rack0m
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen/sink01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen/sink00m$ cdK ..
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master/kitchen01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master/kitchen00m$ cd ..
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master00m$ tree
+01;34m.00m
+├── 01;34mkitchen00m
+│   ├── 01;34mfridge00m
+│   │   ├── 01;34mcrisper-drawer00m
+│   │   │   ├── apples.txt
+│   │   │   └── lettuce.txt
+│   │   ├── 01;34mfreezer00m
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── 01;34mpantry00m
+│   │   ├── cans.txt
+│   │   └── cereal.txt
+│   ├── 01;34msink00m
+│   │   ├── dirty-dishes.txt
+│   │   └── 01;34mdrying-rack00m
+│   │       └── clean-dishes.txt
+│   └── 01;34mtrashcan00m
+│  	├── banana-peels.txt
+│  	├── chicken-bones.txt
+│  	└── egg-shells.txt
+├── 01;31mkitchen.zip00m
+├── LICENSE.txt
+└── README.md
+
+8 directories, 15 files
+0;deathnaut@karla-ubeantu: ~/Desktop/cli_golf-master01;32mdeathnaut@karla-ubeantu00m:01;34m~/Desktop/cli_golf-master00m$ exit
+exit
+
+Script done on Tue 12 Sep 2017 09:22:05 PM CDT
