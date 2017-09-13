@@ -1,0 +1,511 @@
+Last login: Mon Sep 11 20:37:34 on ttys000
+ GA General Assembly  Web Development Immersive
+------------------------------------------
+git version 2.14.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision fedb; last commit 2017-09-11)
+ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin15]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+UFO ~
+$ tree
+-bash: tree: command not found
+UFO ~
+$ homebrew install tree
+-bash: homebrew: command not found
+UFO ~
+$ install tree homebrew
+install: tree: No such file or directory
+UFO ~
+$ install homebrew tree
+install: homebrew: No such file or directory
+UFO ~
+$ install Homebrew tree
+install: Homebrew: No such file or directory
+UFO ~
+$ install tree Homebrew
+install: tree: No such file or directory
+UFO ~
+$ homebrew tree install
+-bash: homebrew: command not found
+UFO ~
+$ tree homebrew install
+-bash: tree: command not found
+UFO ~
+$ tree install homebrew
+-bash: tree: command not found
+UFO ~
+$ ls
+2        Desktop/    Downloads/  Movies/  Pictures/  code/
+Applications/  Documents/  Library/    Music/ Public/
+UFO ~
+$ cd ~/code
+UFO ~/code
+$ ls
+wdi/
+UFO ~/code
+$ cd ..
+UFO ~
+$ ls
+2        Desktop/    Downloads/  Movies/  Pictures/  code/
+Applications/  Documents/  Library/    Music/ Public/
+UFO ~
+$ cd Downloads/
+UFO ~/Downloads
+$ ls
+'face pic.jpg'   kitchen.zip
+UFO ~/Downloads
+$ unzip kitchen.zip
+Archive:  kitchen.zip
+   creating: kitchen/
+ extracting: kitchen/cans.txt
+   creating: kitchen/fridge/
+ extracting: kitchen/fridge/diapers.txt
+   creating: kitchen/fridge/freezer/
+ extracting: kitchen/fridge/freezer/couch.txt
+ extracting: kitchen/fridge/freezer/frozenpeas.txt
+ extracting: kitchen/fridge/freezer/icecream.txt
+ extracting: kitchen/fridge/milk.txt
+   creating: kitchen/fridge/trashcan/
+ extracting: kitchen/fridge/trashcan/banana-peels.txt
+ extracting: kitchen/fridge/trashcan/chicken-bones.txt
+ extracting: kitchen/fridge/trashcan/egg-shells.txt
+   creating: kitchen/fridge/trashcan/sink/
+ extracting: kitchen/fridge/trashcan/sink/clean-dishes.txt
+ extracting: kitchen/fridge/trashcan/sink/delete-me.txt
+ extracting: kitchen/fridge/trashcan/sink/dirty-dishes.txt
+   creating: kitchen/pantry/
+ extracting: kitchen/pantry/cans.txt
+ extracting: kitchen/pantry/cereal.txt
+   creating: kitchen/pantry/crisper-drawer/
+ extracting: kitchen/pantry/crisper-drawer/lettuce.txt
+UFO ~/Downloads
+$ ls
+'face pic.jpg'   kitchen/   kitchen.zip
+UFO ~/Downloads
+$ mv kitchen/ ../code
+renamed 'kitchen/' -> '../code/kitchen'
+UFO ~/Downloads
+$ ls
+'face pic.jpg'   kitchen.zip
+UFO ~/Downloads
+$ rm kitchen.zip
+removed 'kitchen.zip'
+UFO ~/Downloads
+$ ls
+'face pic.jpg'
+UFO ~/Downloads
+$ cd ..
+UFO ~
+$ ls
+2  Applications/  Desktop/  Documents/  Downloads/  Library/  Movies/  Music/  Pictures/  Public/  code/
+UFO ~
+$ cd code/
+UFO ~/code
+$ ls
+kitchen/  wdi/
+UFO ~/code
+$ cd wdi/
+UFO ~/code/wdi
+$ ls
+UFO ~/code/wdi
+$ cd ..
+UFO ~/code
+$ ls
+kitchen/  wdi/
+UFO ~/code
+$ cd kitchen
+UFO ~/code/kitchen
+$ tree
+-bash: tree: command not found
+UFO ~/code/kitchen
+$ install brew tree
+install: brew: No such file or directory
+UFO ~/code/kitchen
+$ install tree brew
+install: tree: No such file or directory
+UFO ~/code/kitchen
+$ tree --help
+-bash: tree: command not found
+UFO ~/code/kitchen
+$ brew install tree
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (caskroom/cask, caskroom/versions).
+No changes to formulae.
+
+==> Downloading https://homebrew.bintray.com/bottles/tree-1.7.0.el_capitan.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Pouring tree-1.7.0.el_capitan.bottle.1.tar.gz
+🍺  /usr/local/Cellar/tree/1.7.0: 7 files, 113.4KB
+UFO ~/code/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+UFO ~/code/kitchen
+$ mv trashcan/ ../
+gmv: cannot stat 'trashcan/': No such file or directory
+UFO ~/code/kitchen
+$ mv fridge/trashcan/ ../
+renamed 'fridge/trashcan/' -> '../trashcan'
+UFO ~/code/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+4 directories, 9 files
+UFO ~/code/kitchen
+$ ../
+-bash: ../: is a directory
+UFO ~/code/kitchen
+$ cd ..
+UFO ~/code
+$ ls
+kitchen/  trashcan/  wdi/
+UFO ~/code
+$ mv trashcan/ kitchen/
+renamed 'trashcan/' -> 'kitchen/trashcan'
+UFO ~/code
+$ ls
+kitchen/  wdi/
+UFO ~/code
+$ tree
+.
+├── kitchen
+│   ├── cans.txt
+│   ├── fridge
+│   │   ├── diapers.txt
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   ├── cereal.txt
+│   │   └── crisper-drawer
+│   │       └── lettuce.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── wdi
+
+8 directories, 15 files
+UFO ~/code
+$ rm kitchen/cans.txt
+removed 'kitchen/cans.txt'
+UFO ~/code
+$ tree
+.
+├── kitchen
+│   ├── fridge
+│   │   ├── diapers.txt
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   ├── cereal.txt
+│   │   └── crisper-drawer
+│   │       └── lettuce.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── wdi
+
+8 directories, 14 files
+UFO ~/code
+$ rm kitchen/fridge/diapers.txt
+removed 'kitchen/fridge/diapers.txt'
+UFO ~/code
+$ tree
+.
+├── kitchen
+│   ├── fridge
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   ├── cereal.txt
+│   │   └── crisper-drawer
+│   │       └── lettuce.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── wdi
+
+8 directories, 13 files
+UFO ~/code
+$ rm kitchen/fridge/freezer/couch.txt
+removed 'kitchen/fridge/freezer/couch.txt'
+UFO ~/code
+$ tree
+.
+├── kitchen
+│   ├── fridge
+│   │   ├── freezer
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   ├── cereal.txt
+│   │   └── crisper-drawer
+│   │       └── lettuce.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── wdi
+
+8 directories, 12 files
+UFO ~/code
+$ mv crisper-drawer/ kitchen/fridge/
+gmv: cannot stat 'crisper-drawer/': No such file or directory
+UFO ~/code
+$ mv kitchen/pantry/crisper-drawer/ kitchen/fridge/
+renamed 'kitchen/pantry/crisper-drawer/' -> 'kitchen/fridge/crisper-drawer'
+UFO ~/code
+$ tree
+.
+├── kitchen
+│   ├── fridge
+│   │   ├── crisper-drawer
+│   │   │   └── lettuce.txt
+│   │   ├── freezer
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   └── milk.txt
+│   ├── pantry
+│   │   ├── cans.txt
+│   │   └── cereal.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── wdi
+
+8 directories, 12 files
+UFO ~/code
+$ cd kitchen
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+6 directories, 12 files
+UFO ~/code/kitchen
+$ touch fridge/crisper-drawer/apples.txt
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── egg-shells.txt
+    └── sink
+        ├── clean-dishes.txt
+        ├── delete-me.txt
+        └── dirty-dishes.txt
+
+6 directories, 13 files
+UFO ~/code/kitchen
+$ mv trashcan/sink/ ../kitchen/
+renamed 'trashcan/sink/' -> '../kitchen/sink'
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── delete-me.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 13 files
+UFO ~/code/kitchen
+$ rm sink/delete-me.txt
+removed 'sink/delete-me.txt'
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+6 directories, 12 files
+UFO ~/code/kitchen
+$ mkdir sink/drying-rack/
+gmkdir: created directory 'sink/drying-rack/'
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── clean-dishes.txt
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+UFO ~/code/kitchen
+$ mv sink/clean-dishes.txt sink/drying-rack
+renamed 'sink/clean-dishes.txt' -> 'sink/drying-rack/clean-dishes.txt'
+UFO ~/code/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+UFO ~/code/kitchen
+$
