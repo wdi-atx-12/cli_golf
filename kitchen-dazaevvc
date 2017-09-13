@@ -1,0 +1,2329 @@
+Last login: Mon Sep 11 12:25:21 on ttys000
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.14.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 9166; last commit 2017-09-11)
+ruby 2.0.0p645 (2015-04-13 revision 50299) [universal.x86_64-darwin15]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+dazaev ~
+$ cd fundamentals
+dazaev ~/fundamentals
+$ ls
+git-practice/  wdi-fundamentals-memorygame/
+memory_game/   wdi-fundamentals-memorygame1/
+dazaev ~/fundamentals
+$ cd wdi-fundamentals-memorygame1/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!]
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   .DS_Store
+	modified:   memory_game (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!]
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[+]
+$ git commit -m 'modified game'
+[master c2cf2ef] modified game
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   memory_game (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.21 KiB | 1.21 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dazaevvc/wdi-fundamentals-memorygame1.git
+   3ac7bf6..c2cf2ef  master -> master
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls
+README.md  memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ cd memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master[!]
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+	modified:   css/.DS_Store
+	modified:   css/style.css
+	modified:   index.html
+	modified:   js/main.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master[!]
+$ cd ..
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git add memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   memory_game (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ cd memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master[!]
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master[+]
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .DS_Store
+	modified:   css/.DS_Store
+	modified:   css/style.css
+	modified:   index.html
+	modified:   js/main.js
+
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master[+]
+$ git commit -m 'files'
+[master 2ed503d] files
+ 5 files changed, 46 insertions(+), 19 deletions(-)
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ git push master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ cd ..
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   memory_game (new commits)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls -a
+./  ../  .DS_Store  .git/  README.md  memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ cd memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ ls -a
+./  ../  .DS_Store  .git/  css/  images/  index.html  js/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ rm -rf .git/
+removed '.git/COMMIT_EDITMSG'
+removed '.git/config'
+removed '.git/description'
+removed '.git/HEAD'
+removed '.git/hooks/applypatch-msg.sample'
+removed '.git/hooks/commit-msg.sample'
+removed '.git/hooks/post-update.sample'
+removed '.git/hooks/pre-applypatch.sample'
+removed '.git/hooks/pre-commit.sample'
+removed '.git/hooks/pre-push.sample'
+removed '.git/hooks/pre-rebase.sample'
+removed '.git/hooks/pre-receive.sample'
+removed '.git/hooks/prepare-commit-msg.sample'
+removed '.git/hooks/update.sample'
+removed directory '.git/hooks'
+removed '.git/index'
+removed '.git/info/exclude'
+removed directory '.git/info'
+removed '.git/logs/HEAD'
+removed '.git/logs/refs/heads/master'
+removed directory '.git/logs/refs/heads'
+removed directory '.git/logs/refs'
+removed directory '.git/logs'
+removed '.git/objects/06/0637c73eb2ea0d908a20c03bec9f5c49ecd3be'
+removed '.git/objects/06/9c0ea4b452754d87db9383695ee08efea62ea6'
+removed directory '.git/objects/06'
+removed '.git/objects/07/130a44160e75b53cb623c1f2b5ed7882d9ad04'
+removed directory '.git/objects/07'
+removed '.git/objects/10/3c33974d0f900b54cbf2abd5b0804059fcddbf'
+removed directory '.git/objects/10'
+removed '.git/objects/11/87bf72159fa9cc4e630016c9899c4eb0c75525'
+removed directory '.git/objects/11'
+removed '.git/objects/13/3143bfa89fa03d2a8b8081b685b0826b6eb5a1'
+removed directory '.git/objects/13'
+removed '.git/objects/1d/3818c0df0b039e051110a4bc3bec91a4d2baf8'
+removed directory '.git/objects/1d'
+removed '.git/objects/2c/cd3964e060df09ea8fd2294c72400ffeca7d23'
+removed directory '.git/objects/2c'
+removed '.git/objects/2e/d503dc68e6ef865079918c55b0b2114ac74926'
+removed directory '.git/objects/2e'
+removed '.git/objects/2f/011e3f7e805fcead075fa017fea138b6b9c85f'
+removed directory '.git/objects/2f'
+removed '.git/objects/31/fdbe2da981019f4d80e84b945f530481095447'
+removed directory '.git/objects/31'
+removed '.git/objects/40/74f245637ab25a90d405ee6a05aab169cc3f55'
+removed directory '.git/objects/40'
+removed '.git/objects/4a/89d868baf0c225b384dee50227099602bd1a13'
+removed directory '.git/objects/4a'
+removed '.git/objects/50/022e5bf73ccf96a64623583e66d425e32ac582'
+removed directory '.git/objects/50'
+removed '.git/objects/51/990be51f2dd7a1396b956fd084f222a55451b0'
+removed directory '.git/objects/51'
+removed '.git/objects/5d/f33dce3b30006d9d8e19295926dbb5104093a4'
+removed directory '.git/objects/5d'
+removed '.git/objects/65/e368d491720086c541e77e73bcfe9e79edeafc'
+removed directory '.git/objects/65'
+removed '.git/objects/6d/92a601173ea14bdb129c3198988adff10459f9'
+removed directory '.git/objects/6d'
+removed '.git/objects/71/16ddf21f598002ba600edacacc2031f6ceef29'
+removed directory '.git/objects/71'
+removed '.git/objects/89/2e4c23d439c98a28acc95c57067a8d253e3361'
+removed directory '.git/objects/89'
+removed '.git/objects/90/ba0b2a1c1b9c53207bc013d02265cda5cc9e94'
+removed directory '.git/objects/90'
+removed '.git/objects/93/da8cea40a337d6bda2927bff55cad85f9e6f81'
+removed directory '.git/objects/93'
+removed '.git/objects/95/1b055f7d49816d1caa83b14694a5c3ee9273be'
+removed directory '.git/objects/95'
+removed '.git/objects/9d/4f6d849fc0811e2af1cffae452bdc8f2842b2d'
+removed directory '.git/objects/9d'
+removed '.git/objects/a6/1d85c82a98345d87215ea3e000b7eba224f198'
+removed directory '.git/objects/a6'
+removed '.git/objects/b4/96b1f67901b02f94888bd5863fbd8f9264013d'
+removed directory '.git/objects/b4'
+removed '.git/objects/d3/d049f88436eb49c6056b76b00a4c3a50c827db'
+removed directory '.git/objects/d3'
+removed '.git/objects/e0/c30b16465e33eec226adf108caa8fa4058c550'
+removed directory '.git/objects/e0'
+removed '.git/objects/e4/2345097eb44e65b77e363a87171f4468be4447'
+removed directory '.git/objects/e4'
+removed '.git/objects/ec/df73bc0fe41a8207ad855daf37b7e56d580f73'
+removed directory '.git/objects/ec'
+removed '.git/objects/f7/8ba319932c62b4ad87cd23bab8a29227fcd495'
+removed directory '.git/objects/f7'
+removed '.git/objects/fd/a9cfef371f43b39f0a5a34076f43185b793371'
+removed directory '.git/objects/fd'
+removed directory '.git/objects/info'
+removed directory '.git/objects/pack'
+removed directory '.git/objects'
+removed '.git/refs/heads/master'
+removed directory '.git/refs/heads'
+removed directory '.git/refs/tags'
+removed directory '.git/refs'
+removed directory '.git/'
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ ls
+css/  images/  index.html  js/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ ls -a
+./  ../  .DS_Store  css/  images/  index.html  js/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1/memory_game on master
+$ cd ..
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls
+README.md  memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls -a
+./  ../  .DS_Store  .git/  README.md  memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working tree clean
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ gigit pull
+-bash: gigit: command not found
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git pull
+Already up-to-date.
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ touch readme2.md
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[?]
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme2.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[?]
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[+]
+$ git commit -m testing file'
+> 
+> 
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[+]
+$ git commit -m 'testing ile'
+[master 79875f1] testing ile
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme2.md
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dazaevvc/wdi-fundamentals-memorygame1.git
+   c2cf2ef..79875f1  master -> master
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls
+README.md  memory_game/  readme2.md
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ rm -rf memory_game/
+removed 'memory_game/.DS_Store'
+removed 'memory_game/css/.DS_Store'
+removed 'memory_game/css/style.css'
+removed directory 'memory_game/css'
+removed 'memory_game/images/.DS_Store'
+removed 'memory_game/images/back.png'
+removed 'memory_game/images/king-of-diamonds.png'
+removed 'memory_game/images/king-of-hearts.png'
+removed 'memory_game/images/queen-of-diamonds.png'
+removed 'memory_game/images/queen-of-hearts.png'
+removed directory 'memory_game/images'
+removed 'memory_game/index.html'
+removed 'memory_game/js/.DS_Store'
+removed 'memory_game/js/main.js'
+removed directory 'memory_game/js'
+removed directory 'memory_game/'
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ ls
+README.md  readme2.md
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    memory_game
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git commit -m 'memory game'
+[master 4c8f51e] memory game
+ 1 file changed, 1 deletion(-)
+ delete mode 160000 memory_game
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/dazaevvc/wdi-fundamentals-memorygame1.git
+   79875f1..4c8f51e  master -> master
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ rm -rf readme2.md 
+removed 'readme2.md'
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!]
+$ cd ..
+dazaev ~/fundamentals
+$ ls
+git-practice/  wdi-fundamentals-memorygame/
+memory_game/   wdi-fundamentals-memorygame1/
+dazaev ~/fundamentals
+$ mv memory_game/ wdi-fundamentals-memorygame1/
+renamed 'memory_game/' -> 'wdi-fundamentals-memorygame1/memory_game'
+dazaev ~/fundamentals
+$ cd wdi-fundamentals-memorygame1/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!?]
+$ ls
+README.md  memory_game/
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!?]
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    readme2.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	memory_game/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[!?]
+$ git add .
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master[+]
+$ git commit -m 'try AGAIN!'
+[master 44331bd] try AGAIN!
+ 9 files changed, 241 insertions(+)
+ create mode 100644 memory_game/css/style.css
+ create mode 100644 memory_game/images/back.png
+ create mode 100644 memory_game/images/king-of-diamonds.png
+ create mode 100644 memory_game/images/king-of-hearts.png
+ create mode 100644 memory_game/images/queen-of-diamonds.png
+ create mode 100644 memory_game/images/queen-of-hearts.png
+ create mode 100644 memory_game/index.html
+ create mode 100644 memory_game/js/main.js
+ delete mode 100644 readme2.md
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ git push
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (14/14), 48.47 KiB | 16.16 MiB/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/dazaevvc/wdi-fundamentals-memorygame1.git
+   4c8f51e..44331bd  master -> master
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ clear
+
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  [Restored Sep 11, 2017, 2:06:41 PM]
+Last login: Mon Sep 11 12:38:09 on ttys000
+Restored session: Mon Sep 11 14:06:39 CDT 2017
+ GA General Assembly  Web Development Immersive 
+------------------------------------------
+git version 2.14.1
+Homebrew 1.3.2 Homebrew/homebrew-core (git revision 9166; last commit 2017-09-11)
+ruby 2.0.0p645 (2015-04-13 revision 50299) [universal.x86_64-darwin15]
+node v8.4.0
+psql (PostgreSQL) 9.6.5
+------------------------------------------
+type unwelcome to remove this message
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ pwd
+/Users/dazaev/fundamentals/wdi-fundamentals-memorygame1
+dazaev ~/fundamentals/wdi-fundamentals-memorygame1 on master
+$ cd ~
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ ls
+ 2		 Downloads/   Pictures/		 code/
+ Applications/	 Library/     Public/		 fundamentals/
+ Desktop/	 Movies/     'VirtualBox VMs'/	 funny_things/
+ Documents/	 Music/       World/		 post.txt
+dazaev ~
+$ cd Desktop/
+dazaev ~/Desktop
+$ ls
+ 13310631_1032449553502952_3389730930382808504_n.jpg
+ 15826898_1316642425064339_8745603281067432137_n.png
+ 16473537_1385198504847591_429613689641500677_n.jpg
+'AMPARO PUERTO MORELOS.doc'
+ Purple.jpg
+'Screen Shot 2016-06-20 at 1.12.39 AM.png'
+'Screen Shot 2016-06-20 at 2.01.42 AM.png'
+'Screen Shot 2016-06-20 at 2.04.16 AM.png'
+'Screen Shot 2016-07-01 at 12.30.12 PM.png'
+'Screen Shot 2016-07-14 at 10.52.42 PM.png'
+'Screen Shot 2016-09-14 at 11.43.41 PM.png'
+'Screen Shot 2016-09-14 at 11.44.06 PM.png'
+'Screen Shot 2016-09-20 at 11.44.21 PM.png'
+'Screen Shot 2016-09-21 at 8.04.30 PM.png'
+'Screen Shot 2016-09-21 at 8.49.05 PM.png'
+'Screen Shot 2016-09-25 at 1.55.32 PM.png'
+'Screen Shot 2016-09-25 at 1.57.07 PM.png'
+'Screen Shot 2016-09-26 at 1.33.59 PM.png'
+'Screen Shot 2016-09-26 at 1.54.34 PM.png'
+'Screen Shot 2016-09-27 at 1.10.07 PM.png'
+'Screen Shot 2016-09-27 at 7.33.18 PM.png'
+'Screen Shot 2016-09-27 at 7.33.41 PM.png'
+'Screen Shot 2016-09-28 at 11.54.29 PM.png'
+'Screen Shot 2016-09-28 at 11.54.33 PM.png'
+'Screen Shot 2016-09-28 at 12.41.01 PM.png'
+'Screen Shot 2016-10-06 at 11.29.44 PM.png'
+'Screen Shot 2016-10-09 at 10.21.04 PM.png'
+'Screen Shot 2016-10-09 at 9.30.06 PM.png'
+'Screen Shot 2016-10-09 at 9.30.09 PM.png'
+'Screen Shot 2016-10-09 at 9.33.59 PM.png'
+'Screen Shot 2016-10-09 at 9.49.13 PM.png'
+'Screen Shot 2016-10-09 at 9.49.14 PM.png'
+'Screen Shot 2016-10-09 at 9.49.49 PM.png'
+'Screen Shot 2016-10-09 at 9.55.21 PM.png'
+'Screen Shot 2016-10-10 at 11.35.06 PM.png'
+'Screen Shot 2016-10-10 at 4.01.14 PM.png'
+'Screen Shot 2016-10-12 at 12.35.18 PM.png'
+'Screen Shot 2016-10-12 at 4.34.28 PM.png'
+'Screen Shot 2016-10-13 at 12.38.13 AM.png'
+'Screen Shot 2016-10-14 at 11.42.22 AM.png'
+'Screen Shot 2016-10-14 at 11.42.33 AM.png'
+'Screen Shot 2016-10-14 at 3.40.37 PM.png'
+'Screen Shot 2016-10-14 at 3.41.04 PM.png'
+'Screen Shot 2016-10-14 at 5.00.30 PM.png'
+'Screen Shot 2016-10-15 at 12.50.35 PM.png'
+'Screen Shot 2016-10-19 at 1.09.50 AM.png'
+'Screen Shot 2016-10-19 at 9.54.47 PM.png'
+'Screen Shot 2016-10-20 at 1.35.46 AM.png'
+'Screen Shot 2016-10-20 at 12.41.44 PM.png'
+'Screen Shot 2016-10-20 at 12.41.52 PM.png'
+'Screen Shot 2016-10-20 at 2.56.12 PM.png'
+'Screen Shot 2016-10-20 at 2.56.40 PM.png'
+'Screen Shot 2016-10-20 at 2.58.25 PM.png'
+'Screen Shot 2016-10-20 at 3.00.35 PM.png'
+'Screen Shot 2016-10-20 at 3.30.03 PM.png'
+'Screen Shot 2016-10-21 at 1.14.57 AM.png'
+'Screen Shot 2016-10-21 at 8.08.28 PM.png'
+'Screen Shot 2016-10-21 at 8.09.04 PM.png'
+'Screen Shot 2016-10-21 at 8.09.56 PM.png'
+'Screen Shot 2016-10-21 at 8.16.54 PM.png'
+'Screen Shot 2016-10-21 at 8.17.50 PM.png'
+'Screen Shot 2016-10-21 at 8.19.07 PM.png'
+'Screen Shot 2016-10-21 at 8.25.03 PM.png'
+'Screen Shot 2016-10-22 at 3.01.18 PM.png'
+'Screen Shot 2016-10-22 at 3.04.34 PM.png'
+'Screen Shot 2016-10-22 at 3.43.15 PM.png'
+'Screen Shot 2016-10-23 at 4.57.51 PM.png'
+'Screen Shot 2016-10-24 at 3.33.26 PM.png'
+'Screen Shot 2016-10-26 at 11.51.11 PM.png'
+'Screen Shot 2016-10-26 at 2.42.38 AM.png'
+'Screen Shot 2016-10-27 at 1.02.05 PM.png'
+'Screen Shot 2016-10-27 at 1.49.00 PM.png'
+'Screen Shot 2016-10-27 at 1.50.33 PM.png'
+'Screen Shot 2016-10-31 at 12.53.20 AM.png'
+'Screen Shot 2016-10-31 at 12.54.03 AM.png'
+'Screen Shot 2016-10-31 at 12.54.38 AM.png'
+'Screen Shot 2016-11-02 at 6.49.18 PM.png'
+'Screen Shot 2016-11-06 at 11.30.56 PM.png'
+'Screen Shot 2016-11-07 at 1.24.30 AM.png'
+'Screen Shot 2016-11-07 at 1.29.08 AM.png'
+'Screen Shot 2016-11-09 at 2.42.15 PM.png'
+'Screen Shot 2016-11-10 at 12.49.18 PM.png'
+'Screen Shot 2016-11-10 at 3.11.11 PM.png'
+'Screen Shot 2016-11-13 at 2.23.55 PM.png'
+'Screen Shot 2016-11-17 at 6.25.14 PM.png'
+'Screen Shot 2016-11-17 at 6.39.52 PM.png'
+'Screen Shot 2016-11-18 at 12.01.03 AM.png'
+'Screen Shot 2016-11-18 at 12.06.23 AM.png'
+'Screen Shot 2016-11-19 at 8.12.43 PM.png'
+'Screen Shot 2016-11-19 at 8.42.06 PM.png'
+'Screen Shot 2016-11-21 at 12.59.48 PM.png'
+'Screen Shot 2016-11-24 at 11.02.58 PM.png'
+'Screen Shot 2016-11-26 at 2.34.39 PM.png'
+'Screen Shot 2016-11-26 at 3.02.26 PM.png'
+'Screen Shot 2016-11-26 at 4.12.23 PM.png'
+'Screen Shot 2016-11-27 at 4.18.46 AM.png'
+'Screen Shot 2016-11-27 at 4.19.00 AM.png'
+'Screen Shot 2016-11-28 at 1.53.59 PM.png'
+'Screen Shot 2016-11-28 at 11.33.45 PM.png'
+'Screen Shot 2016-11-28 at 12.50.49 PM.png'
+'Screen Shot 2016-11-28 at 12.50.50 PM.png'
+'Screen Shot 2016-11-28 at 12.53.22 PM.png'
+'Screen Shot 2016-11-28 at 12.54.22 PM.png'
+'Screen Shot 2016-11-29 at 12.30.56 AM.png'
+'Screen Shot 2016-12-03 at 11.43.28 AM.png'
+'Screen Shot 2016-12-05 at 4.50.26 PM.png'
+'Screen Shot 2016-12-06 at 12.20.06 AM.png'
+'Screen Shot 2016-12-06 at 12.22.19 AM.png'
+'Screen Shot 2016-12-06 at 12.31.58 AM.png'
+'Screen Shot 2016-12-06 at 12.34.00 AM.png'
+'Screen Shot 2016-12-06 at 12.49.47 AM.png'
+'Screen Shot 2016-12-06 at 4.37.55 PM.png'
+'Screen Shot 2016-12-06 at 5.22.55 PM.png'
+'Screen Shot 2016-12-06 at 5.23.01 PM.png'
+'Screen Shot 2016-12-06 at 5.23.58 PM.png'
+'Screen Shot 2016-12-08 at 1.13.26 AM.png'
+'Screen Shot 2016-12-08 at 11.50.03 AM.png'
+'Screen Shot 2016-12-08 at 11.50.04 AM.png'
+'Screen Shot 2016-12-08 at 12.01.07 PM.png'
+'Screen Shot 2016-12-08 at 12.01.14 PM.png'
+'Screen Shot 2016-12-12 at 6.28.17 PM.png'
+'Screen Shot 2016-12-13 at 1.53.00 PM.png'
+'Screen Shot 2016-12-13 at 2.29.09 PM.png'
+'Screen Shot 2016-12-13 at 9.29.15 PM.png'
+'Screen Shot 2016-12-15 at 3.54.59 PM.png'
+'Screen Shot 2016-12-15 at 4.35.52 PM.png'
+'Screen Shot 2016-12-15 at 5.24.51 PM.png'
+'Screen Shot 2016-12-16 at 5.43.56 PM.png'
+'Screen Shot 2016-12-17 at 7.46.34 PM.png'
+'Screen Shot 2016-12-19 at 2.19.57 AM.png'
+'Screen Shot 2016-12-21 at 10.15.49 PM.png'
+'Screen Shot 2016-12-21 at 10.29.22 PM.png'
+'Screen Shot 2016-12-21 at 4.11.07 PM.png'
+'Screen Shot 2016-12-21 at 4.17.45 PM.png'
+'Screen Shot 2016-12-22 at 7.36.06 PM.png'
+'Screen Shot 2016-12-23 at 1.38.41 PM.png'
+'Screen Shot 2016-12-23 at 5.03.59 PM.png'
+'Screen Shot 2016-12-24 at 4.34.53 PM.png'
+'Screen Shot 2016-12-27 at 11.57.42 AM.png'
+'Screen Shot 2016-12-27 at 12.13.13 PM.png'
+'Screen Shot 2016-12-27 at 12.20.49 PM.png'
+'Screen Shot 2016-12-27 at 12.38.21 PM.png'
+'Screen Shot 2016-12-30 at 3.04.51 PM.png'
+'Screen Shot 2017-01-02 at 10.03.25 PM.png'
+'Screen Shot 2017-01-02 at 11.48.54 PM.png'
+'Screen Shot 2017-01-02 at 11.50.38 PM.png'
+'Screen Shot 2017-01-02 at 3.58.21 PM.png'
+'Screen Shot 2017-01-04 at 2.59.21 PM.png'
+'Screen Shot 2017-01-04 at 3.07.23 PM.png'
+'Screen Shot 2017-01-05 at 5.07.02 PM.png'
+'Screen Shot 2017-01-10 at 12.18.14 AM.png'
+'Screen Shot 2017-01-10 at 2.28.04 PM.png'
+'Screen Shot 2017-01-10 at 4.28.38 PM.png'
+'Screen Shot 2017-01-10 at 4.28.44 PM.png'
+'Screen Shot 2017-01-10 at 4.28.53 PM.png'
+'Screen Shot 2017-01-11 at 12.41.03 AM.png'
+'Screen Shot 2017-01-13 at 2.37.17 PM.png'
+'Screen Shot 2017-01-17 at 1.38.54 PM.png'
+'Screen Shot 2017-01-17 at 4.36.09 PM.png'
+'Screen Shot 2017-01-17 at 5.27.05 PM.png'
+'Screen Shot 2017-01-17 at 6.23.23 PM.png'
+'Screen Shot 2017-01-28 at 7.36.12 PM.png'
+'Screen Shot 2017-01-28 at 7.53.05 PM.png'
+'Screen Shot 2017-01-30 at 2.47.36 AM.png'
+'Screen Shot 2017-01-30 at 7.24.03 PM.png'
+'Screen Shot 2017-01-31 at 10.57.31 PM.png'
+'Screen Shot 2017-02-01 at 1.02.45 AM.png'
+'Screen Shot 2017-02-01 at 1.10.48 AM.png'
+'Screen Shot 2017-02-01 at 1.11.54 AM.png'
+'Screen Shot 2017-02-01 at 12.30.55 AM.png'
+'Screen Shot 2017-02-01 at 2.14.53 PM.png'
+'Screen Shot 2017-02-01 at 2.58.06 PM.png'
+'Screen Shot 2017-02-01 at 2.58.46 PM.png'
+'Screen Shot 2017-02-01 at 2.59.12 PM.png'
+'Screen Shot 2017-02-01 at 3.00.13 PM.png'
+'Screen Shot 2017-02-01 at 3.00.24 PM.png'
+'Screen Shot 2017-02-01 at 3.02.13 PM.png'
+'Screen Shot 2017-02-01 at 8.43.41 PM.png'
+'Screen Shot 2017-02-02 at 11.57.23 AM.png'
+'Screen Shot 2017-02-02 at 12.48.04 AM.png'
+'Screen Shot 2017-02-02 at 3.52.35 PM.png'
+'Screen Shot 2017-02-02 at 3.52.54 PM.png'
+'Screen Shot 2017-02-02 at 9.10.05 AM.png'
+'Screen Shot 2017-02-02 at 9.19.07 AM.png'
+'Screen Shot 2017-02-05 at 3.40.30 PM.png'
+'Screen Shot 2017-02-06 at 11.01.51 PM.png'
+'Screen Shot 2017-02-08 at 10.09.56 PM.png'
+'Screen Shot 2017-02-08 at 10.48.45 AM.png'
+'Screen Shot 2017-02-08 at 11.43.27 AM.png'
+'Screen Shot 2017-02-10 at 12.02.34 PM.png'
+'Screen Shot 2017-02-10 at 12.02.41 PM.png'
+'Screen Shot 2017-02-10 at 12.02.49 PM.png'
+'Screen Shot 2017-02-10 at 12.32.27 PM.png'
+'Screen Shot 2017-02-10 at 12.32.36 PM.png'
+'Screen Shot 2017-02-10 at 12.40.33 PM.png'
+'Screen Shot 2017-02-10 at 12.40.52 PM.png'
+'Screen Shot 2017-02-11 at 11.39.15 AM.png'
+'Screen Shot 2017-02-12 at 9.20.21 PM.png'
+'Screen Shot 2017-02-13 at 1.43.36 PM.png'
+'Screen Shot 2017-02-13 at 1.47.10 PM.png'
+'Screen Shot 2017-02-13 at 1.48.19 PM.png'
+'Screen Shot 2017-02-13 at 12.41.42 PM.png'
+'Screen Shot 2017-02-13 at 12.42.01 PM.png'
+'Screen Shot 2017-02-13 at 12.42.02 PM.png'
+'Screen Shot 2017-02-15 at 1.15.16 AM.png'
+'Screen Shot 2017-02-15 at 1.15.33 AM.png'
+'Screen Shot 2017-02-18 at 2.26.45 PM.png'
+'Screen Shot 2017-02-18 at 2.27.08 PM.png'
+'Screen Shot 2017-02-18 at 2.27.48 PM.png'
+'Screen Shot 2017-02-18 at 2.27.59 PM.png'
+'Screen Shot 2017-02-18 at 2.28.05 PM.png'
+'Screen Shot 2017-02-18 at 2.28.11 PM.png'
+'Screen Shot 2017-03-02 at 11.55.21 AM.png'
+'Screen Shot 2017-03-02 at 6.09.38 PM.png'
+'Screen Shot 2017-03-03 at 2.53.03 PM.png'
+'Screen Shot 2017-03-03 at 3.06.05 PM.png'
+'Screen Shot 2017-03-05 at 2.05.13 PM.png'
+'Screen Shot 2017-03-05 at 2.05.30 PM.png'
+'Screen Shot 2017-03-08 at 8.31.25 PM.png'
+'Screen Shot 2017-03-08 at 8.31.48 PM.png'
+'Screen Shot 2017-03-08 at 8.36.19 PM.png'
+'Screen Shot 2017-03-11 at 12.41.59 PM.png'
+'Screen Shot 2017-03-12 at 12.37.35 PM.png'
+'Screen Shot 2017-03-13 at 12.10.13 PM.png'
+'Screen Shot 2017-03-13 at 12.10.30 PM.png'
+'Screen Shot 2017-03-13 at 2.24.20 PM.png'
+'Screen Shot 2017-03-15 at 2.02.17 PM.png'
+'Screen Shot 2017-03-20 at 2.42.37 PM.png'
+'Screen Shot 2017-03-20 at 4.40.13 PM.png'
+'Screen Shot 2017-03-20 at 5.02.10 PM.png'
+'Screen Shot 2017-03-20 at 5.18.11 PM.png'
+'Screen Shot 2017-03-21 at 1.50.10 AM.png'
+'Screen Shot 2017-03-21 at 12.00.40 PM.png'
+'Screen Shot 2017-03-21 at 12.27.18 AM.png'
+'Screen Shot 2017-03-21 at 3.15.59 PM.png'
+'Screen Shot 2017-03-22 at 5.17.04 PM.png'
+'Screen Shot 2017-03-22 at 7.16.10 PM.png'
+'Screen Shot 2017-03-27 at 11.02.26 PM.png'
+'Screen Shot 2017-03-28 at 5.18.48 PM.png'
+'Screen Shot 2017-03-29 at 12.23.32 AM.png'
+'Screen Shot 2017-03-29 at 12.36.57 AM.png'
+'Screen Shot 2017-03-29 at 12.44.54 AM.png'
+'Screen Shot 2017-03-29 at 12.57.29 AM.png'
+'Screen Shot 2017-03-29 at 3.59.53 PM.png'
+'Screen Shot 2017-03-29 at 4.04.40 PM.png'
+'Screen Shot 2017-03-30 at 5.23.21 PM.png'
+'Screen Shot 2017-03-31 at 12.34.32 PM.png'
+'Screen Shot 2017-04-03 at 8.21.45 PM.png'
+'Screen Shot 2017-04-10 at 1.19.26 PM.png'
+'Screen Shot 2017-04-10 at 1.19.37 PM.png'
+'Screen Shot 2017-04-10 at 2.02.14 AM.png'
+'Screen Shot 2017-04-10 at 5.22.17 PM.png'
+'Screen Shot 2017-04-10 at 9.07.14 PM.png'
+'Screen Shot 2017-04-11 at 1.01.33 AM.png'
+'Screen Shot 2017-04-11 at 12.25.20 AM.png'
+'Screen Shot 2017-04-11 at 4.05.34 PM.png'
+'Screen Shot 2017-04-11 at 4.08.48 PM.png'
+'Screen Shot 2017-04-11 at 4.18.33 PM.png'
+'Screen Shot 2017-04-11 at 4.19.19 PM.png'
+'Screen Shot 2017-04-11 at 4.22.11 PM.png'
+'Screen Shot 2017-04-12 at 3.09.06 PM.png'
+'Screen Shot 2017-04-12 at 7.51.25 PM.png'
+'Screen Shot 2017-04-12 at 8.19.19 PM.png'
+'Screen Shot 2017-04-12 at 8.28.07 PM.png'
+'Screen Shot 2017-04-17 at 11.38.06 AM.png'
+'Screen Shot 2017-04-17 at 4.21.28 PM.png'
+'Screen Shot 2017-04-21 at 1.18.42 PM.png'
+'Screen Shot 2017-04-25 at 1.25.34 PM.png'
+'Screen Shot 2017-04-25 at 12.17.24 AM.png'
+'Screen Shot 2017-04-25 at 12.48.31 AM.png'
+'Screen Shot 2017-04-26 at 5.22.03 PM.png'
+'Screen Shot 2017-04-26 at 6.03.48 PM.png'
+'Screen Shot 2017-04-26 at 6.18.28 PM.png'
+'Screen Shot 2017-04-26 at 7.05.28 PM.png'
+'Screen Shot 2017-04-26 at 7.11.12 PM.png'
+'Screen Shot 2017-04-27 at 12.45.49 AM.png'
+'Screen Shot 2017-04-28 at 1.18.38 PM.png'
+'Screen Shot 2017-05-01 at 12.55.15 PM.png'
+'Screen Shot 2017-05-02 at 9.34.40 PM.png'
+'Screen Shot 2017-05-03 at 11.45.15 AM.png'
+'Screen Shot 2017-05-03 at 12.33.50 PM.png'
+'Screen Shot 2017-05-03 at 2.55.02 PM.png'
+'Screen Shot 2017-05-10 at 1.12.57 AM.png'
+'Screen Shot 2017-05-14 at 8.47.37 PM.png'
+'Screen Shot 2017-05-16 at 5.05.29 PM.png'
+'Screen Shot 2017-05-17 at 1.46.39 PM.png'
+'Screen Shot 2017-05-17 at 5.47.24 PM.png'
+'Screen Shot 2017-05-18 at 1.03.39 PM.png'
+'Screen Shot 2017-05-18 at 1.53.30 PM.png'
+'Screen Shot 2017-05-18 at 2.04.40 PM.png'
+'Screen Shot 2017-05-18 at 3.08.51 PM.png'
+'Screen Shot 2017-05-19 at 1.48.12 PM.png'
+'Screen Shot 2017-05-19 at 12.09.29 AM.png'
+'Screen Shot 2017-05-19 at 12.19.39 AM.png'
+'Screen Shot 2017-05-19 at 12.41.36 AM.png'
+'Screen Shot 2017-05-22 at 2.30.34 PM.png'
+'Screen Shot 2017-05-22 at 2.30.58 PM.png'
+'Screen Shot 2017-05-22 at 2.31.41 PM.png'
+'Screen Shot 2017-05-22 at 3.10.27 PM.png'
+'Screen Shot 2017-05-22 at 3.11.11 PM.png'
+'Screen Shot 2017-05-22 at 3.11.42 PM.png'
+'Screen Shot 2017-05-23 at 1.38.55 PM.png'
+'Screen Shot 2017-05-23 at 1.39.17 PM.png'
+'Screen Shot 2017-05-23 at 2.24.55 PM.png'
+'Screen Shot 2017-05-23 at 2.25.42 PM.png'
+'Screen Shot 2017-05-24 at 12.06.30 PM.png'
+'Screen Shot 2017-05-24 at 12.06.39 PM.png'
+'Screen Shot 2017-05-24 at 12.18.18 PM.png'
+'Screen Shot 2017-05-24 at 12.18.22 PM.png'
+'Screen Shot 2017-05-24 at 12.18.28 PM.png'
+'Screen Shot 2017-05-24 at 2.41.24 PM.png'
+'Screen Shot 2017-05-24 at 4.45.25 PM.png'
+'Screen Shot 2017-05-24 at 4.47.56 PM.png'
+'Screen Shot 2017-05-30 at 1.01.22 AM.png'
+'Screen Shot 2017-05-30 at 1.44.17 AM.png'
+'Screen Shot 2017-05-30 at 2.48.47 PM.png'
+'Screen Shot 2017-05-31 at 2.31.41 PM.png'
+'Screen Shot 2017-06-05 at 7.00.41 PM.png'
+'Screen Shot 2017-06-10 at 11.23.02 PM.png'
+'Screen Shot 2017-06-11 at 2.42.22 AM.png'
+'Screen Shot 2017-06-12 at 1.37.57 PM.png'
+'Screen Shot 2017-06-12 at 1.40.39 PM.png'
+'Screen Shot 2017-06-12 at 11.20.39 AM.png'
+'Screen Shot 2017-06-12 at 9.11.02 PM.png'
+'Screen Shot 2017-06-13 at 11.25.36 AM.png'
+'Screen Shot 2017-06-13 at 11.29.43 AM.png'
+'Screen Shot 2017-06-13 at 11.39.59 AM.png'
+'Screen Shot 2017-06-14 at 2.36.22 PM.png'
+'Screen Shot 2017-06-19 at 10.06.29 PM.png'
+'Screen Shot 2017-06-19 at 10.09.14 PM.png'
+'Screen Shot 2017-06-19 at 7.44.32 PM.png'
+'Screen Shot 2017-06-19 at 8.51.07 PM.png'
+'Screen Shot 2017-06-19 at 8.51.28 PM.png'
+'Screen Shot 2017-06-20 at 7.20.07 PM.png'
+'Screen Shot 2017-06-20 at 7.28.24 PM.png'
+'Screen Shot 2017-06-21 at 3.36.29 PM.png'
+'Screen Shot 2017-06-23 at 3.53.51 PM.png'
+'Screen Shot 2017-06-25 at 2.39.44 AM.png'
+'Screen Shot 2017-06-25 at 4.33.35 PM.png'
+'Screen Shot 2017-06-26 at 3.47.28 PM.png'
+'Screen Shot 2017-06-27 at 4.32.46 PM.png'
+'Screen Shot 2017-06-30 at 1.17.20 PM.png'
+'Screen Shot 2017-06-30 at 5.53.13 PM.png'
+'Screen Shot 2017-07-03 at 3.18.34 PM.png'
+'Screen Shot 2017-07-03 at 3.22.35 PM.png'
+'Screen Shot 2017-07-21 at 1.25.57 AM.png'
+'Screen Shot 2017-07-21 at 1.40.27 AM.png'
+'Screen Shot 2017-07-21 at 1.40.33 AM.png'
+'Screen Shot 2017-07-21 at 1.40.39 AM.png'
+'Screen Shot 2017-07-21 at 1.40.45 AM.png'
+'Screen Shot 2017-07-21 at 1.42.29 AM.png'
+'Screen Shot 2017-07-21 at 1.42.30 AM.png'
+'Screen Shot 2017-07-21 at 1.45.46 AM.png'
+'Screen Shot 2017-07-21 at 10.31.43 AM.png'
+'Screen Shot 2017-07-21 at 12.24.21 PM.png'
+'Screen Shot 2017-07-22 at 7.04.23 PM.png'
+'Screen Shot 2017-07-22 at 7.05.23 PM.png'
+'Screen Shot 2017-07-22 at 7.06.52 PM.png'
+'Screen Shot 2017-07-22 at 7.09.18 PM.png'
+'Screen Shot 2017-07-22 at 7.39.26 PM.png'
+'Screen Shot 2017-07-24 at 11.45.10 AM.png'
+'Screen Shot 2017-07-24 at 12.52.42 PM.png'
+'Screen Shot 2017-07-28 at 4.04.01 PM.png'
+'Screen Shot 2017-07-28 at 4.04.04 PM.png'
+'Screen Shot 2017-07-30 at 11.25.01 PM.png'
+'Screen Shot 2017-07-31 at 1.00.50 PM.png'
+'Screen Shot 2017-07-31 at 1.00.59 PM.png'
+'Screen Shot 2017-08-02 at 10.50.08 AM.png'
+'Screen Shot 2017-08-02 at 10.50.23 AM.png'
+'Screen Shot 2017-08-02 at 10.50.41 AM.png'
+'Screen Shot 2017-08-02 at 11.29.40 PM.png'
+'Screen Shot 2017-08-04 at 1.10.28 PM.png'
+'Screen Shot 2017-08-10 at 2.04.54 PM.png'
+'Screen Shot 2017-08-10 at 3.46.52 PM.png'
+'Screen Shot 2017-08-11 at 2.33.56 PM.png'
+'Screen Shot 2017-08-11 at 3.31.09 PM.png'
+'Screen Shot 2017-08-15 at 2.09.02 PM.png'
+'Screen Shot 2017-08-17 at 1.37.28 PM.png'
+'Screen Shot 2017-08-17 at 1.37.51 PM.png'
+'Screen Shot 2017-08-17 at 1.39.24 PM.png'
+'Screen Shot 2017-08-22 at 2.42.45 AM.png'
+'Screen Shot 2017-08-28 at 9.56.55 PM.png'
+'Screen Shot 2017-08-29 at 10.27.51 AM.png'
+'Screen Shot 2017-08-29 at 10.28.10 AM.png'
+'Screen Shot 2017-08-29 at 10.28.40 AM.png'
+'Screen Shot 2017-08-30 at 3.48.23 PM.png'
+'Screen Shot 2017-08-31 at 12.04.04 PM.png'
+'Screen Shot 2017-08-31 at 12.43.44 PM.png'
+'Screen Shot 2017-09-01 at 4.52.11 PM.png'
+'Screen Shot 2017-09-06 at 11.56.21 PM.png'
+'Screen Shot 2017-09-06 at 11.56.38 PM.png'
+'Screen Shot 2017-09-06 at 11.56.49 PM.png'
+'Screen Shot 2017-09-06 at 11.56.57 PM.png'
+'Screen Shot 2017-09-07 at 12.27.58 AM.png'
+ Spongebob-Meme-Fish-Face-10.jpg
+ TomorrowNight.terminal
+ USPTOelhartista.pdf
+ anime.jpg-large
+ anna.jpeg
+'barrer desmeme.jpg'
+'barrer memes.jpg'
+'boleta rebeca.jpeg'
+'camiseta horrible.jpg'
+ cena.jpg
+ dazaev.jpeg
+ drakerezando.jpg-large
+ elhartista.jpg
+ ezpzcolores.jpg
+'fotos de Blanca'/
+ gaysactivos.jpg
+ hannibal.jpeg
+ hhonors.jpg
+ keepupkardashians.jpeg
+ nachomastu.png
+ oczerbado.jpg
+ perro.jpg-large
+'pulga rio.png'
+'recibo de pago elhartista.pdf'
+ samuelpistola.jpg
+'slide .gif'
+ telescopio.jpg
+'~$PARO PUERTO MORELOS.doc'
+dazaev ~/Desktop
+$ pwd
+/Users/dazaev/Desktop
+dazaev ~/Desktop
+$ clear
+
+dazaev ~/Desktop
+$ tree
+-bash: tree: command not found
+dazaev ~/Desktop
+$ pwd
+/Users/dazaev/Desktop
+dazaev ~/Desktop
+$ tree
+-bash: tree: command not found
+dazaev ~/Desktop
+$ cd ~
+dazaev ~
+$ ls
+ 2		 Downloads/   Pictures/		 code/
+ Applications/	 Library/     Public/		 fundamentals/
+ Desktop/	 Movies/     'VirtualBox VMs'/	 funny_things/
+ Documents/	 Music/       World/		 post.txt
+dazaev ~
+$ cd Library/
+dazaev ~/Library
+$ clear
+
+
+
+dazaev ~/Library
+$ cd..
+-bash: cd..: command not found
+dazaev ~/Library
+$ cd ..
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ ls
+ 2		 Desktop/     Downloads/   Movies/   Pictures/	'VirtualBox VMs'/   code/	    funny_things/
+ Applications/	 Documents/   Library/	   Music/    Public/	 World/		    fundamentals/   post.txt
+dazaev ~
+$ cd Desktop/
+dazaev ~/Desktop
+$ mkdir exercises
+gmkdir: created directory 'exercises'
+dazaev ~/Desktop
+$ ls
+ 13310631_1032449553502952_3389730930382808504_n.jpg  'Screen Shot 2017-03-02 at 11.55.21 AM.png'
+ 15826898_1316642425064339_8745603281067432137_n.png  'Screen Shot 2017-03-02 at 6.09.38 PM.png'
+ 16473537_1385198504847591_429613689641500677_n.jpg   'Screen Shot 2017-03-03 at 2.53.03 PM.png'
+'AMPARO PUERTO MORELOS.doc'			      'Screen Shot 2017-03-03 at 3.06.05 PM.png'
+ Purple.jpg					      'Screen Shot 2017-03-05 at 2.05.13 PM.png'
+'Screen Shot 2016-06-20 at 1.12.39 AM.png'	      'Screen Shot 2017-03-05 at 2.05.30 PM.png'
+'Screen Shot 2016-06-20 at 2.01.42 AM.png'	      'Screen Shot 2017-03-08 at 8.31.25 PM.png'
+'Screen Shot 2016-06-20 at 2.04.16 AM.png'	      'Screen Shot 2017-03-08 at 8.31.48 PM.png'
+'Screen Shot 2016-07-01 at 12.30.12 PM.png'	      'Screen Shot 2017-03-08 at 8.36.19 PM.png'
+'Screen Shot 2016-07-14 at 10.52.42 PM.png'	      'Screen Shot 2017-03-11 at 12.41.59 PM.png'
+'Screen Shot 2016-09-14 at 11.43.41 PM.png'	      'Screen Shot 2017-03-12 at 12.37.35 PM.png'
+'Screen Shot 2016-09-14 at 11.44.06 PM.png'	      'Screen Shot 2017-03-13 at 12.10.13 PM.png'
+'Screen Shot 2016-09-20 at 11.44.21 PM.png'	      'Screen Shot 2017-03-13 at 12.10.30 PM.png'
+'Screen Shot 2016-09-21 at 8.04.30 PM.png'	      'Screen Shot 2017-03-13 at 2.24.20 PM.png'
+'Screen Shot 2016-09-21 at 8.49.05 PM.png'	      'Screen Shot 2017-03-15 at 2.02.17 PM.png'
+'Screen Shot 2016-09-25 at 1.55.32 PM.png'	      'Screen Shot 2017-03-20 at 2.42.37 PM.png'
+'Screen Shot 2016-09-25 at 1.57.07 PM.png'	      'Screen Shot 2017-03-20 at 4.40.13 PM.png'
+'Screen Shot 2016-09-26 at 1.33.59 PM.png'	      'Screen Shot 2017-03-20 at 5.02.10 PM.png'
+'Screen Shot 2016-09-26 at 1.54.34 PM.png'	      'Screen Shot 2017-03-20 at 5.18.11 PM.png'
+'Screen Shot 2016-09-27 at 1.10.07 PM.png'	      'Screen Shot 2017-03-21 at 1.50.10 AM.png'
+'Screen Shot 2016-09-27 at 7.33.18 PM.png'	      'Screen Shot 2017-03-21 at 12.00.40 PM.png'
+'Screen Shot 2016-09-27 at 7.33.41 PM.png'	      'Screen Shot 2017-03-21 at 12.27.18 AM.png'
+'Screen Shot 2016-09-28 at 11.54.29 PM.png'	      'Screen Shot 2017-03-21 at 3.15.59 PM.png'
+'Screen Shot 2016-09-28 at 11.54.33 PM.png'	      'Screen Shot 2017-03-22 at 5.17.04 PM.png'
+'Screen Shot 2016-09-28 at 12.41.01 PM.png'	      'Screen Shot 2017-03-22 at 7.16.10 PM.png'
+'Screen Shot 2016-10-06 at 11.29.44 PM.png'	      'Screen Shot 2017-03-27 at 11.02.26 PM.png'
+'Screen Shot 2016-10-09 at 10.21.04 PM.png'	      'Screen Shot 2017-03-28 at 5.18.48 PM.png'
+'Screen Shot 2016-10-09 at 9.30.06 PM.png'	      'Screen Shot 2017-03-29 at 12.23.32 AM.png'
+'Screen Shot 2016-10-09 at 9.30.09 PM.png'	      'Screen Shot 2017-03-29 at 12.36.57 AM.png'
+'Screen Shot 2016-10-09 at 9.33.59 PM.png'	      'Screen Shot 2017-03-29 at 12.44.54 AM.png'
+'Screen Shot 2016-10-09 at 9.49.13 PM.png'	      'Screen Shot 2017-03-29 at 12.57.29 AM.png'
+'Screen Shot 2016-10-09 at 9.49.14 PM.png'	      'Screen Shot 2017-03-29 at 3.59.53 PM.png'
+'Screen Shot 2016-10-09 at 9.49.49 PM.png'	      'Screen Shot 2017-03-29 at 4.04.40 PM.png'
+'Screen Shot 2016-10-09 at 9.55.21 PM.png'	      'Screen Shot 2017-03-30 at 5.23.21 PM.png'
+'Screen Shot 2016-10-10 at 11.35.06 PM.png'	      'Screen Shot 2017-03-31 at 12.34.32 PM.png'
+'Screen Shot 2016-10-10 at 4.01.14 PM.png'	      'Screen Shot 2017-04-03 at 8.21.45 PM.png'
+'Screen Shot 2016-10-12 at 12.35.18 PM.png'	      'Screen Shot 2017-04-10 at 1.19.26 PM.png'
+'Screen Shot 2016-10-12 at 4.34.28 PM.png'	      'Screen Shot 2017-04-10 at 1.19.37 PM.png'
+'Screen Shot 2016-10-13 at 12.38.13 AM.png'	      'Screen Shot 2017-04-10 at 2.02.14 AM.png'
+'Screen Shot 2016-10-14 at 11.42.22 AM.png'	      'Screen Shot 2017-04-10 at 5.22.17 PM.png'
+'Screen Shot 2016-10-14 at 11.42.33 AM.png'	      'Screen Shot 2017-04-10 at 9.07.14 PM.png'
+'Screen Shot 2016-10-14 at 3.40.37 PM.png'	      'Screen Shot 2017-04-11 at 1.01.33 AM.png'
+'Screen Shot 2016-10-14 at 3.41.04 PM.png'	      'Screen Shot 2017-04-11 at 12.25.20 AM.png'
+'Screen Shot 2016-10-14 at 5.00.30 PM.png'	      'Screen Shot 2017-04-11 at 4.05.34 PM.png'
+'Screen Shot 2016-10-15 at 12.50.35 PM.png'	      'Screen Shot 2017-04-11 at 4.08.48 PM.png'
+'Screen Shot 2016-10-19 at 1.09.50 AM.png'	      'Screen Shot 2017-04-11 at 4.18.33 PM.png'
+'Screen Shot 2016-10-19 at 9.54.47 PM.png'	      'Screen Shot 2017-04-11 at 4.19.19 PM.png'
+'Screen Shot 2016-10-20 at 1.35.46 AM.png'	      'Screen Shot 2017-04-11 at 4.22.11 PM.png'
+'Screen Shot 2016-10-20 at 12.41.44 PM.png'	      'Screen Shot 2017-04-12 at 3.09.06 PM.png'
+'Screen Shot 2016-10-20 at 12.41.52 PM.png'	      'Screen Shot 2017-04-12 at 7.51.25 PM.png'
+'Screen Shot 2016-10-20 at 2.56.12 PM.png'	      'Screen Shot 2017-04-12 at 8.19.19 PM.png'
+'Screen Shot 2016-10-20 at 2.56.40 PM.png'	      'Screen Shot 2017-04-12 at 8.28.07 PM.png'
+'Screen Shot 2016-10-20 at 2.58.25 PM.png'	      'Screen Shot 2017-04-17 at 11.38.06 AM.png'
+'Screen Shot 2016-10-20 at 3.00.35 PM.png'	      'Screen Shot 2017-04-17 at 4.21.28 PM.png'
+'Screen Shot 2016-10-20 at 3.30.03 PM.png'	      'Screen Shot 2017-04-21 at 1.18.42 PM.png'
+'Screen Shot 2016-10-21 at 1.14.57 AM.png'	      'Screen Shot 2017-04-25 at 1.25.34 PM.png'
+'Screen Shot 2016-10-21 at 8.08.28 PM.png'	      'Screen Shot 2017-04-25 at 12.17.24 AM.png'
+'Screen Shot 2016-10-21 at 8.09.04 PM.png'	      'Screen Shot 2017-04-25 at 12.48.31 AM.png'
+'Screen Shot 2016-10-21 at 8.09.56 PM.png'	      'Screen Shot 2017-04-26 at 5.22.03 PM.png'
+'Screen Shot 2016-10-21 at 8.16.54 PM.png'	      'Screen Shot 2017-04-26 at 6.03.48 PM.png'
+'Screen Shot 2016-10-21 at 8.17.50 PM.png'	      'Screen Shot 2017-04-26 at 6.18.28 PM.png'
+'Screen Shot 2016-10-21 at 8.19.07 PM.png'	      'Screen Shot 2017-04-26 at 7.05.28 PM.png'
+'Screen Shot 2016-10-21 at 8.25.03 PM.png'	      'Screen Shot 2017-04-26 at 7.11.12 PM.png'
+'Screen Shot 2016-10-22 at 3.01.18 PM.png'	      'Screen Shot 2017-04-27 at 12.45.49 AM.png'
+'Screen Shot 2016-10-22 at 3.04.34 PM.png'	      'Screen Shot 2017-04-28 at 1.18.38 PM.png'
+'Screen Shot 2016-10-22 at 3.43.15 PM.png'	      'Screen Shot 2017-05-01 at 12.55.15 PM.png'
+'Screen Shot 2016-10-23 at 4.57.51 PM.png'	      'Screen Shot 2017-05-02 at 9.34.40 PM.png'
+'Screen Shot 2016-10-24 at 3.33.26 PM.png'	      'Screen Shot 2017-05-03 at 11.45.15 AM.png'
+'Screen Shot 2016-10-26 at 11.51.11 PM.png'	      'Screen Shot 2017-05-03 at 12.33.50 PM.png'
+'Screen Shot 2016-10-26 at 2.42.38 AM.png'	      'Screen Shot 2017-05-03 at 2.55.02 PM.png'
+'Screen Shot 2016-10-27 at 1.02.05 PM.png'	      'Screen Shot 2017-05-10 at 1.12.57 AM.png'
+'Screen Shot 2016-10-27 at 1.49.00 PM.png'	      'Screen Shot 2017-05-14 at 8.47.37 PM.png'
+'Screen Shot 2016-10-27 at 1.50.33 PM.png'	      'Screen Shot 2017-05-16 at 5.05.29 PM.png'
+'Screen Shot 2016-10-31 at 12.53.20 AM.png'	      'Screen Shot 2017-05-17 at 1.46.39 PM.png'
+'Screen Shot 2016-10-31 at 12.54.03 AM.png'	      'Screen Shot 2017-05-17 at 5.47.24 PM.png'
+'Screen Shot 2016-10-31 at 12.54.38 AM.png'	      'Screen Shot 2017-05-18 at 1.03.39 PM.png'
+'Screen Shot 2016-11-02 at 6.49.18 PM.png'	      'Screen Shot 2017-05-18 at 1.53.30 PM.png'
+'Screen Shot 2016-11-06 at 11.30.56 PM.png'	      'Screen Shot 2017-05-18 at 2.04.40 PM.png'
+'Screen Shot 2016-11-07 at 1.24.30 AM.png'	      'Screen Shot 2017-05-18 at 3.08.51 PM.png'
+'Screen Shot 2016-11-07 at 1.29.08 AM.png'	      'Screen Shot 2017-05-19 at 1.48.12 PM.png'
+'Screen Shot 2016-11-09 at 2.42.15 PM.png'	      'Screen Shot 2017-05-19 at 12.09.29 AM.png'
+'Screen Shot 2016-11-10 at 12.49.18 PM.png'	      'Screen Shot 2017-05-19 at 12.19.39 AM.png'
+'Screen Shot 2016-11-10 at 3.11.11 PM.png'	      'Screen Shot 2017-05-19 at 12.41.36 AM.png'
+'Screen Shot 2016-11-13 at 2.23.55 PM.png'	      'Screen Shot 2017-05-22 at 2.30.34 PM.png'
+'Screen Shot 2016-11-17 at 6.25.14 PM.png'	      'Screen Shot 2017-05-22 at 2.30.58 PM.png'
+'Screen Shot 2016-11-17 at 6.39.52 PM.png'	      'Screen Shot 2017-05-22 at 2.31.41 PM.png'
+'Screen Shot 2016-11-18 at 12.01.03 AM.png'	      'Screen Shot 2017-05-22 at 3.10.27 PM.png'
+'Screen Shot 2016-11-18 at 12.06.23 AM.png'	      'Screen Shot 2017-05-22 at 3.11.11 PM.png'
+'Screen Shot 2016-11-19 at 8.12.43 PM.png'	      'Screen Shot 2017-05-22 at 3.11.42 PM.png'
+'Screen Shot 2016-11-19 at 8.42.06 PM.png'	      'Screen Shot 2017-05-23 at 1.38.55 PM.png'
+'Screen Shot 2016-11-21 at 12.59.48 PM.png'	      'Screen Shot 2017-05-23 at 1.39.17 PM.png'
+'Screen Shot 2016-11-24 at 11.02.58 PM.png'	      'Screen Shot 2017-05-23 at 2.24.55 PM.png'
+'Screen Shot 2016-11-26 at 2.34.39 PM.png'	      'Screen Shot 2017-05-23 at 2.25.42 PM.png'
+'Screen Shot 2016-11-26 at 3.02.26 PM.png'	      'Screen Shot 2017-05-24 at 12.06.30 PM.png'
+'Screen Shot 2016-11-26 at 4.12.23 PM.png'	      'Screen Shot 2017-05-24 at 12.06.39 PM.png'
+'Screen Shot 2016-11-27 at 4.18.46 AM.png'	      'Screen Shot 2017-05-24 at 12.18.18 PM.png'
+'Screen Shot 2016-11-27 at 4.19.00 AM.png'	      'Screen Shot 2017-05-24 at 12.18.22 PM.png'
+'Screen Shot 2016-11-28 at 1.53.59 PM.png'	      'Screen Shot 2017-05-24 at 12.18.28 PM.png'
+'Screen Shot 2016-11-28 at 11.33.45 PM.png'	      'Screen Shot 2017-05-24 at 2.41.24 PM.png'
+'Screen Shot 2016-11-28 at 12.50.49 PM.png'	      'Screen Shot 2017-05-24 at 4.45.25 PM.png'
+'Screen Shot 2016-11-28 at 12.50.50 PM.png'	      'Screen Shot 2017-05-24 at 4.47.56 PM.png'
+'Screen Shot 2016-11-28 at 12.53.22 PM.png'	      'Screen Shot 2017-05-30 at 1.01.22 AM.png'
+'Screen Shot 2016-11-28 at 12.54.22 PM.png'	      'Screen Shot 2017-05-30 at 1.44.17 AM.png'
+'Screen Shot 2016-11-29 at 12.30.56 AM.png'	      'Screen Shot 2017-05-30 at 2.48.47 PM.png'
+'Screen Shot 2016-12-03 at 11.43.28 AM.png'	      'Screen Shot 2017-05-31 at 2.31.41 PM.png'
+'Screen Shot 2016-12-05 at 4.50.26 PM.png'	      'Screen Shot 2017-06-05 at 7.00.41 PM.png'
+'Screen Shot 2016-12-06 at 12.20.06 AM.png'	      'Screen Shot 2017-06-10 at 11.23.02 PM.png'
+'Screen Shot 2016-12-06 at 12.22.19 AM.png'	      'Screen Shot 2017-06-11 at 2.42.22 AM.png'
+'Screen Shot 2016-12-06 at 12.31.58 AM.png'	      'Screen Shot 2017-06-12 at 1.37.57 PM.png'
+'Screen Shot 2016-12-06 at 12.34.00 AM.png'	      'Screen Shot 2017-06-12 at 1.40.39 PM.png'
+'Screen Shot 2016-12-06 at 12.49.47 AM.png'	      'Screen Shot 2017-06-12 at 11.20.39 AM.png'
+'Screen Shot 2016-12-06 at 4.37.55 PM.png'	      'Screen Shot 2017-06-12 at 9.11.02 PM.png'
+'Screen Shot 2016-12-06 at 5.22.55 PM.png'	      'Screen Shot 2017-06-13 at 11.25.36 AM.png'
+'Screen Shot 2016-12-06 at 5.23.01 PM.png'	      'Screen Shot 2017-06-13 at 11.29.43 AM.png'
+'Screen Shot 2016-12-06 at 5.23.58 PM.png'	      'Screen Shot 2017-06-13 at 11.39.59 AM.png'
+'Screen Shot 2016-12-08 at 1.13.26 AM.png'	      'Screen Shot 2017-06-14 at 2.36.22 PM.png'
+'Screen Shot 2016-12-08 at 11.50.03 AM.png'	      'Screen Shot 2017-06-19 at 10.06.29 PM.png'
+'Screen Shot 2016-12-08 at 11.50.04 AM.png'	      'Screen Shot 2017-06-19 at 10.09.14 PM.png'
+'Screen Shot 2016-12-08 at 12.01.07 PM.png'	      'Screen Shot 2017-06-19 at 7.44.32 PM.png'
+'Screen Shot 2016-12-08 at 12.01.14 PM.png'	      'Screen Shot 2017-06-19 at 8.51.07 PM.png'
+'Screen Shot 2016-12-12 at 6.28.17 PM.png'	      'Screen Shot 2017-06-19 at 8.51.28 PM.png'
+'Screen Shot 2016-12-13 at 1.53.00 PM.png'	      'Screen Shot 2017-06-20 at 7.20.07 PM.png'
+'Screen Shot 2016-12-13 at 2.29.09 PM.png'	      'Screen Shot 2017-06-20 at 7.28.24 PM.png'
+'Screen Shot 2016-12-13 at 9.29.15 PM.png'	      'Screen Shot 2017-06-21 at 3.36.29 PM.png'
+'Screen Shot 2016-12-15 at 3.54.59 PM.png'	      'Screen Shot 2017-06-23 at 3.53.51 PM.png'
+'Screen Shot 2016-12-15 at 4.35.52 PM.png'	      'Screen Shot 2017-06-25 at 2.39.44 AM.png'
+'Screen Shot 2016-12-15 at 5.24.51 PM.png'	      'Screen Shot 2017-06-25 at 4.33.35 PM.png'
+'Screen Shot 2016-12-16 at 5.43.56 PM.png'	      'Screen Shot 2017-06-26 at 3.47.28 PM.png'
+'Screen Shot 2016-12-17 at 7.46.34 PM.png'	      'Screen Shot 2017-06-27 at 4.32.46 PM.png'
+'Screen Shot 2016-12-19 at 2.19.57 AM.png'	      'Screen Shot 2017-06-30 at 1.17.20 PM.png'
+'Screen Shot 2016-12-21 at 10.15.49 PM.png'	      'Screen Shot 2017-06-30 at 5.53.13 PM.png'
+'Screen Shot 2016-12-21 at 10.29.22 PM.png'	      'Screen Shot 2017-07-03 at 3.18.34 PM.png'
+'Screen Shot 2016-12-21 at 4.11.07 PM.png'	      'Screen Shot 2017-07-03 at 3.22.35 PM.png'
+'Screen Shot 2016-12-21 at 4.17.45 PM.png'	      'Screen Shot 2017-07-21 at 1.25.57 AM.png'
+'Screen Shot 2016-12-22 at 7.36.06 PM.png'	      'Screen Shot 2017-07-21 at 1.40.27 AM.png'
+'Screen Shot 2016-12-23 at 1.38.41 PM.png'	      'Screen Shot 2017-07-21 at 1.40.33 AM.png'
+'Screen Shot 2016-12-23 at 5.03.59 PM.png'	      'Screen Shot 2017-07-21 at 1.40.39 AM.png'
+'Screen Shot 2016-12-24 at 4.34.53 PM.png'	      'Screen Shot 2017-07-21 at 1.40.45 AM.png'
+'Screen Shot 2016-12-27 at 11.57.42 AM.png'	      'Screen Shot 2017-07-21 at 1.42.29 AM.png'
+'Screen Shot 2016-12-27 at 12.13.13 PM.png'	      'Screen Shot 2017-07-21 at 1.42.30 AM.png'
+'Screen Shot 2016-12-27 at 12.20.49 PM.png'	      'Screen Shot 2017-07-21 at 1.45.46 AM.png'
+'Screen Shot 2016-12-27 at 12.38.21 PM.png'	      'Screen Shot 2017-07-21 at 10.31.43 AM.png'
+'Screen Shot 2016-12-30 at 3.04.51 PM.png'	      'Screen Shot 2017-07-21 at 12.24.21 PM.png'
+'Screen Shot 2017-01-02 at 10.03.25 PM.png'	      'Screen Shot 2017-07-22 at 7.04.23 PM.png'
+'Screen Shot 2017-01-02 at 11.48.54 PM.png'	      'Screen Shot 2017-07-22 at 7.05.23 PM.png'
+'Screen Shot 2017-01-02 at 11.50.38 PM.png'	      'Screen Shot 2017-07-22 at 7.06.52 PM.png'
+'Screen Shot 2017-01-02 at 3.58.21 PM.png'	      'Screen Shot 2017-07-22 at 7.09.18 PM.png'
+'Screen Shot 2017-01-04 at 2.59.21 PM.png'	      'Screen Shot 2017-07-22 at 7.39.26 PM.png'
+'Screen Shot 2017-01-04 at 3.07.23 PM.png'	      'Screen Shot 2017-07-24 at 11.45.10 AM.png'
+'Screen Shot 2017-01-05 at 5.07.02 PM.png'	      'Screen Shot 2017-07-24 at 12.52.42 PM.png'
+'Screen Shot 2017-01-10 at 12.18.14 AM.png'	      'Screen Shot 2017-07-28 at 4.04.01 PM.png'
+'Screen Shot 2017-01-10 at 2.28.04 PM.png'	      'Screen Shot 2017-07-28 at 4.04.04 PM.png'
+'Screen Shot 2017-01-10 at 4.28.38 PM.png'	      'Screen Shot 2017-07-30 at 11.25.01 PM.png'
+'Screen Shot 2017-01-10 at 4.28.44 PM.png'	      'Screen Shot 2017-07-31 at 1.00.50 PM.png'
+'Screen Shot 2017-01-10 at 4.28.53 PM.png'	      'Screen Shot 2017-07-31 at 1.00.59 PM.png'
+'Screen Shot 2017-01-11 at 12.41.03 AM.png'	      'Screen Shot 2017-08-02 at 10.50.08 AM.png'
+'Screen Shot 2017-01-13 at 2.37.17 PM.png'	      'Screen Shot 2017-08-02 at 10.50.23 AM.png'
+'Screen Shot 2017-01-17 at 1.38.54 PM.png'	      'Screen Shot 2017-08-02 at 10.50.41 AM.png'
+'Screen Shot 2017-01-17 at 4.36.09 PM.png'	      'Screen Shot 2017-08-02 at 11.29.40 PM.png'
+'Screen Shot 2017-01-17 at 5.27.05 PM.png'	      'Screen Shot 2017-08-04 at 1.10.28 PM.png'
+'Screen Shot 2017-01-17 at 6.23.23 PM.png'	      'Screen Shot 2017-08-10 at 2.04.54 PM.png'
+'Screen Shot 2017-01-28 at 7.36.12 PM.png'	      'Screen Shot 2017-08-10 at 3.46.52 PM.png'
+'Screen Shot 2017-01-28 at 7.53.05 PM.png'	      'Screen Shot 2017-08-11 at 2.33.56 PM.png'
+'Screen Shot 2017-01-30 at 2.47.36 AM.png'	      'Screen Shot 2017-08-11 at 3.31.09 PM.png'
+'Screen Shot 2017-01-30 at 7.24.03 PM.png'	      'Screen Shot 2017-08-15 at 2.09.02 PM.png'
+'Screen Shot 2017-01-31 at 10.57.31 PM.png'	      'Screen Shot 2017-08-17 at 1.37.28 PM.png'
+'Screen Shot 2017-02-01 at 1.02.45 AM.png'	      'Screen Shot 2017-08-17 at 1.37.51 PM.png'
+'Screen Shot 2017-02-01 at 1.10.48 AM.png'	      'Screen Shot 2017-08-17 at 1.39.24 PM.png'
+'Screen Shot 2017-02-01 at 1.11.54 AM.png'	      'Screen Shot 2017-08-22 at 2.42.45 AM.png'
+'Screen Shot 2017-02-01 at 12.30.55 AM.png'	      'Screen Shot 2017-08-28 at 9.56.55 PM.png'
+'Screen Shot 2017-02-01 at 2.14.53 PM.png'	      'Screen Shot 2017-08-29 at 10.27.51 AM.png'
+'Screen Shot 2017-02-01 at 2.58.06 PM.png'	      'Screen Shot 2017-08-29 at 10.28.10 AM.png'
+'Screen Shot 2017-02-01 at 2.58.46 PM.png'	      'Screen Shot 2017-08-29 at 10.28.40 AM.png'
+'Screen Shot 2017-02-01 at 2.59.12 PM.png'	      'Screen Shot 2017-08-30 at 3.48.23 PM.png'
+'Screen Shot 2017-02-01 at 3.00.13 PM.png'	      'Screen Shot 2017-08-31 at 12.04.04 PM.png'
+'Screen Shot 2017-02-01 at 3.00.24 PM.png'	      'Screen Shot 2017-08-31 at 12.43.44 PM.png'
+'Screen Shot 2017-02-01 at 3.02.13 PM.png'	      'Screen Shot 2017-09-01 at 4.52.11 PM.png'
+'Screen Shot 2017-02-01 at 8.43.41 PM.png'	      'Screen Shot 2017-09-06 at 11.56.21 PM.png'
+'Screen Shot 2017-02-02 at 11.57.23 AM.png'	      'Screen Shot 2017-09-06 at 11.56.38 PM.png'
+'Screen Shot 2017-02-02 at 12.48.04 AM.png'	      'Screen Shot 2017-09-06 at 11.56.49 PM.png'
+'Screen Shot 2017-02-02 at 3.52.35 PM.png'	      'Screen Shot 2017-09-06 at 11.56.57 PM.png'
+'Screen Shot 2017-02-02 at 3.52.54 PM.png'	      'Screen Shot 2017-09-07 at 12.27.58 AM.png'
+'Screen Shot 2017-02-02 at 9.10.05 AM.png'	       Spongebob-Meme-Fish-Face-10.jpg
+'Screen Shot 2017-02-02 at 9.19.07 AM.png'	       TomorrowNight.terminal
+'Screen Shot 2017-02-05 at 3.40.30 PM.png'	       USPTOelhartista.pdf
+'Screen Shot 2017-02-06 at 11.01.51 PM.png'	       anime.jpg-large
+'Screen Shot 2017-02-08 at 10.09.56 PM.png'	       anna.jpeg
+'Screen Shot 2017-02-08 at 10.48.45 AM.png'	      'barrer desmeme.jpg'
+'Screen Shot 2017-02-08 at 11.43.27 AM.png'	      'barrer memes.jpg'
+'Screen Shot 2017-02-10 at 12.02.34 PM.png'	      'boleta rebeca.jpeg'
+'Screen Shot 2017-02-10 at 12.02.41 PM.png'	      'camiseta horrible.jpg'
+'Screen Shot 2017-02-10 at 12.02.49 PM.png'	       cena.jpg
+'Screen Shot 2017-02-10 at 12.32.27 PM.png'	       dazaev.jpeg
+'Screen Shot 2017-02-10 at 12.32.36 PM.png'	       drakerezando.jpg-large
+'Screen Shot 2017-02-10 at 12.40.33 PM.png'	       elhartista.jpg
+'Screen Shot 2017-02-10 at 12.40.52 PM.png'	       exercises/
+'Screen Shot 2017-02-11 at 11.39.15 AM.png'	       ezpzcolores.jpg
+'Screen Shot 2017-02-12 at 9.20.21 PM.png'	      'fotos de Blanca'/
+'Screen Shot 2017-02-13 at 1.43.36 PM.png'	       gaysactivos.jpg
+'Screen Shot 2017-02-13 at 1.47.10 PM.png'	       hannibal.jpeg
+'Screen Shot 2017-02-13 at 1.48.19 PM.png'	       hhonors.jpg
+'Screen Shot 2017-02-13 at 12.41.42 PM.png'	       keepupkardashians.jpeg
+'Screen Shot 2017-02-13 at 12.42.01 PM.png'	       nachomastu.png
+'Screen Shot 2017-02-13 at 12.42.02 PM.png'	       oczerbado.jpg
+'Screen Shot 2017-02-15 at 1.15.16 AM.png'	       perro.jpg-large
+'Screen Shot 2017-02-15 at 1.15.33 AM.png'	      'pulga rio.png'
+'Screen Shot 2017-02-18 at 2.26.45 PM.png'	      'recibo de pago elhartista.pdf'
+'Screen Shot 2017-02-18 at 2.27.08 PM.png'	       samuelpistola.jpg
+'Screen Shot 2017-02-18 at 2.27.48 PM.png'	      'slide .gif'
+'Screen Shot 2017-02-18 at 2.27.59 PM.png'	       telescopio.jpg
+'Screen Shot 2017-02-18 at 2.28.05 PM.png'	      '~$PARO PUERTO MORELOS.doc'
+'Screen Shot 2017-02-18 at 2.28.11 PM.png'
+dazaev ~/Desktop
+$ cd exercises
+dazaev ~/Desktop/exercises
+$ pwd
+/Users/dazaev/Desktop/exercises
+dazaev ~/Desktop/exercises
+$ touch file.txt
+dazaev ~/Desktop/exercises
+$ ls
+file.txt
+dazaev ~/Desktop/exercises
+$ clear
+
+dazaev ~/Desktop/exercises
+$ cd ..
+dazaev ~/Desktop
+$ mkdir Labyrinth, cd Labyrinth
+gmkdir: created directory 'Labyrinth,'
+gmkdir: created directory 'cd'
+gmkdir: created directory 'Labyrinth'
+dazaev ~/Desktop
+$ cd Labyrinth
+dazaev ~/Desktop/Labyrinth
+$ mkdir parlor
+gmkdir: created directory 'parlor'
+dazaev ~/Desktop/Labyrinth
+$ mkdir stairway
+gmkdir: created directory 'stairway'
+dazaev ~/Desktop/Labyrinth
+$ ls
+parlor/  stairway/
+dazaev ~/Desktop/Labyrinth
+$ cd parlor
+dazaev ~/Desktop/Labyrinth/parlor
+$ mkdir ballrom
+gmkdir: created directory 'ballrom'
+dazaev ~/Desktop/Labyrinth/parlor
+$ cd ballrom
+dazaev ~/Desktop/Labyrinth/parlor/ballrom
+$ touch sarah_williams.txt
+dazaev ~/Desktop/Labyrinth/parlor/ballrom
+$ cd ..
+dazaev ~/Desktop/Labyrinth/parlor
+$ mkdir dining_room
+gmkdir: created directory 'dining_room'
+dazaev ~/Desktop/Labyrinth/parlor
+$ cd ..
+dazaev ~/Desktop/Labyrinth
+$ cd stairway
+dazaev ~/Desktop/Labyrinth/stairway
+$ mkdir escher_room
+gmkdir: created directory 'escher_room'
+dazaev ~/Desktop/Labyrinth/stairway
+$ mkdir throne_room
+gmkdir: created directory 'throne_room'
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd throne_room/
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ touch goblin_king.txt
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ cd ~
+dazaev ~
+$ ls Desktop/
+ 13310631_1032449553502952_3389730930382808504_n.jpg  'Screen Shot 2017-03-02 at 11.55.21 AM.png'
+ 15826898_1316642425064339_8745603281067432137_n.png  'Screen Shot 2017-03-02 at 6.09.38 PM.png'
+ 16473537_1385198504847591_429613689641500677_n.jpg   'Screen Shot 2017-03-03 at 2.53.03 PM.png'
+'AMPARO PUERTO MORELOS.doc'			      'Screen Shot 2017-03-03 at 3.06.05 PM.png'
+ Labyrinth/					      'Screen Shot 2017-03-05 at 2.05.13 PM.png'
+ Purple.jpg					      'Screen Shot 2017-03-05 at 2.05.30 PM.png'
+'Screen Shot 2016-06-20 at 1.12.39 AM.png'	      'Screen Shot 2017-03-08 at 8.31.25 PM.png'
+'Screen Shot 2016-06-20 at 2.01.42 AM.png'	      'Screen Shot 2017-03-08 at 8.31.48 PM.png'
+'Screen Shot 2016-06-20 at 2.04.16 AM.png'	      'Screen Shot 2017-03-08 at 8.36.19 PM.png'
+'Screen Shot 2016-07-01 at 12.30.12 PM.png'	      'Screen Shot 2017-03-11 at 12.41.59 PM.png'
+'Screen Shot 2016-07-14 at 10.52.42 PM.png'	      'Screen Shot 2017-03-12 at 12.37.35 PM.png'
+'Screen Shot 2016-09-14 at 11.43.41 PM.png'	      'Screen Shot 2017-03-13 at 12.10.13 PM.png'
+'Screen Shot 2016-09-14 at 11.44.06 PM.png'	      'Screen Shot 2017-03-13 at 12.10.30 PM.png'
+'Screen Shot 2016-09-20 at 11.44.21 PM.png'	      'Screen Shot 2017-03-13 at 2.24.20 PM.png'
+'Screen Shot 2016-09-21 at 8.04.30 PM.png'	      'Screen Shot 2017-03-15 at 2.02.17 PM.png'
+'Screen Shot 2016-09-21 at 8.49.05 PM.png'	      'Screen Shot 2017-03-20 at 2.42.37 PM.png'
+'Screen Shot 2016-09-25 at 1.55.32 PM.png'	      'Screen Shot 2017-03-20 at 4.40.13 PM.png'
+'Screen Shot 2016-09-25 at 1.57.07 PM.png'	      'Screen Shot 2017-03-20 at 5.02.10 PM.png'
+'Screen Shot 2016-09-26 at 1.33.59 PM.png'	      'Screen Shot 2017-03-20 at 5.18.11 PM.png'
+'Screen Shot 2016-09-26 at 1.54.34 PM.png'	      'Screen Shot 2017-03-21 at 1.50.10 AM.png'
+'Screen Shot 2016-09-27 at 1.10.07 PM.png'	      'Screen Shot 2017-03-21 at 12.00.40 PM.png'
+'Screen Shot 2016-09-27 at 7.33.18 PM.png'	      'Screen Shot 2017-03-21 at 12.27.18 AM.png'
+'Screen Shot 2016-09-27 at 7.33.41 PM.png'	      'Screen Shot 2017-03-21 at 3.15.59 PM.png'
+'Screen Shot 2016-09-28 at 11.54.29 PM.png'	      'Screen Shot 2017-03-22 at 5.17.04 PM.png'
+'Screen Shot 2016-09-28 at 11.54.33 PM.png'	      'Screen Shot 2017-03-22 at 7.16.10 PM.png'
+'Screen Shot 2016-09-28 at 12.41.01 PM.png'	      'Screen Shot 2017-03-27 at 11.02.26 PM.png'
+'Screen Shot 2016-10-06 at 11.29.44 PM.png'	      'Screen Shot 2017-03-28 at 5.18.48 PM.png'
+'Screen Shot 2016-10-09 at 10.21.04 PM.png'	      'Screen Shot 2017-03-29 at 12.23.32 AM.png'
+'Screen Shot 2016-10-09 at 9.30.06 PM.png'	      'Screen Shot 2017-03-29 at 12.36.57 AM.png'
+'Screen Shot 2016-10-09 at 9.30.09 PM.png'	      'Screen Shot 2017-03-29 at 12.44.54 AM.png'
+'Screen Shot 2016-10-09 at 9.33.59 PM.png'	      'Screen Shot 2017-03-29 at 12.57.29 AM.png'
+'Screen Shot 2016-10-09 at 9.49.13 PM.png'	      'Screen Shot 2017-03-29 at 3.59.53 PM.png'
+'Screen Shot 2016-10-09 at 9.49.14 PM.png'	      'Screen Shot 2017-03-29 at 4.04.40 PM.png'
+'Screen Shot 2016-10-09 at 9.49.49 PM.png'	      'Screen Shot 2017-03-30 at 5.23.21 PM.png'
+'Screen Shot 2016-10-09 at 9.55.21 PM.png'	      'Screen Shot 2017-03-31 at 12.34.32 PM.png'
+'Screen Shot 2016-10-10 at 11.35.06 PM.png'	      'Screen Shot 2017-04-03 at 8.21.45 PM.png'
+'Screen Shot 2016-10-10 at 4.01.14 PM.png'	      'Screen Shot 2017-04-10 at 1.19.26 PM.png'
+'Screen Shot 2016-10-12 at 12.35.18 PM.png'	      'Screen Shot 2017-04-10 at 1.19.37 PM.png'
+'Screen Shot 2016-10-12 at 4.34.28 PM.png'	      'Screen Shot 2017-04-10 at 2.02.14 AM.png'
+'Screen Shot 2016-10-13 at 12.38.13 AM.png'	      'Screen Shot 2017-04-10 at 5.22.17 PM.png'
+'Screen Shot 2016-10-14 at 11.42.22 AM.png'	      'Screen Shot 2017-04-10 at 9.07.14 PM.png'
+'Screen Shot 2016-10-14 at 11.42.33 AM.png'	      'Screen Shot 2017-04-11 at 1.01.33 AM.png'
+'Screen Shot 2016-10-14 at 3.40.37 PM.png'	      'Screen Shot 2017-04-11 at 12.25.20 AM.png'
+'Screen Shot 2016-10-14 at 3.41.04 PM.png'	      'Screen Shot 2017-04-11 at 4.05.34 PM.png'
+'Screen Shot 2016-10-14 at 5.00.30 PM.png'	      'Screen Shot 2017-04-11 at 4.08.48 PM.png'
+'Screen Shot 2016-10-15 at 12.50.35 PM.png'	      'Screen Shot 2017-04-11 at 4.18.33 PM.png'
+'Screen Shot 2016-10-19 at 1.09.50 AM.png'	      'Screen Shot 2017-04-11 at 4.19.19 PM.png'
+'Screen Shot 2016-10-19 at 9.54.47 PM.png'	      'Screen Shot 2017-04-11 at 4.22.11 PM.png'
+'Screen Shot 2016-10-20 at 1.35.46 AM.png'	      'Screen Shot 2017-04-12 at 3.09.06 PM.png'
+'Screen Shot 2016-10-20 at 12.41.44 PM.png'	      'Screen Shot 2017-04-12 at 7.51.25 PM.png'
+'Screen Shot 2016-10-20 at 12.41.52 PM.png'	      'Screen Shot 2017-04-12 at 8.19.19 PM.png'
+'Screen Shot 2016-10-20 at 2.56.12 PM.png'	      'Screen Shot 2017-04-12 at 8.28.07 PM.png'
+'Screen Shot 2016-10-20 at 2.56.40 PM.png'	      'Screen Shot 2017-04-17 at 11.38.06 AM.png'
+'Screen Shot 2016-10-20 at 2.58.25 PM.png'	      'Screen Shot 2017-04-17 at 4.21.28 PM.png'
+'Screen Shot 2016-10-20 at 3.00.35 PM.png'	      'Screen Shot 2017-04-21 at 1.18.42 PM.png'
+'Screen Shot 2016-10-20 at 3.30.03 PM.png'	      'Screen Shot 2017-04-25 at 1.25.34 PM.png'
+'Screen Shot 2016-10-21 at 1.14.57 AM.png'	      'Screen Shot 2017-04-25 at 12.17.24 AM.png'
+'Screen Shot 2016-10-21 at 8.08.28 PM.png'	      'Screen Shot 2017-04-25 at 12.48.31 AM.png'
+'Screen Shot 2016-10-21 at 8.09.04 PM.png'	      'Screen Shot 2017-04-26 at 5.22.03 PM.png'
+'Screen Shot 2016-10-21 at 8.09.56 PM.png'	      'Screen Shot 2017-04-26 at 6.03.48 PM.png'
+'Screen Shot 2016-10-21 at 8.16.54 PM.png'	      'Screen Shot 2017-04-26 at 6.18.28 PM.png'
+'Screen Shot 2016-10-21 at 8.17.50 PM.png'	      'Screen Shot 2017-04-26 at 7.05.28 PM.png'
+'Screen Shot 2016-10-21 at 8.19.07 PM.png'	      'Screen Shot 2017-04-26 at 7.11.12 PM.png'
+'Screen Shot 2016-10-21 at 8.25.03 PM.png'	      'Screen Shot 2017-04-27 at 12.45.49 AM.png'
+'Screen Shot 2016-10-22 at 3.01.18 PM.png'	      'Screen Shot 2017-04-28 at 1.18.38 PM.png'
+'Screen Shot 2016-10-22 at 3.04.34 PM.png'	      'Screen Shot 2017-05-01 at 12.55.15 PM.png'
+'Screen Shot 2016-10-22 at 3.43.15 PM.png'	      'Screen Shot 2017-05-02 at 9.34.40 PM.png'
+'Screen Shot 2016-10-23 at 4.57.51 PM.png'	      'Screen Shot 2017-05-03 at 11.45.15 AM.png'
+'Screen Shot 2016-10-24 at 3.33.26 PM.png'	      'Screen Shot 2017-05-03 at 12.33.50 PM.png'
+'Screen Shot 2016-10-26 at 11.51.11 PM.png'	      'Screen Shot 2017-05-03 at 2.55.02 PM.png'
+'Screen Shot 2016-10-26 at 2.42.38 AM.png'	      'Screen Shot 2017-05-10 at 1.12.57 AM.png'
+'Screen Shot 2016-10-27 at 1.02.05 PM.png'	      'Screen Shot 2017-05-14 at 8.47.37 PM.png'
+'Screen Shot 2016-10-27 at 1.49.00 PM.png'	      'Screen Shot 2017-05-16 at 5.05.29 PM.png'
+'Screen Shot 2016-10-27 at 1.50.33 PM.png'	      'Screen Shot 2017-05-17 at 1.46.39 PM.png'
+'Screen Shot 2016-10-31 at 12.53.20 AM.png'	      'Screen Shot 2017-05-17 at 5.47.24 PM.png'
+'Screen Shot 2016-10-31 at 12.54.03 AM.png'	      'Screen Shot 2017-05-18 at 1.03.39 PM.png'
+'Screen Shot 2016-10-31 at 12.54.38 AM.png'	      'Screen Shot 2017-05-18 at 1.53.30 PM.png'
+'Screen Shot 2016-11-02 at 6.49.18 PM.png'	      'Screen Shot 2017-05-18 at 2.04.40 PM.png'
+'Screen Shot 2016-11-06 at 11.30.56 PM.png'	      'Screen Shot 2017-05-18 at 3.08.51 PM.png'
+'Screen Shot 2016-11-07 at 1.24.30 AM.png'	      'Screen Shot 2017-05-19 at 1.48.12 PM.png'
+'Screen Shot 2016-11-07 at 1.29.08 AM.png'	      'Screen Shot 2017-05-19 at 12.09.29 AM.png'
+'Screen Shot 2016-11-09 at 2.42.15 PM.png'	      'Screen Shot 2017-05-19 at 12.19.39 AM.png'
+'Screen Shot 2016-11-10 at 12.49.18 PM.png'	      'Screen Shot 2017-05-19 at 12.41.36 AM.png'
+'Screen Shot 2016-11-10 at 3.11.11 PM.png'	      'Screen Shot 2017-05-22 at 2.30.34 PM.png'
+'Screen Shot 2016-11-13 at 2.23.55 PM.png'	      'Screen Shot 2017-05-22 at 2.30.58 PM.png'
+'Screen Shot 2016-11-17 at 6.25.14 PM.png'	      'Screen Shot 2017-05-22 at 2.31.41 PM.png'
+'Screen Shot 2016-11-17 at 6.39.52 PM.png'	      'Screen Shot 2017-05-22 at 3.10.27 PM.png'
+'Screen Shot 2016-11-18 at 12.01.03 AM.png'	      'Screen Shot 2017-05-22 at 3.11.11 PM.png'
+'Screen Shot 2016-11-18 at 12.06.23 AM.png'	      'Screen Shot 2017-05-22 at 3.11.42 PM.png'
+'Screen Shot 2016-11-19 at 8.12.43 PM.png'	      'Screen Shot 2017-05-23 at 1.38.55 PM.png'
+'Screen Shot 2016-11-19 at 8.42.06 PM.png'	      'Screen Shot 2017-05-23 at 1.39.17 PM.png'
+'Screen Shot 2016-11-21 at 12.59.48 PM.png'	      'Screen Shot 2017-05-23 at 2.24.55 PM.png'
+'Screen Shot 2016-11-24 at 11.02.58 PM.png'	      'Screen Shot 2017-05-23 at 2.25.42 PM.png'
+'Screen Shot 2016-11-26 at 2.34.39 PM.png'	      'Screen Shot 2017-05-24 at 12.06.30 PM.png'
+'Screen Shot 2016-11-26 at 3.02.26 PM.png'	      'Screen Shot 2017-05-24 at 12.06.39 PM.png'
+'Screen Shot 2016-11-26 at 4.12.23 PM.png'	      'Screen Shot 2017-05-24 at 12.18.18 PM.png'
+'Screen Shot 2016-11-27 at 4.18.46 AM.png'	      'Screen Shot 2017-05-24 at 12.18.22 PM.png'
+'Screen Shot 2016-11-27 at 4.19.00 AM.png'	      'Screen Shot 2017-05-24 at 12.18.28 PM.png'
+'Screen Shot 2016-11-28 at 1.53.59 PM.png'	      'Screen Shot 2017-05-24 at 2.41.24 PM.png'
+'Screen Shot 2016-11-28 at 11.33.45 PM.png'	      'Screen Shot 2017-05-24 at 4.45.25 PM.png'
+'Screen Shot 2016-11-28 at 12.50.49 PM.png'	      'Screen Shot 2017-05-24 at 4.47.56 PM.png'
+'Screen Shot 2016-11-28 at 12.50.50 PM.png'	      'Screen Shot 2017-05-30 at 1.01.22 AM.png'
+'Screen Shot 2016-11-28 at 12.53.22 PM.png'	      'Screen Shot 2017-05-30 at 1.44.17 AM.png'
+'Screen Shot 2016-11-28 at 12.54.22 PM.png'	      'Screen Shot 2017-05-30 at 2.48.47 PM.png'
+'Screen Shot 2016-11-29 at 12.30.56 AM.png'	      'Screen Shot 2017-05-31 at 2.31.41 PM.png'
+'Screen Shot 2016-12-03 at 11.43.28 AM.png'	      'Screen Shot 2017-06-05 at 7.00.41 PM.png'
+'Screen Shot 2016-12-05 at 4.50.26 PM.png'	      'Screen Shot 2017-06-10 at 11.23.02 PM.png'
+'Screen Shot 2016-12-06 at 12.20.06 AM.png'	      'Screen Shot 2017-06-11 at 2.42.22 AM.png'
+'Screen Shot 2016-12-06 at 12.22.19 AM.png'	      'Screen Shot 2017-06-12 at 1.37.57 PM.png'
+'Screen Shot 2016-12-06 at 12.31.58 AM.png'	      'Screen Shot 2017-06-12 at 1.40.39 PM.png'
+'Screen Shot 2016-12-06 at 12.34.00 AM.png'	      'Screen Shot 2017-06-12 at 11.20.39 AM.png'
+'Screen Shot 2016-12-06 at 12.49.47 AM.png'	      'Screen Shot 2017-06-12 at 9.11.02 PM.png'
+'Screen Shot 2016-12-06 at 4.37.55 PM.png'	      'Screen Shot 2017-06-13 at 11.25.36 AM.png'
+'Screen Shot 2016-12-06 at 5.22.55 PM.png'	      'Screen Shot 2017-06-13 at 11.29.43 AM.png'
+'Screen Shot 2016-12-06 at 5.23.01 PM.png'	      'Screen Shot 2017-06-13 at 11.39.59 AM.png'
+'Screen Shot 2016-12-06 at 5.23.58 PM.png'	      'Screen Shot 2017-06-14 at 2.36.22 PM.png'
+'Screen Shot 2016-12-08 at 1.13.26 AM.png'	      'Screen Shot 2017-06-19 at 10.06.29 PM.png'
+'Screen Shot 2016-12-08 at 11.50.03 AM.png'	      'Screen Shot 2017-06-19 at 10.09.14 PM.png'
+'Screen Shot 2016-12-08 at 11.50.04 AM.png'	      'Screen Shot 2017-06-19 at 7.44.32 PM.png'
+'Screen Shot 2016-12-08 at 12.01.07 PM.png'	      'Screen Shot 2017-06-19 at 8.51.07 PM.png'
+'Screen Shot 2016-12-08 at 12.01.14 PM.png'	      'Screen Shot 2017-06-19 at 8.51.28 PM.png'
+'Screen Shot 2016-12-12 at 6.28.17 PM.png'	      'Screen Shot 2017-06-20 at 7.20.07 PM.png'
+'Screen Shot 2016-12-13 at 1.53.00 PM.png'	      'Screen Shot 2017-06-20 at 7.28.24 PM.png'
+'Screen Shot 2016-12-13 at 2.29.09 PM.png'	      'Screen Shot 2017-06-21 at 3.36.29 PM.png'
+'Screen Shot 2016-12-13 at 9.29.15 PM.png'	      'Screen Shot 2017-06-23 at 3.53.51 PM.png'
+'Screen Shot 2016-12-15 at 3.54.59 PM.png'	      'Screen Shot 2017-06-25 at 2.39.44 AM.png'
+'Screen Shot 2016-12-15 at 4.35.52 PM.png'	      'Screen Shot 2017-06-25 at 4.33.35 PM.png'
+'Screen Shot 2016-12-15 at 5.24.51 PM.png'	      'Screen Shot 2017-06-26 at 3.47.28 PM.png'
+'Screen Shot 2016-12-16 at 5.43.56 PM.png'	      'Screen Shot 2017-06-27 at 4.32.46 PM.png'
+'Screen Shot 2016-12-17 at 7.46.34 PM.png'	      'Screen Shot 2017-06-30 at 1.17.20 PM.png'
+'Screen Shot 2016-12-19 at 2.19.57 AM.png'	      'Screen Shot 2017-06-30 at 5.53.13 PM.png'
+'Screen Shot 2016-12-21 at 10.15.49 PM.png'	      'Screen Shot 2017-07-03 at 3.18.34 PM.png'
+'Screen Shot 2016-12-21 at 10.29.22 PM.png'	      'Screen Shot 2017-07-03 at 3.22.35 PM.png'
+'Screen Shot 2016-12-21 at 4.11.07 PM.png'	      'Screen Shot 2017-07-21 at 1.25.57 AM.png'
+'Screen Shot 2016-12-21 at 4.17.45 PM.png'	      'Screen Shot 2017-07-21 at 1.40.27 AM.png'
+'Screen Shot 2016-12-22 at 7.36.06 PM.png'	      'Screen Shot 2017-07-21 at 1.40.33 AM.png'
+'Screen Shot 2016-12-23 at 1.38.41 PM.png'	      'Screen Shot 2017-07-21 at 1.40.39 AM.png'
+'Screen Shot 2016-12-23 at 5.03.59 PM.png'	      'Screen Shot 2017-07-21 at 1.40.45 AM.png'
+'Screen Shot 2016-12-24 at 4.34.53 PM.png'	      'Screen Shot 2017-07-21 at 1.42.29 AM.png'
+'Screen Shot 2016-12-27 at 11.57.42 AM.png'	      'Screen Shot 2017-07-21 at 1.42.30 AM.png'
+'Screen Shot 2016-12-27 at 12.13.13 PM.png'	      'Screen Shot 2017-07-21 at 1.45.46 AM.png'
+'Screen Shot 2016-12-27 at 12.20.49 PM.png'	      'Screen Shot 2017-07-21 at 10.31.43 AM.png'
+'Screen Shot 2016-12-27 at 12.38.21 PM.png'	      'Screen Shot 2017-07-21 at 12.24.21 PM.png'
+'Screen Shot 2016-12-30 at 3.04.51 PM.png'	      'Screen Shot 2017-07-22 at 7.04.23 PM.png'
+'Screen Shot 2017-01-02 at 10.03.25 PM.png'	      'Screen Shot 2017-07-22 at 7.05.23 PM.png'
+'Screen Shot 2017-01-02 at 11.48.54 PM.png'	      'Screen Shot 2017-07-22 at 7.06.52 PM.png'
+'Screen Shot 2017-01-02 at 11.50.38 PM.png'	      'Screen Shot 2017-07-22 at 7.09.18 PM.png'
+'Screen Shot 2017-01-02 at 3.58.21 PM.png'	      'Screen Shot 2017-07-22 at 7.39.26 PM.png'
+'Screen Shot 2017-01-04 at 2.59.21 PM.png'	      'Screen Shot 2017-07-24 at 11.45.10 AM.png'
+'Screen Shot 2017-01-04 at 3.07.23 PM.png'	      'Screen Shot 2017-07-24 at 12.52.42 PM.png'
+'Screen Shot 2017-01-05 at 5.07.02 PM.png'	      'Screen Shot 2017-07-28 at 4.04.01 PM.png'
+'Screen Shot 2017-01-10 at 12.18.14 AM.png'	      'Screen Shot 2017-07-28 at 4.04.04 PM.png'
+'Screen Shot 2017-01-10 at 2.28.04 PM.png'	      'Screen Shot 2017-07-30 at 11.25.01 PM.png'
+'Screen Shot 2017-01-10 at 4.28.38 PM.png'	      'Screen Shot 2017-07-31 at 1.00.50 PM.png'
+'Screen Shot 2017-01-10 at 4.28.44 PM.png'	      'Screen Shot 2017-07-31 at 1.00.59 PM.png'
+'Screen Shot 2017-01-10 at 4.28.53 PM.png'	      'Screen Shot 2017-08-02 at 10.50.08 AM.png'
+'Screen Shot 2017-01-11 at 12.41.03 AM.png'	      'Screen Shot 2017-08-02 at 10.50.23 AM.png'
+'Screen Shot 2017-01-13 at 2.37.17 PM.png'	      'Screen Shot 2017-08-02 at 10.50.41 AM.png'
+'Screen Shot 2017-01-17 at 1.38.54 PM.png'	      'Screen Shot 2017-08-02 at 11.29.40 PM.png'
+'Screen Shot 2017-01-17 at 4.36.09 PM.png'	      'Screen Shot 2017-08-04 at 1.10.28 PM.png'
+'Screen Shot 2017-01-17 at 5.27.05 PM.png'	      'Screen Shot 2017-08-10 at 2.04.54 PM.png'
+'Screen Shot 2017-01-17 at 6.23.23 PM.png'	      'Screen Shot 2017-08-10 at 3.46.52 PM.png'
+'Screen Shot 2017-01-28 at 7.36.12 PM.png'	      'Screen Shot 2017-08-11 at 2.33.56 PM.png'
+'Screen Shot 2017-01-28 at 7.53.05 PM.png'	      'Screen Shot 2017-08-11 at 3.31.09 PM.png'
+'Screen Shot 2017-01-30 at 2.47.36 AM.png'	      'Screen Shot 2017-08-15 at 2.09.02 PM.png'
+'Screen Shot 2017-01-30 at 7.24.03 PM.png'	      'Screen Shot 2017-08-17 at 1.37.28 PM.png'
+'Screen Shot 2017-01-31 at 10.57.31 PM.png'	      'Screen Shot 2017-08-17 at 1.37.51 PM.png'
+'Screen Shot 2017-02-01 at 1.02.45 AM.png'	      'Screen Shot 2017-08-17 at 1.39.24 PM.png'
+'Screen Shot 2017-02-01 at 1.10.48 AM.png'	      'Screen Shot 2017-08-22 at 2.42.45 AM.png'
+'Screen Shot 2017-02-01 at 1.11.54 AM.png'	      'Screen Shot 2017-08-28 at 9.56.55 PM.png'
+'Screen Shot 2017-02-01 at 12.30.55 AM.png'	      'Screen Shot 2017-08-29 at 10.27.51 AM.png'
+'Screen Shot 2017-02-01 at 2.14.53 PM.png'	      'Screen Shot 2017-08-29 at 10.28.10 AM.png'
+'Screen Shot 2017-02-01 at 2.58.06 PM.png'	      'Screen Shot 2017-08-29 at 10.28.40 AM.png'
+'Screen Shot 2017-02-01 at 2.58.46 PM.png'	      'Screen Shot 2017-08-30 at 3.48.23 PM.png'
+'Screen Shot 2017-02-01 at 2.59.12 PM.png'	      'Screen Shot 2017-08-31 at 12.04.04 PM.png'
+'Screen Shot 2017-02-01 at 3.00.13 PM.png'	      'Screen Shot 2017-08-31 at 12.43.44 PM.png'
+'Screen Shot 2017-02-01 at 3.00.24 PM.png'	      'Screen Shot 2017-09-01 at 4.52.11 PM.png'
+'Screen Shot 2017-02-01 at 3.02.13 PM.png'	      'Screen Shot 2017-09-06 at 11.56.21 PM.png'
+'Screen Shot 2017-02-01 at 8.43.41 PM.png'	      'Screen Shot 2017-09-06 at 11.56.38 PM.png'
+'Screen Shot 2017-02-02 at 11.57.23 AM.png'	      'Screen Shot 2017-09-06 at 11.56.49 PM.png'
+'Screen Shot 2017-02-02 at 12.48.04 AM.png'	      'Screen Shot 2017-09-06 at 11.56.57 PM.png'
+'Screen Shot 2017-02-02 at 3.52.35 PM.png'	      'Screen Shot 2017-09-07 at 12.27.58 AM.png'
+'Screen Shot 2017-02-02 at 3.52.54 PM.png'	       Spongebob-Meme-Fish-Face-10.jpg
+'Screen Shot 2017-02-02 at 9.10.05 AM.png'	       TomorrowNight.terminal
+'Screen Shot 2017-02-02 at 9.19.07 AM.png'	       USPTOelhartista.pdf
+'Screen Shot 2017-02-05 at 3.40.30 PM.png'	       anime.jpg-large
+'Screen Shot 2017-02-06 at 11.01.51 PM.png'	       anna.jpeg
+'Screen Shot 2017-02-08 at 10.09.56 PM.png'	      'barrer desmeme.jpg'
+'Screen Shot 2017-02-08 at 10.48.45 AM.png'	      'barrer memes.jpg'
+'Screen Shot 2017-02-08 at 11.43.27 AM.png'	      'boleta rebeca.jpeg'
+'Screen Shot 2017-02-10 at 12.02.34 PM.png'	      'camiseta horrible.jpg'
+'Screen Shot 2017-02-10 at 12.02.41 PM.png'	       cd/
+'Screen Shot 2017-02-10 at 12.02.49 PM.png'	       cena.jpg
+'Screen Shot 2017-02-10 at 12.32.27 PM.png'	       dazaev.jpeg
+'Screen Shot 2017-02-10 at 12.32.36 PM.png'	       drakerezando.jpg-large
+'Screen Shot 2017-02-10 at 12.40.33 PM.png'	       elhartista.jpg
+'Screen Shot 2017-02-10 at 12.40.52 PM.png'	       exercises/
+'Screen Shot 2017-02-11 at 11.39.15 AM.png'	       ezpzcolores.jpg
+'Screen Shot 2017-02-12 at 9.20.21 PM.png'	      'fotos de Blanca'/
+'Screen Shot 2017-02-13 at 1.43.36 PM.png'	       gaysactivos.jpg
+'Screen Shot 2017-02-13 at 1.47.10 PM.png'	       hannibal.jpeg
+'Screen Shot 2017-02-13 at 1.48.19 PM.png'	       hhonors.jpg
+'Screen Shot 2017-02-13 at 12.41.42 PM.png'	       keepupkardashians.jpeg
+'Screen Shot 2017-02-13 at 12.42.01 PM.png'	       nachomastu.png
+'Screen Shot 2017-02-13 at 12.42.02 PM.png'	       oczerbado.jpg
+'Screen Shot 2017-02-15 at 1.15.16 AM.png'	       perro.jpg-large
+'Screen Shot 2017-02-15 at 1.15.33 AM.png'	      'pulga rio.png'
+'Screen Shot 2017-02-18 at 2.26.45 PM.png'	      'recibo de pago elhartista.pdf'
+'Screen Shot 2017-02-18 at 2.27.08 PM.png'	       samuelpistola.jpg
+'Screen Shot 2017-02-18 at 2.27.48 PM.png'	      'slide .gif'
+'Screen Shot 2017-02-18 at 2.27.59 PM.png'	       telescopio.jpg
+'Screen Shot 2017-02-18 at 2.28.05 PM.png'	      '~$PARO PUERTO MORELOS.doc'
+'Screen Shot 2017-02-18 at 2.28.11 PM.png'
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ cd Desktop/
+dazaev ~/Desktop
+$ cd Labyrinth/
+dazaev ~/Desktop/Labyrinth
+$ ls
+parlor/  stairway/
+dazaev ~/Desktop/Labyrinth
+$ clear
+
+dazaev ~/Desktop/Labyrinth
+$ pwd
+/Users/dazaev/Desktop/Labyrinth
+dazaev ~/Desktop/Labyrinth
+$ cd parlor/
+dazaev ~/Desktop/Labyrinth/parlor
+$ ls
+ballrom/  dining_room/
+dazaev ~/Desktop/Labyrinth/parlor
+$ ls
+ballrom/  dining_room/
+dazaev ~/Desktop/Labyrinth/parlor
+$ cd ballrom/
+dazaev ~/Desktop/Labyrinth/parlor/ballrom
+$ ls
+sarah_williams.txt
+dazaev ~/Desktop/Labyrinth/parlor/ballrom
+$ tree
+-bash: tree: command not found
+dazaev ~/Desktop/Labyrinth/parlor/ballrom
+$ cd ..
+dazaev ~/Desktop/Labyrinth/parlor
+$ cd ..
+dazaev ~/Desktop/Labyrinth
+$ ls
+parlor/  stairway/
+dazaev ~/Desktop/Labyrinth
+$ cd stairway/
+dazaev ~/Desktop/Labyrinth/stairway
+$ ls
+escher_room/  throne_room/
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd throne_room/
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ ls
+goblin_king.txt
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ cd ..
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd ..
+dazaev ~/Desktop/Labyrinth
+$ clear
+
+
+
+
+
+
+dazaev ~/Desktop/Labyrinth
+$ pwd
+/Users/dazaev/Desktop/Labyrinth
+dazaev ~/Desktop/Labyrinth
+$ man
+What manual page do you want?
+dazaev ~/Desktop/Labyrinth
+$ mna owd
+-bash: mna: command not found
+dazaev ~/Desktop/Labyrinth
+$ man pwd
+dazaev ~/Desktop/Labyrinth
+$ cd ~
+dazaev ~
+$ brew install tree
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (caskroom/cask, homebrew/core).
+==> Cleaning up /Library/Caches/Homebrew...
+==> Migrating /Library/Caches/Homebrew to /Users/dazaev/Library/Caches/Homebrew...
+==> Deleting /Library/Caches/Homebrew...
+==> Updated Formulae
+consul-template                   filebeat                          logstash                          packetbeat
+elasticsearch                     gobject-introspection             metricbeat
+==> Renamed Formulae
+fbida -> exiftran
+
+==> Downloading https://homebrew.bintray.com/bottles/tree-1.7.0.el_capitan.bottle.1.tar.gz
+######################################################################## 100.0%
+==> Pouring tree-1.7.0.el_capitan.bottle.1.tar.gz
+🍺  /usr/local/Cellar/tree/1.7.0: 7 files, 113.4KB
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+dazaev ~
+$ cd Desktop/
+dazaev ~/Desktop
+$ ls
+ 13310631_1032449553502952_3389730930382808504_n.jpg  'Screen Shot 2017-03-02 at 11.55.21 AM.png'
+ 15826898_1316642425064339_8745603281067432137_n.png  'Screen Shot 2017-03-02 at 6.09.38 PM.png'
+ 16473537_1385198504847591_429613689641500677_n.jpg   'Screen Shot 2017-03-03 at 2.53.03 PM.png'
+'AMPARO PUERTO MORELOS.doc'			      'Screen Shot 2017-03-03 at 3.06.05 PM.png'
+ Labyrinth/					      'Screen Shot 2017-03-05 at 2.05.13 PM.png'
+ Purple.jpg					      'Screen Shot 2017-03-05 at 2.05.30 PM.png'
+'Screen Shot 2016-06-20 at 1.12.39 AM.png'	      'Screen Shot 2017-03-08 at 8.31.25 PM.png'
+'Screen Shot 2016-06-20 at 2.01.42 AM.png'	      'Screen Shot 2017-03-08 at 8.31.48 PM.png'
+'Screen Shot 2016-06-20 at 2.04.16 AM.png'	      'Screen Shot 2017-03-08 at 8.36.19 PM.png'
+'Screen Shot 2016-07-01 at 12.30.12 PM.png'	      'Screen Shot 2017-03-11 at 12.41.59 PM.png'
+'Screen Shot 2016-07-14 at 10.52.42 PM.png'	      'Screen Shot 2017-03-12 at 12.37.35 PM.png'
+'Screen Shot 2016-09-14 at 11.43.41 PM.png'	      'Screen Shot 2017-03-13 at 12.10.13 PM.png'
+'Screen Shot 2016-09-14 at 11.44.06 PM.png'	      'Screen Shot 2017-03-13 at 12.10.30 PM.png'
+'Screen Shot 2016-09-20 at 11.44.21 PM.png'	      'Screen Shot 2017-03-13 at 2.24.20 PM.png'
+'Screen Shot 2016-09-21 at 8.04.30 PM.png'	      'Screen Shot 2017-03-15 at 2.02.17 PM.png'
+'Screen Shot 2016-09-21 at 8.49.05 PM.png'	      'Screen Shot 2017-03-20 at 2.42.37 PM.png'
+'Screen Shot 2016-09-25 at 1.55.32 PM.png'	      'Screen Shot 2017-03-20 at 4.40.13 PM.png'
+'Screen Shot 2016-09-25 at 1.57.07 PM.png'	      'Screen Shot 2017-03-20 at 5.02.10 PM.png'
+'Screen Shot 2016-09-26 at 1.33.59 PM.png'	      'Screen Shot 2017-03-20 at 5.18.11 PM.png'
+'Screen Shot 2016-09-26 at 1.54.34 PM.png'	      'Screen Shot 2017-03-21 at 1.50.10 AM.png'
+'Screen Shot 2016-09-27 at 1.10.07 PM.png'	      'Screen Shot 2017-03-21 at 12.00.40 PM.png'
+'Screen Shot 2016-09-27 at 7.33.18 PM.png'	      'Screen Shot 2017-03-21 at 12.27.18 AM.png'
+'Screen Shot 2016-09-27 at 7.33.41 PM.png'	      'Screen Shot 2017-03-21 at 3.15.59 PM.png'
+'Screen Shot 2016-09-28 at 11.54.29 PM.png'	      'Screen Shot 2017-03-22 at 5.17.04 PM.png'
+'Screen Shot 2016-09-28 at 11.54.33 PM.png'	      'Screen Shot 2017-03-22 at 7.16.10 PM.png'
+'Screen Shot 2016-09-28 at 12.41.01 PM.png'	      'Screen Shot 2017-03-27 at 11.02.26 PM.png'
+'Screen Shot 2016-10-06 at 11.29.44 PM.png'	      'Screen Shot 2017-03-28 at 5.18.48 PM.png'
+'Screen Shot 2016-10-09 at 10.21.04 PM.png'	      'Screen Shot 2017-03-29 at 12.23.32 AM.png'
+'Screen Shot 2016-10-09 at 9.30.06 PM.png'	      'Screen Shot 2017-03-29 at 12.36.57 AM.png'
+'Screen Shot 2016-10-09 at 9.30.09 PM.png'	      'Screen Shot 2017-03-29 at 12.44.54 AM.png'
+'Screen Shot 2016-10-09 at 9.33.59 PM.png'	      'Screen Shot 2017-03-29 at 12.57.29 AM.png'
+'Screen Shot 2016-10-09 at 9.49.13 PM.png'	      'Screen Shot 2017-03-29 at 3.59.53 PM.png'
+'Screen Shot 2016-10-09 at 9.49.14 PM.png'	      'Screen Shot 2017-03-29 at 4.04.40 PM.png'
+'Screen Shot 2016-10-09 at 9.49.49 PM.png'	      'Screen Shot 2017-03-30 at 5.23.21 PM.png'
+'Screen Shot 2016-10-09 at 9.55.21 PM.png'	      'Screen Shot 2017-03-31 at 12.34.32 PM.png'
+'Screen Shot 2016-10-10 at 11.35.06 PM.png'	      'Screen Shot 2017-04-03 at 8.21.45 PM.png'
+'Screen Shot 2016-10-10 at 4.01.14 PM.png'	      'Screen Shot 2017-04-10 at 1.19.26 PM.png'
+'Screen Shot 2016-10-12 at 12.35.18 PM.png'	      'Screen Shot 2017-04-10 at 1.19.37 PM.png'
+'Screen Shot 2016-10-12 at 4.34.28 PM.png'	      'Screen Shot 2017-04-10 at 2.02.14 AM.png'
+'Screen Shot 2016-10-13 at 12.38.13 AM.png'	      'Screen Shot 2017-04-10 at 5.22.17 PM.png'
+'Screen Shot 2016-10-14 at 11.42.22 AM.png'	      'Screen Shot 2017-04-10 at 9.07.14 PM.png'
+'Screen Shot 2016-10-14 at 11.42.33 AM.png'	      'Screen Shot 2017-04-11 at 1.01.33 AM.png'
+'Screen Shot 2016-10-14 at 3.40.37 PM.png'	      'Screen Shot 2017-04-11 at 12.25.20 AM.png'
+'Screen Shot 2016-10-14 at 3.41.04 PM.png'	      'Screen Shot 2017-04-11 at 4.05.34 PM.png'
+'Screen Shot 2016-10-14 at 5.00.30 PM.png'	      'Screen Shot 2017-04-11 at 4.08.48 PM.png'
+'Screen Shot 2016-10-15 at 12.50.35 PM.png'	      'Screen Shot 2017-04-11 at 4.18.33 PM.png'
+'Screen Shot 2016-10-19 at 1.09.50 AM.png'	      'Screen Shot 2017-04-11 at 4.19.19 PM.png'
+'Screen Shot 2016-10-19 at 9.54.47 PM.png'	      'Screen Shot 2017-04-11 at 4.22.11 PM.png'
+'Screen Shot 2016-10-20 at 1.35.46 AM.png'	      'Screen Shot 2017-04-12 at 3.09.06 PM.png'
+'Screen Shot 2016-10-20 at 12.41.44 PM.png'	      'Screen Shot 2017-04-12 at 7.51.25 PM.png'
+'Screen Shot 2016-10-20 at 12.41.52 PM.png'	      'Screen Shot 2017-04-12 at 8.19.19 PM.png'
+'Screen Shot 2016-10-20 at 2.56.12 PM.png'	      'Screen Shot 2017-04-12 at 8.28.07 PM.png'
+'Screen Shot 2016-10-20 at 2.56.40 PM.png'	      'Screen Shot 2017-04-17 at 11.38.06 AM.png'
+'Screen Shot 2016-10-20 at 2.58.25 PM.png'	      'Screen Shot 2017-04-17 at 4.21.28 PM.png'
+'Screen Shot 2016-10-20 at 3.00.35 PM.png'	      'Screen Shot 2017-04-21 at 1.18.42 PM.png'
+'Screen Shot 2016-10-20 at 3.30.03 PM.png'	      'Screen Shot 2017-04-25 at 1.25.34 PM.png'
+'Screen Shot 2016-10-21 at 1.14.57 AM.png'	      'Screen Shot 2017-04-25 at 12.17.24 AM.png'
+'Screen Shot 2016-10-21 at 8.08.28 PM.png'	      'Screen Shot 2017-04-25 at 12.48.31 AM.png'
+'Screen Shot 2016-10-21 at 8.09.04 PM.png'	      'Screen Shot 2017-04-26 at 5.22.03 PM.png'
+'Screen Shot 2016-10-21 at 8.09.56 PM.png'	      'Screen Shot 2017-04-26 at 6.03.48 PM.png'
+'Screen Shot 2016-10-21 at 8.16.54 PM.png'	      'Screen Shot 2017-04-26 at 6.18.28 PM.png'
+'Screen Shot 2016-10-21 at 8.17.50 PM.png'	      'Screen Shot 2017-04-26 at 7.05.28 PM.png'
+'Screen Shot 2016-10-21 at 8.19.07 PM.png'	      'Screen Shot 2017-04-26 at 7.11.12 PM.png'
+'Screen Shot 2016-10-21 at 8.25.03 PM.png'	      'Screen Shot 2017-04-27 at 12.45.49 AM.png'
+'Screen Shot 2016-10-22 at 3.01.18 PM.png'	      'Screen Shot 2017-04-28 at 1.18.38 PM.png'
+'Screen Shot 2016-10-22 at 3.04.34 PM.png'	      'Screen Shot 2017-05-01 at 12.55.15 PM.png'
+'Screen Shot 2016-10-22 at 3.43.15 PM.png'	      'Screen Shot 2017-05-02 at 9.34.40 PM.png'
+'Screen Shot 2016-10-23 at 4.57.51 PM.png'	      'Screen Shot 2017-05-03 at 11.45.15 AM.png'
+'Screen Shot 2016-10-24 at 3.33.26 PM.png'	      'Screen Shot 2017-05-03 at 12.33.50 PM.png'
+'Screen Shot 2016-10-26 at 11.51.11 PM.png'	      'Screen Shot 2017-05-03 at 2.55.02 PM.png'
+'Screen Shot 2016-10-26 at 2.42.38 AM.png'	      'Screen Shot 2017-05-10 at 1.12.57 AM.png'
+'Screen Shot 2016-10-27 at 1.02.05 PM.png'	      'Screen Shot 2017-05-14 at 8.47.37 PM.png'
+'Screen Shot 2016-10-27 at 1.49.00 PM.png'	      'Screen Shot 2017-05-16 at 5.05.29 PM.png'
+'Screen Shot 2016-10-27 at 1.50.33 PM.png'	      'Screen Shot 2017-05-17 at 1.46.39 PM.png'
+'Screen Shot 2016-10-31 at 12.53.20 AM.png'	      'Screen Shot 2017-05-17 at 5.47.24 PM.png'
+'Screen Shot 2016-10-31 at 12.54.03 AM.png'	      'Screen Shot 2017-05-18 at 1.03.39 PM.png'
+'Screen Shot 2016-10-31 at 12.54.38 AM.png'	      'Screen Shot 2017-05-18 at 1.53.30 PM.png'
+'Screen Shot 2016-11-02 at 6.49.18 PM.png'	      'Screen Shot 2017-05-18 at 2.04.40 PM.png'
+'Screen Shot 2016-11-06 at 11.30.56 PM.png'	      'Screen Shot 2017-05-18 at 3.08.51 PM.png'
+'Screen Shot 2016-11-07 at 1.24.30 AM.png'	      'Screen Shot 2017-05-19 at 1.48.12 PM.png'
+'Screen Shot 2016-11-07 at 1.29.08 AM.png'	      'Screen Shot 2017-05-19 at 12.09.29 AM.png'
+'Screen Shot 2016-11-09 at 2.42.15 PM.png'	      'Screen Shot 2017-05-19 at 12.19.39 AM.png'
+'Screen Shot 2016-11-10 at 12.49.18 PM.png'	      'Screen Shot 2017-05-19 at 12.41.36 AM.png'
+'Screen Shot 2016-11-10 at 3.11.11 PM.png'	      'Screen Shot 2017-05-22 at 2.30.34 PM.png'
+'Screen Shot 2016-11-13 at 2.23.55 PM.png'	      'Screen Shot 2017-05-22 at 2.30.58 PM.png'
+'Screen Shot 2016-11-17 at 6.25.14 PM.png'	      'Screen Shot 2017-05-22 at 2.31.41 PM.png'
+'Screen Shot 2016-11-17 at 6.39.52 PM.png'	      'Screen Shot 2017-05-22 at 3.10.27 PM.png'
+'Screen Shot 2016-11-18 at 12.01.03 AM.png'	      'Screen Shot 2017-05-22 at 3.11.11 PM.png'
+'Screen Shot 2016-11-18 at 12.06.23 AM.png'	      'Screen Shot 2017-05-22 at 3.11.42 PM.png'
+'Screen Shot 2016-11-19 at 8.12.43 PM.png'	      'Screen Shot 2017-05-23 at 1.38.55 PM.png'
+'Screen Shot 2016-11-19 at 8.42.06 PM.png'	      'Screen Shot 2017-05-23 at 1.39.17 PM.png'
+'Screen Shot 2016-11-21 at 12.59.48 PM.png'	      'Screen Shot 2017-05-23 at 2.24.55 PM.png'
+'Screen Shot 2016-11-24 at 11.02.58 PM.png'	      'Screen Shot 2017-05-23 at 2.25.42 PM.png'
+'Screen Shot 2016-11-26 at 2.34.39 PM.png'	      'Screen Shot 2017-05-24 at 12.06.30 PM.png'
+'Screen Shot 2016-11-26 at 3.02.26 PM.png'	      'Screen Shot 2017-05-24 at 12.06.39 PM.png'
+'Screen Shot 2016-11-26 at 4.12.23 PM.png'	      'Screen Shot 2017-05-24 at 12.18.18 PM.png'
+'Screen Shot 2016-11-27 at 4.18.46 AM.png'	      'Screen Shot 2017-05-24 at 12.18.22 PM.png'
+'Screen Shot 2016-11-27 at 4.19.00 AM.png'	      'Screen Shot 2017-05-24 at 12.18.28 PM.png'
+'Screen Shot 2016-11-28 at 1.53.59 PM.png'	      'Screen Shot 2017-05-24 at 2.41.24 PM.png'
+'Screen Shot 2016-11-28 at 11.33.45 PM.png'	      'Screen Shot 2017-05-24 at 4.45.25 PM.png'
+'Screen Shot 2016-11-28 at 12.50.49 PM.png'	      'Screen Shot 2017-05-24 at 4.47.56 PM.png'
+'Screen Shot 2016-11-28 at 12.50.50 PM.png'	      'Screen Shot 2017-05-30 at 1.01.22 AM.png'
+'Screen Shot 2016-11-28 at 12.53.22 PM.png'	      'Screen Shot 2017-05-30 at 1.44.17 AM.png'
+'Screen Shot 2016-11-28 at 12.54.22 PM.png'	      'Screen Shot 2017-05-30 at 2.48.47 PM.png'
+'Screen Shot 2016-11-29 at 12.30.56 AM.png'	      'Screen Shot 2017-05-31 at 2.31.41 PM.png'
+'Screen Shot 2016-12-03 at 11.43.28 AM.png'	      'Screen Shot 2017-06-05 at 7.00.41 PM.png'
+'Screen Shot 2016-12-05 at 4.50.26 PM.png'	      'Screen Shot 2017-06-10 at 11.23.02 PM.png'
+'Screen Shot 2016-12-06 at 12.20.06 AM.png'	      'Screen Shot 2017-06-11 at 2.42.22 AM.png'
+'Screen Shot 2016-12-06 at 12.22.19 AM.png'	      'Screen Shot 2017-06-12 at 1.37.57 PM.png'
+'Screen Shot 2016-12-06 at 12.31.58 AM.png'	      'Screen Shot 2017-06-12 at 1.40.39 PM.png'
+'Screen Shot 2016-12-06 at 12.34.00 AM.png'	      'Screen Shot 2017-06-12 at 11.20.39 AM.png'
+'Screen Shot 2016-12-06 at 12.49.47 AM.png'	      'Screen Shot 2017-06-12 at 9.11.02 PM.png'
+'Screen Shot 2016-12-06 at 4.37.55 PM.png'	      'Screen Shot 2017-06-13 at 11.25.36 AM.png'
+'Screen Shot 2016-12-06 at 5.22.55 PM.png'	      'Screen Shot 2017-06-13 at 11.29.43 AM.png'
+'Screen Shot 2016-12-06 at 5.23.01 PM.png'	      'Screen Shot 2017-06-13 at 11.39.59 AM.png'
+'Screen Shot 2016-12-06 at 5.23.58 PM.png'	      'Screen Shot 2017-06-14 at 2.36.22 PM.png'
+'Screen Shot 2016-12-08 at 1.13.26 AM.png'	      'Screen Shot 2017-06-19 at 10.06.29 PM.png'
+'Screen Shot 2016-12-08 at 11.50.03 AM.png'	      'Screen Shot 2017-06-19 at 10.09.14 PM.png'
+'Screen Shot 2016-12-08 at 11.50.04 AM.png'	      'Screen Shot 2017-06-19 at 7.44.32 PM.png'
+'Screen Shot 2016-12-08 at 12.01.07 PM.png'	      'Screen Shot 2017-06-19 at 8.51.07 PM.png'
+'Screen Shot 2016-12-08 at 12.01.14 PM.png'	      'Screen Shot 2017-06-19 at 8.51.28 PM.png'
+'Screen Shot 2016-12-12 at 6.28.17 PM.png'	      'Screen Shot 2017-06-20 at 7.20.07 PM.png'
+'Screen Shot 2016-12-13 at 1.53.00 PM.png'	      'Screen Shot 2017-06-20 at 7.28.24 PM.png'
+'Screen Shot 2016-12-13 at 2.29.09 PM.png'	      'Screen Shot 2017-06-21 at 3.36.29 PM.png'
+'Screen Shot 2016-12-13 at 9.29.15 PM.png'	      'Screen Shot 2017-06-23 at 3.53.51 PM.png'
+'Screen Shot 2016-12-15 at 3.54.59 PM.png'	      'Screen Shot 2017-06-25 at 2.39.44 AM.png'
+'Screen Shot 2016-12-15 at 4.35.52 PM.png'	      'Screen Shot 2017-06-25 at 4.33.35 PM.png'
+'Screen Shot 2016-12-15 at 5.24.51 PM.png'	      'Screen Shot 2017-06-26 at 3.47.28 PM.png'
+'Screen Shot 2016-12-16 at 5.43.56 PM.png'	      'Screen Shot 2017-06-27 at 4.32.46 PM.png'
+'Screen Shot 2016-12-17 at 7.46.34 PM.png'	      'Screen Shot 2017-06-30 at 1.17.20 PM.png'
+'Screen Shot 2016-12-19 at 2.19.57 AM.png'	      'Screen Shot 2017-06-30 at 5.53.13 PM.png'
+'Screen Shot 2016-12-21 at 10.15.49 PM.png'	      'Screen Shot 2017-07-03 at 3.18.34 PM.png'
+'Screen Shot 2016-12-21 at 10.29.22 PM.png'	      'Screen Shot 2017-07-03 at 3.22.35 PM.png'
+'Screen Shot 2016-12-21 at 4.11.07 PM.png'	      'Screen Shot 2017-07-21 at 1.25.57 AM.png'
+'Screen Shot 2016-12-21 at 4.17.45 PM.png'	      'Screen Shot 2017-07-21 at 1.40.27 AM.png'
+'Screen Shot 2016-12-22 at 7.36.06 PM.png'	      'Screen Shot 2017-07-21 at 1.40.33 AM.png'
+'Screen Shot 2016-12-23 at 1.38.41 PM.png'	      'Screen Shot 2017-07-21 at 1.40.39 AM.png'
+'Screen Shot 2016-12-23 at 5.03.59 PM.png'	      'Screen Shot 2017-07-21 at 1.40.45 AM.png'
+'Screen Shot 2016-12-24 at 4.34.53 PM.png'	      'Screen Shot 2017-07-21 at 1.42.29 AM.png'
+'Screen Shot 2016-12-27 at 11.57.42 AM.png'	      'Screen Shot 2017-07-21 at 1.42.30 AM.png'
+'Screen Shot 2016-12-27 at 12.13.13 PM.png'	      'Screen Shot 2017-07-21 at 1.45.46 AM.png'
+'Screen Shot 2016-12-27 at 12.20.49 PM.png'	      'Screen Shot 2017-07-21 at 10.31.43 AM.png'
+'Screen Shot 2016-12-27 at 12.38.21 PM.png'	      'Screen Shot 2017-07-21 at 12.24.21 PM.png'
+'Screen Shot 2016-12-30 at 3.04.51 PM.png'	      'Screen Shot 2017-07-22 at 7.04.23 PM.png'
+'Screen Shot 2017-01-02 at 10.03.25 PM.png'	      'Screen Shot 2017-07-22 at 7.05.23 PM.png'
+'Screen Shot 2017-01-02 at 11.48.54 PM.png'	      'Screen Shot 2017-07-22 at 7.06.52 PM.png'
+'Screen Shot 2017-01-02 at 11.50.38 PM.png'	      'Screen Shot 2017-07-22 at 7.09.18 PM.png'
+'Screen Shot 2017-01-02 at 3.58.21 PM.png'	      'Screen Shot 2017-07-22 at 7.39.26 PM.png'
+'Screen Shot 2017-01-04 at 2.59.21 PM.png'	      'Screen Shot 2017-07-24 at 11.45.10 AM.png'
+'Screen Shot 2017-01-04 at 3.07.23 PM.png'	      'Screen Shot 2017-07-24 at 12.52.42 PM.png'
+'Screen Shot 2017-01-05 at 5.07.02 PM.png'	      'Screen Shot 2017-07-28 at 4.04.01 PM.png'
+'Screen Shot 2017-01-10 at 12.18.14 AM.png'	      'Screen Shot 2017-07-28 at 4.04.04 PM.png'
+'Screen Shot 2017-01-10 at 2.28.04 PM.png'	      'Screen Shot 2017-07-30 at 11.25.01 PM.png'
+'Screen Shot 2017-01-10 at 4.28.38 PM.png'	      'Screen Shot 2017-07-31 at 1.00.50 PM.png'
+'Screen Shot 2017-01-10 at 4.28.44 PM.png'	      'Screen Shot 2017-07-31 at 1.00.59 PM.png'
+'Screen Shot 2017-01-10 at 4.28.53 PM.png'	      'Screen Shot 2017-08-02 at 10.50.08 AM.png'
+'Screen Shot 2017-01-11 at 12.41.03 AM.png'	      'Screen Shot 2017-08-02 at 10.50.23 AM.png'
+'Screen Shot 2017-01-13 at 2.37.17 PM.png'	      'Screen Shot 2017-08-02 at 10.50.41 AM.png'
+'Screen Shot 2017-01-17 at 1.38.54 PM.png'	      'Screen Shot 2017-08-02 at 11.29.40 PM.png'
+'Screen Shot 2017-01-17 at 4.36.09 PM.png'	      'Screen Shot 2017-08-04 at 1.10.28 PM.png'
+'Screen Shot 2017-01-17 at 5.27.05 PM.png'	      'Screen Shot 2017-08-10 at 2.04.54 PM.png'
+'Screen Shot 2017-01-17 at 6.23.23 PM.png'	      'Screen Shot 2017-08-10 at 3.46.52 PM.png'
+'Screen Shot 2017-01-28 at 7.36.12 PM.png'	      'Screen Shot 2017-08-11 at 2.33.56 PM.png'
+'Screen Shot 2017-01-28 at 7.53.05 PM.png'	      'Screen Shot 2017-08-11 at 3.31.09 PM.png'
+'Screen Shot 2017-01-30 at 2.47.36 AM.png'	      'Screen Shot 2017-08-15 at 2.09.02 PM.png'
+'Screen Shot 2017-01-30 at 7.24.03 PM.png'	      'Screen Shot 2017-08-17 at 1.37.28 PM.png'
+'Screen Shot 2017-01-31 at 10.57.31 PM.png'	      'Screen Shot 2017-08-17 at 1.37.51 PM.png'
+'Screen Shot 2017-02-01 at 1.02.45 AM.png'	      'Screen Shot 2017-08-17 at 1.39.24 PM.png'
+'Screen Shot 2017-02-01 at 1.10.48 AM.png'	      'Screen Shot 2017-08-22 at 2.42.45 AM.png'
+'Screen Shot 2017-02-01 at 1.11.54 AM.png'	      'Screen Shot 2017-08-28 at 9.56.55 PM.png'
+'Screen Shot 2017-02-01 at 12.30.55 AM.png'	      'Screen Shot 2017-08-29 at 10.27.51 AM.png'
+'Screen Shot 2017-02-01 at 2.14.53 PM.png'	      'Screen Shot 2017-08-29 at 10.28.10 AM.png'
+'Screen Shot 2017-02-01 at 2.58.06 PM.png'	      'Screen Shot 2017-08-29 at 10.28.40 AM.png'
+'Screen Shot 2017-02-01 at 2.58.46 PM.png'	      'Screen Shot 2017-08-30 at 3.48.23 PM.png'
+'Screen Shot 2017-02-01 at 2.59.12 PM.png'	      'Screen Shot 2017-08-31 at 12.04.04 PM.png'
+'Screen Shot 2017-02-01 at 3.00.13 PM.png'	      'Screen Shot 2017-08-31 at 12.43.44 PM.png'
+'Screen Shot 2017-02-01 at 3.00.24 PM.png'	      'Screen Shot 2017-09-01 at 4.52.11 PM.png'
+'Screen Shot 2017-02-01 at 3.02.13 PM.png'	      'Screen Shot 2017-09-06 at 11.56.21 PM.png'
+'Screen Shot 2017-02-01 at 8.43.41 PM.png'	      'Screen Shot 2017-09-06 at 11.56.38 PM.png'
+'Screen Shot 2017-02-02 at 11.57.23 AM.png'	      'Screen Shot 2017-09-06 at 11.56.49 PM.png'
+'Screen Shot 2017-02-02 at 12.48.04 AM.png'	      'Screen Shot 2017-09-06 at 11.56.57 PM.png'
+'Screen Shot 2017-02-02 at 3.52.35 PM.png'	      'Screen Shot 2017-09-07 at 12.27.58 AM.png'
+'Screen Shot 2017-02-02 at 3.52.54 PM.png'	       Spongebob-Meme-Fish-Face-10.jpg
+'Screen Shot 2017-02-02 at 9.10.05 AM.png'	       TomorrowNight.terminal
+'Screen Shot 2017-02-02 at 9.19.07 AM.png'	       USPTOelhartista.pdf
+'Screen Shot 2017-02-05 at 3.40.30 PM.png'	       anime.jpg-large
+'Screen Shot 2017-02-06 at 11.01.51 PM.png'	       anna.jpeg
+'Screen Shot 2017-02-08 at 10.09.56 PM.png'	      'barrer desmeme.jpg'
+'Screen Shot 2017-02-08 at 10.48.45 AM.png'	      'barrer memes.jpg'
+'Screen Shot 2017-02-08 at 11.43.27 AM.png'	      'boleta rebeca.jpeg'
+'Screen Shot 2017-02-10 at 12.02.34 PM.png'	      'camiseta horrible.jpg'
+'Screen Shot 2017-02-10 at 12.02.41 PM.png'	       cd/
+'Screen Shot 2017-02-10 at 12.02.49 PM.png'	       cena.jpg
+'Screen Shot 2017-02-10 at 12.32.27 PM.png'	       dazaev.jpeg
+'Screen Shot 2017-02-10 at 12.32.36 PM.png'	       drakerezando.jpg-large
+'Screen Shot 2017-02-10 at 12.40.33 PM.png'	       elhartista.jpg
+'Screen Shot 2017-02-10 at 12.40.52 PM.png'	       exercises/
+'Screen Shot 2017-02-11 at 11.39.15 AM.png'	       ezpzcolores.jpg
+'Screen Shot 2017-02-12 at 9.20.21 PM.png'	      'fotos de Blanca'/
+'Screen Shot 2017-02-13 at 1.43.36 PM.png'	       gaysactivos.jpg
+'Screen Shot 2017-02-13 at 1.47.10 PM.png'	       hannibal.jpeg
+'Screen Shot 2017-02-13 at 1.48.19 PM.png'	       hhonors.jpg
+'Screen Shot 2017-02-13 at 12.41.42 PM.png'	       keepupkardashians.jpeg
+'Screen Shot 2017-02-13 at 12.42.01 PM.png'	       nachomastu.png
+'Screen Shot 2017-02-13 at 12.42.02 PM.png'	       oczerbado.jpg
+'Screen Shot 2017-02-15 at 1.15.16 AM.png'	       perro.jpg-large
+'Screen Shot 2017-02-15 at 1.15.33 AM.png'	      'pulga rio.png'
+'Screen Shot 2017-02-18 at 2.26.45 PM.png'	      'recibo de pago elhartista.pdf'
+'Screen Shot 2017-02-18 at 2.27.08 PM.png'	       samuelpistola.jpg
+'Screen Shot 2017-02-18 at 2.27.48 PM.png'	      'slide .gif'
+'Screen Shot 2017-02-18 at 2.27.59 PM.png'	       telescopio.jpg
+'Screen Shot 2017-02-18 at 2.28.05 PM.png'	      '~$PARO PUERTO MORELOS.doc'
+'Screen Shot 2017-02-18 at 2.28.11 PM.png'
+dazaev ~/Desktop
+$ cd Labyrinth/
+dazaev ~/Desktop/Labyrinth
+$ ls
+parlor/  stairway/
+dazaev ~/Desktop/Labyrinth
+$ cd stairway/
+dazaev ~/Desktop/Labyrinth/stairway
+$ ls
+escher_room/  throne_room/
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd thro
+-bash: cd: thro: No such file or directory
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd throne_room/
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ mv goblin_king.txt goblin_queen.txt
+renamed 'goblin_king.txt' -> 'goblin_queen.txt'
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ ls
+goblin_queen.txt
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ clear
+
+dazaev ~/Desktop/Labyrinth/stairway/throne_room
+$ cd ..
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd .
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd ..
+dazaev ~/Desktop/Labyrinth
+$ ls
+parlor/  stairway/
+dazaev ~/Desktop/Labyrinth
+$ cd stairway/
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd ~
+dazaev ~
+$ cd Desktop/Labyrinth/stairway/
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd ~
+dazaev ~
+$ cd Desktop/Labyrinth/stairway/
+dazaev ~/Desktop/Labyrinth/stairway
+$ pwd
+/Users/dazaev/Desktop/Labyrinth/stairway
+dazaev ~/Desktop/Labyrinth/stairway
+$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dazaev ~/Desktop/Labyrinth/stairway
+$ cd ~
+dazaev ~
+$ pwd
+/Users/dazaev
+dazaev ~
+$ cd ~/Downloads
+dazaev ~/Downloads
+$ ls
+'00276310 276310 (1).pdf'
+'00276310 276310.pdf'
+ 04-Navbars.zip
+ 04_Navbars/
+ 07-Image-Blog-1.zip
+'07-Image-Gallery (1).zip'
+ 07-Image-Gallery.zip
+ 07-Selectors.zip
+ 07_ImageBlog1/
+ 07_Image_Gallery/
+'07_Image_Gallery 2'/
+'07_Image_Gallery 3'/
+ 07_Selectors/
+ 09-Selector-Exercise-Starter.zip
+ 09_Selector_Exercise_Starter/
+'13467584_1046195158795058_636910491_o (1).jpg'
+ 13467584_1046195158795058_636910491_o.jpg
+ 13493264_10154404832026549_805896407_o.png
+ 13499623_1046194955461745_2106517618_o.jpg
+ 14488791_10157529841880646_824180338_o.jpg
+ 14488855_10155323593607222_1591246868_o.jpg
+ 14489540_10157529732785646_1928222444_o.jpg
+ 14489794_10157529841515646_658866793_o.jpg
+ 14522197_10157529841415646_1032417278_o.jpg
+ 14522258_10157529841815646_343274963_o.jpg
+ 15292615_301245380269892_1139868766_o.jpg
+ 15502722_10154111874366146_868189192_o.jpg
+ 15502850_10154111769996146_1074604624_o.png
+ 15556029_10154111754276146_2030410733_n.png
+ 15857123_1220019671412605_1563706660_o.jpg
+ 15857799_1218413738239865_1812768513_o.jpg
+ 15878179_1218413741573198_1698279914_o.jpg
+ 17431621_1303946406353264_2133985398_o.jpg
+ 17453312_1303937203020851_801798792_o.jpg
+ 2000085.pdf
+ 22ACTUALIZACIONPPDUPUERTOMORELOS20MAYO2009.pdf
+ 336229474-Formato-de-Amparo-Gasolina.pdf
+ 4686386.pdf
+ 46e8c4aae99211efecad252103e93e5f.jpg
+ 6.doc
+'A.PREDIAL MONTERREY.docx'
+'A.PREDIAL MTY&SANTIAGO.docx'
+'A.PREDIAL SP&MTY.docx'
+ AEIntroduc.docx
+'AMPARO INCREMENTO PREDIAL.docx'
+ AMPAROS-INCOMPLETO.xlsx
+'ANA MARIA BARONA GARZA (STRATEGAL).docx'
+ Ampliacion-juicio-politico.docx
+'Anti+Gravity+case (1).xlsx'
+ Anti+Gravity+case.xlsx
+'Brief Linea CY 2.pdf'
+'CONTRATO (1).docx'
+'CONTRATO DE ARRENDAMIENTO CARLOS  SALAZAR 980.docx'
+ CONTRATO-SERVICIOS-AMPAROS.doc
+ CONTRATO.docx
+'Camillasodi H.pdf'
+'Carine Felizardo - Sexy Outubro 2016.pdf'
+'Carol Dias.pdf'
+'Carta poder inmobiliaria 35 (1).docx'
+'Carta poder inmobiliaria 35.docx'
+'Coexistence Agreement - Draft - LIFT. vs LYFT - revised.docx'
+'Coexistence Agreement Lyft and   Lifestyle +Fitness Travel March 6, 2017'
+'ComprobanteMRY17913690 (1).xml'
+'ComprobanteMRY17913690 (2).xml'
+ ComprobanteMRY17913690.xml
+'Constancia-RFC-23-ene-15 (1).pdf'
+'Constancia-RFC-23-ene-15 (2).pdf'
+ Constancia-RFC-23-ene-15.pdf
+'Convenio de Divorcio (modificado).doc'
+'Convenio de Divorcio.doc'
+'Cotton Jones - I Am The Changer.mp3'
+ DIETA-DE-REDUCCION-1700.doc
+ DSC_0084.jpg
+ DS_Store
+'DS_Store (1)'
+'Dazaev%2BVives-%2Binvoice%2B3rd%2BAugust (1).pdf'
+ Dazaev%2BVives-%2Binvoice%2B3rd%2BAugust.pdf
+'Dazaev%2BVives-%2Binvoice%2B4th%2BAugust (1).pdf'
+ Dazaev%2BVives-%2Binvoice%2B4th%2BAugust.pdf
+ Demanda-de-juicio-político.docx
+ EJECUTIVO-DEMANDA-INICIAL-CERDO-UBER.docx
+ EJECUTIVO-DEMANDA-INICIAL-LEWIS.docx
+'FICREA FINAL.docx'
+ FICREA-MIAMI.-MATERIAL-A-INVESTIGAR.docx
+ FICREA-PGT.docx
+ FTK-87409421.pdf
+ HP-Deskjet-1510-series_v12.34.0.dmg
+ IMG_12072016_120749.png
+ IMG_13072016_143323.png
+ IMG_3791.JPG
+ IMG_3792.JPG
+ IMG_3793.JPG
+ IMG_3794.JPG
+ IMG_3798.JPG
+ Image-Gallery-Solution.zip
+ Image_Gallery_Solution/
+'Install Spotify.app'/
+'LIC. REYNA TORRES - JUICIO ORAL INTERRIGATORIO.pptx'
+'League of Legends LATAMN.dmg'
+ MARCA-E.U.docx
+ M_MES/
+ M_MES.zip
+ OmniDiskSweeper-1.9.dmg
+ Oracle_VM_VirtualBox_Extension_Pack-5.1.22-115126.vbox-extpack
+ PROPUESTA-LAS-MISIONES.docx
+'PULGA RIO CROQUIS derecho.pdf'
+'PULGA RIO CROQUIS.pdf'
+'Package (1).jpg'
+'Package (2).jpg'
+ PopcornTime/
+ PopcornTime-latest.dmg
+ Presentacion_comercial.pdf
+'Puerto Morelos - Antecedentes territoriales.pptx'
+ QUEJA-BRONCO-AMLO.docx
+ Quatation%2Bfrom%2BKangning.pdf
+'ROBERTO EMILIANO HERNANDEZ GARCIA.docx'
+ SGM950714DC2_CRN840705SP6_MRY17913690.pdf
+'Sheet para clientes.docx'
+ Skype_7.31.304.dmg
+ Slack-2.6.3-macOS.zip
+ Speech-Samuel-mañana.docx
+'SpotifyInstaller (1).zip'
+ SpotifyInstaller.zip
+ Strategal-Law-Firm-1.xlsx
+'Strategal-Law-Firm-2 (1).xlsx'
+ Strategal-Law-Firm-2.xlsx
+ Strategal-Law-Firm.xlsx
+'Sublime Text 2.0.2.dmg'
+'Sublime Text Build 3126.dmg'
+ VirtualBox-5.1.22-115126-OSX.dmg
+'WhatsApp Image 2017-02-10 at 2.10.43 PM.jpeg'
+'WhatsApp Image 2017-02-10 at 2.10.44 PM.jpeg'
+'WhatsApp Image 2017-02-10 at 2.10.59 PM (1).jpeg'
+'WhatsApp Image 2017-02-10 at 2.10.59 PM.jpeg'
+'WhatsApp Image 2017-02-13 at 1.43.54 PM.jpeg'
+'WhatsApp Image 2017-05-09 at 11.57.55.jpeg'
+'WhatsApp Image 2017-05-09 at 11.57.56.jpeg'
+'WhatsApp Image 2017-05-09 at 11.57.59.jpeg'
+'WhatsApp Image 2017-05-09 at 11.58.01.jpeg'
+'WhatsApp Image 2017-05-09 at 11.58.02.jpeg'
+ World/
+ World.zip
+ XD.pdf
+ amparosanpedro2/
+ amparosanpedro2.zip
+ amparosmonterrey/
+ amparosmonterrey.zip
+ amparossanpedro1/
+ amparossanpedro1.zip
+ amparossanpedroactualizado2/
+ amparossanpedroactualizado2.zip
+ amparossanpedroactualizados/
+ amparossanpedroactualizados.zip
+ amparotenencia.doc
+ annasentada.jpg
+ bootstrap-3.3.7-dist/
+ bootstrap-3.3.7-dist.zip
+'copia_de_plano_de_antecedente_const_feb2016 (1).pdf'
+ copia_de_plano_de_antecedente_const_feb2016.pdf
+'cyzone cotización.pdf'
+ daza.mp4
+'elhartista mexico trademark registry cestificate.jpg'
+ escrito-despido-api.docx
+ especificaciones_web.pdf
+'export (1).xls'
+ export.xls
+ fmtoqueja.pdf*
+ fmtoqueja.zip
+ fontsss/
+'fontsss 2'/
+ git-2.14.1-intel-universal-mavericks.dmg
+ googlechrome.dmg
+ images/
+'images (1).zip'
+ images.zip
+'info IMSS.docx'
+ invite.ics
+ kitchen/
+ kitchen.zip
+'l_fprd_con_adm (1).doc'
+ l_fprd_con_adm.doc
+'lista fea.jpg'
+'logo copy.png'
+ package.jpg
+ packing.png
+ photo.html
+ platessilicone.png
+'receta crujipollo 2.jpg'
+'receta secreta crujipollo.png'
+'sergio arnolo velderrain diaz 2.docx'
+ steam.dmg
+ syllabus.pdf
+'tabulacion de costos anna sarelly.pdf'
+ unnamed.gif
+ video-1465197949.mp4
+ video-1465197976.mp4
+ video-1465198194.mp4
+'~$Anti+Gravity+case.xlsx'
+'~$NTRATO-SERVICIOS-AMPAROS.doc'
+'~$crito-despido-api.docx'
+'~$parotenencia.doc'
+'~$rgio arnolo verrestain 2.docx'
+dazaev ~/Downloads
+$ cd kitchen/
+dazaev ~/Downloads/kitchen
+$ mkdir sink
+gmkdir: created directory 'sink'
+dazaev ~/Downloads/kitchen
+$ mkdir trashcan
+gmkdir: created directory 'trashcan'
+dazaev ~/Downloads/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ mv cans.txt pantry/
+renamed 'cans.txt' -> 'pantry/cans.txt'
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ cd pantry/
+dazaev ~/Downloads/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+dazaev ~/Downloads/kitchen/pantry
+$ mv crisper-drawer/ ..
+renamed 'crisper-drawer/' -> '../crisper-drawer'
+dazaev ~/Downloads/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+dazaev ~/Downloads/kitchen/pantry
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+crisper-drawer/  fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ mv crisper-drawer/ fridge/
+renamed 'crisper-drawer/' -> 'fridge/crisper-drawer'
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ cd fridge/
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+dazaev ~/Downloads/kitchen/fridge
+$ rm trashcan/
+grm: cannot remove 'trashcan/': Is a directory
+dazaev ~/Downloads/kitchen/fridge
+$ rmdir trashcan/
+rmdir: trashcan/: Directory not empty
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+dazaev ~/Downloads/kitchen/fridge
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd fridge/
+dazaev ~/Downloads/kitchen/fridge
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ rmdir trashcan/
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/
+dazaev ~/Downloads/kitchen
+$ cd fridge/
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+dazaev ~/Downloads/kitchen/fridge
+$ mv trashcan/ ..
+renamed 'trashcan/' -> '../trashcan'
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt
+dazaev ~/Downloads/kitchen/fridge
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ cd fridge/
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt
+dazaev ~/Downloads/kitchen/fridge
+$ rm diapers.txt 
+removed 'diapers.txt'
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+dazaev ~/Downloads/kitchen/fridge
+$ cd crisper-drawer/
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ ls
+lettuce.txt
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ cd ..
+dazaev ~/Downloads/kitchen/fridge
+$ cd freezer/
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ cd ..
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+dazaev ~/Downloads/kitchen/fridge
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd pantry/
+dazaev ~/Downloads/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+dazaev ~/Downloads/kitchen/pantry
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd sink/
+dazaev ~/Downloads/kitchen/sink
+$ ls
+dazaev ~/Downloads/kitchen/sink
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ rmdir sink/
+dazaev ~/Downloads/kitchen
+$ cd trashcan/
+dazaev ~/Downloads/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt  sink/
+dazaev ~/Downloads/kitchen/trashcan
+$ mvdir sink/ ..
+-bash: mvdir: command not found
+dazaev ~/Downloads/kitchen/trashcan
+$ mv sink/ ..
+renamed 'sink/' -> '../sink'
+dazaev ~/Downloads/kitchen/trashcan
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ cd sink/
+dazaev ~/Downloads/kitchen/sink
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+dazaev ~/Downloads/kitchen/sink
+$ rm delete-me.txt 
+removed 'delete-me.txt'
+dazaev ~/Downloads/kitchen/sink
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+dazaev ~/Downloads/kitchen/sink
+$ mv clean-dishes.txt drying-rack/
+renamed 'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+dazaev ~/Downloads/kitchen/sink
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd fridge/crisper-drawer/ls
+-bash: cd: fridge/crisper-drawer/ls: No such file or directory
+dazaev ~/Downloads/kitchen
+$ cd fridge/crisper-drawer/
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+dazaev ~/Downloads/kitchen/fridge/crisper-drawer
+$ cd ..
+dazaev ~/Downloads/kitchen/fridge
+$ cd freezer/
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+dazaev ~/Downloads/kitchen/fridge/freezer
+$ cd ..
+dazaev ~/Downloads/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+dazaev ~/Downloads/kitchen/fridge
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+dazaev ~/Downloads/kitchen
+$ cd pantry/
+dazaev ~/Downloads/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+dazaev ~/Downloads/kitchen/pantry
+$ cd .
+dazaev ~/Downloads/kitchen/pantry
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd sink/
+dazaev ~/Downloads/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+dazaev ~/Downloads/kitchen/sink
+$ cd drying-rack/
+dazaev ~/Downloads/kitchen/sink/drying-rack
+$ ls
+clean-dishes.txt
+dazaev ~/Downloads/kitchen/sink/drying-rack
+$ cd ..
+dazaev ~/Downloads/kitchen/sink
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ cd trashcan/
+dazaev ~/Downloads/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+dazaev ~/Downloads/kitchen/trashcan
+$ cd ..
+dazaev ~/Downloads/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+dazaev ~/Downloads/kitchen
+$ 
