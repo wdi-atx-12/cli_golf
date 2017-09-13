@@ -1,0 +1,74 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+   
+C:\Users\Star_>bash
+bash: /home/jaylara/.rvm/scripts/rvm: No such file or directory
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_$ cd /mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ tree
+.
++-- cans.txt
++-- fridge
+¦   +-- diapers.txt
+¦   +-- freezer
+¦   ¦   +-- couch.txt
+¦   ¦   +-- frozenpeas.txt
+¦   ¦   +-- icecream.txt
+¦   +-- milk.txt
+¦   +-- trashcan
+¦       +-- banana-peels.txt
+¦       +-- chicken-bones.txt
+¦       +-- egg-shells.txt
+¦       +-- sink
+¦           +-- clean-dishes.txt
+¦           +-- delete-me.txt
+¦           +-- dirty-dishes.txt
++-- pantry
+    +-- cans.txt
+    +-- cereal.txt
+    +-- crisper-drawer
+        +-- lettuce.txt
+
+6 directories, 15 files
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ mv ./fridge/trashcan/sink/ ./sink
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ mv ./fridge/trashcan/ ./trashcan
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ ls
+cans.txt  fridge  pantry  sink  trashcan
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ mv ./pantry/crisper-drawer/ ./fridge/crisper-drawer/
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ rm ./sink/d
+delete-me.txt     dirty-dishes.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ rm ./sink/delete-me.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ cd sink
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/sink$ mkdir drying-rack
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/sink$ mv clean-dishes.txt ./drying-rack/clean-dishes.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/sink$ cd ../fridge/
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/fridge$ ls
+crisper-drawer  diapers.txt  freezer  milk.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/fridge$ touch ./crisper-drawer/apples.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/fridge$ rm ./freezer/couch.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/fridge$ rm diapers.txt
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen/fridge$ cd ../
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$ tree
+.
++-- cans.txt
++-- fridge
+¦   +-- crisper-drawer
+¦   ¦   +-- apples.txt
+¦   ¦   +-- lettuce.txt
+¦   +-- freezer
+¦   ¦   +-- frozenpeas.txt
+¦   ¦   +-- icecream.txt
+¦   +-- milk.txt
++-- pantry
+¦   +-- cans.txt
+¦   +-- cereal.txt
++-- sink
+¦   +-- dirty-dishes.txt
+¦   +-- drying-rack
+¦       +-- clean-dishes.txt
++-- trashcan
+    +-- banana-peels.txt
+    +-- chicken-bones.txt
+    +-- egg-shells.txt
+
+7 directories, 13 files
+jaylara@LCARS-Jay15:/mnt/c/Users/Star_/Desktop/ga/cli_golf/kitchen$
