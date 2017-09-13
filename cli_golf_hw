@@ -1,0 +1,401 @@
+Last login: Mon Sep 11 14:29:54 on ttys000
+jamestang ~
+$ ls
+2	       Desktop/    Downloads/  Movies/	Pictures/  code/
+Applications/  Documents/  Library/    Music/	Public/
+jamestang ~
+$ cd Desktop/
+jamestang ~/Desktop
+$ cd kitchen/
+jamestang ~/Desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── couch.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   ├── milk.txt
+│   └── trashcan
+│       ├── banana-peels.txt
+│       ├── chicken-bones.txt
+│       ├── egg-shells.txt
+│       └── sink
+│           ├── clean-dishes.txt
+│           ├── delete-me.txt
+│           └── dirty-dishes.txt
+└── pantry
+    ├── cans.txt
+    ├── cereal.txt
+    └── crisper-drawer
+        └── lettuce.txt
+
+6 directories, 15 files
+jamestang ~/Desktop/kitchen
+$ mkdir fridge/crisper-drawer/
+gmkdir: created directory 'fridge/crisper-drawer/'
+jamestang ~/Desktop/kitchen
+$ touch fridge/crisper-drawer/apples.txt
+jamestang ~/Desktop/kitchen
+$ touch fridge/crisper-drawer/lettuce.txt
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+jamestang ~/Desktop/kitchen
+$ cd fridge/
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ cd freezer/
+jamestang ~/Desktop/kitchen/fridge/freezer
+$ rm couch.txt
+removed 'couch.txt'
+jamestang ~/Desktop/kitchen/fridge/freezer
+$ cd ..
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ pwd
+/Users/jamestang/Desktop/kitchen/fridge
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/
+gmv: missing destination file operand after 'trashcan/'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ kitchen/
+renamed 'trashcan/' -> 'kitchen/'
+jamestang ~/Desktop/kitchen/fridge
+$ rm kitchen/ trashcan/
+grm: cannot remove 'kitchen/': Is a directory
+grm: cannot remove 'trashcan/': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ mv kitchen/ trashcan/
+renamed 'kitchen/' -> 'trashcan/'
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ pwd
+/Users/jamestang/Desktop/kitchen/fridge
+jamestang ~/Desktop/kitchen/fridge
+$ mvdir trashcan/ kitchen/
+-bash: mvdir: command not found
+jamestang ~/Desktop/kitchen/fridge
+$ mvdir trashcan/kitchen/
+-bash: mvdir: command not found
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ /Desktop/kitchen/fridge
+gmv: cannot move 'trashcan/' to '/Desktop/kitchen/fridge': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ mv Desktop/kitchen/trashcan/ Desktop/kitchen/fridge/
+gmv: cannot stat 'Desktop/kitchen/trashcan/': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ Desktop/kitchen/fridge
+gmv: cannot move 'trashcan/' to 'Desktop/kitchen/fridge': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ fridge/
+renamed 'trashcan/' -> 'fridge/'
+jamestang ~/Desktop/kitchen/fridge
+$ mv fridge/ trashcan/
+renamed 'fridge/' -> 'trashcan/'
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ Desktop/kitchen/
+gmv: cannot move 'trashcan/' to 'Desktop/kitchen/': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+jamestang ~/Desktop/kitchen
+$ cd pantry/
+jamestang ~/Desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+jamestang ~/Desktop/kitchen/pantry
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ cd fridge/
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ cd trashcan/
+jamestang ~/Desktop/kitchen/fridge/trashcan
+$ cd ..
+jamestang ~/Desktop/kitchen/fridge
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+jamestang ~/Desktop/kitchen
+$ cd fridge/
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ ~/Desktop/kitchen/fridge
+gmv: 'trashcan/' and '/Users/jamestang/Desktop/kitchen/fridge/trashcan' are the same file
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ ~/Desktop/kitchen/fridge/
+gmv: 'trashcan/' and '/Users/jamestang/Desktop/kitchen/fridge/trashcan' are the same file
+jamestang ~/Desktop/kitchen/fridge
+$ mv trashcan/ ~/Desktop/kitchen/
+renamed 'trashcan/' -> '/Users/jamestang/Desktop/kitchen/trashcan'
+jamestang ~/Desktop/kitchen/fridge
+$ mv /Users/jamestang/Desktop/kitchen/trashcan trashcan/
+renamed '/Users/jamestang/Desktop/kitchen/trashcan' -> 'trashcan/'
+jamestang ~/Desktop/kitchen/fridge
+$ mv -r /Desktop/kitchen/fridge/trashcan /Desktop/kitchen/
+gmv: invalid option -- 'r'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen/fridge
+$ mv -r /Desktop/kitchen/fridge/trashcann/ /Desktop/kitchen/
+gmv: invalid option -- 'r'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen/fridge
+$ pwd
+/Users/jamestang/Desktop/kitchen/fridge
+jamestang ~/Desktop/kitchen/fridge
+$ mv -r /Users/jamestang/Desktop/kitchen/fridge/trashcan /Users/jamestang/kitchen/
+gmv: invalid option -- 'r'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen/fridge
+$ mv Users/jamestang/Desktop/kitchen/fridge/trashcan /Users/jamestang/kitchen/
+gmv: cannot stat 'Users/jamestang/Desktop/kitchen/fridge/trashcan': No such file or directory
+jamestang ~/Desktop/kitchen/fridge
+$ cd ~
+jamestang ~
+$ ls
+2  Applications/  Desktop/  Documents/	Downloads/  Library/  Movies/  Music/  Pictures/  Public/  code/
+jamestang ~
+$ cd Desktop/
+jamestang ~/Desktop
+$ ls
+Pictures/  kitchen/
+jamestang ~/Desktop
+$ cd kitchen/
+jamestang ~/Desktop/kitchen
+$ mv -R /Users/jamestang/Desktop/kitchen/fridge/trashcan Users/Desktop/kitchen
+gmv: invalid option -- 'R'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen
+$ mv /Users/jamestang/Desktop/kitchen/fridge/trashcan /Users/Desktop/kitchen/
+gmv: cannot move '/Users/jamestang/Desktop/kitchen/fridge/trashcan' to '/Users/Desktop/kitchen/': No such file or directory
+jamestang ~/Desktop/kitchen
+$ mv -R /Users/jamestang/Desktop/kitchen/fridge/trashan /Users/Desktop/kitchen/
+gmv: invalid option -- 'R'
+Try 'gmv --help' for more information.
+jamestang ~/Desktop/kitchen
+$ mv /Users/jamestang/Desktop/kitchen/fridge/trashcan/ /Users/Desktop/kitchen/
+gmv: cannot move '/Users/jamestang/Desktop/kitchen/fridge/trashcan/' to '/Users/Desktop/kitchen/': No such file or directory
+jamestang ~/Desktop/kitchen
+$ s
+-bash: s: command not found
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+jamestang ~/Desktop/kitchen
+$ mkdir trashcan
+gmkdir: created directory 'trashcan'
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+jamestang ~/Desktop/kitchen
+$ trashcan/
+-bash: trashcan/: is a directory
+jamestang ~/Desktop/kitchen
+$ cd trashcan/
+jamestang ~/Desktop/kitchen/trashcan
+$ touch banana-peels.txt
+jamestang ~/Desktop/kitchen/trashcan
+$ touch chicken-bones.txt
+jamestang ~/Desktop/kitchen/trashcan
+$ touch egg-shells.txt
+jamestang ~/Desktop/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+jamestang ~/Desktop/kitchen/trashcan
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ mkdir sink
+gmkdir: created directory 'sink'
+jamestang ~/Desktop/kitchen
+$ rm sink
+grm: cannot remove 'sink': Is a directory
+jamestang ~/Desktop/kitchen
+$ rmdir sink/
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+jamestang ~/Desktop/kitchen
+$ mkdir sink/
+gmkdir: created directory 'sink/'
+jamestang ~/Desktop/kitchen
+$ cd sink/
+jamestang ~/Desktop/kitchen/sink
+$ mkdir drying-rack/
+gmkdir: created directory 'drying-rack/'
+jamestang ~/Desktop/kitchen/sink
+$ touch dirty-dishes.txt
+jamestang ~/Desktop/kitchen/sink
+$ cd drying-rack/
+jamestang ~/Desktop/kitchen/sink/drying-rack
+$ touch clean-dishes/txt
+touch: clean-dishes/txt: No such file or directory
+jamestang ~/Desktop/kitchen/sink/drying-rack
+$ touch clean-dishes.txt
+jamestang ~/Desktop/kitchen/sink/drying-rack
+$ cd ..
+jamestang ~/Desktop/kitchen/sink
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ cd fridge/
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/	milk.txt  trashcan/
+jamestang ~/Desktop/kitchen/fridge
+$ rm diapers.txt
+removed 'diapers.txt'
+jamestang ~/Desktop/kitchen/fridge
+$ rmdir trashcan/
+rmdir: trashcan/: Directory not empty
+jamestang ~/Desktop/kitchen/fridge
+$ rm -f trashcan/
+grm: cannot remove 'trashcan/': Is a directory
+jamestang ~/Desktop/kitchen/fridge
+$ rm -r trashcan/
+removed 'trashcan/banana-peels.txt'
+removed 'trashcan/chicken-bones.txt'
+removed 'trashcan/egg-shells.txt'
+removed 'trashcan/sink/clean-dishes.txt'
+removed 'trashcan/sink/delete-me.txt'
+removed 'trashcan/sink/dirty-dishes.txt'
+removed directory 'trashcan/sink'
+removed directory 'trashcan/'
+jamestang ~/Desktop/kitchen/fridge
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+jamestang ~/Desktop/kitchen
+$ rm cans.txt
+removed 'cans.txt'
+jamestang ~/Desktop/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+jamestang ~/Desktop/kitchen
+$ cd pantry/
+jamestang ~/Desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+jamestang ~/Desktop/kitchen/pantry
+$ rm crisper-drawer/
+grm: cannot remove 'crisper-drawer/': Is a directory
+jamestang ~/Desktop/kitchen/pantry
+$ rm -r crisper-drawer/
+removed 'crisper-drawer/lettuce.txt'
+removed directory 'crisper-drawer/'
+jamestang ~/Desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+jamestang ~/Desktop/kitchen/pantry
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+jamestang ~/Desktop/kitchen
+$ cd fridge/
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+jamestang ~/Desktop/kitchen/fridge
+$ cd crisper-drawer/
+jamestang ~/Desktop/kitchen/fridge/crisper-drawer
+$ 
+jamestang ~/Desktop/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+jamestang ~/Desktop/kitchen/fridge/crisper-drawer
+$ cd ..
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+jamestang ~/Desktop/kitchen/fridge
+$ cd freezer/
+jamestang ~/Desktop/kitchen/fridge/freezer
+$ ls
+frozenpeas.txt	icecream.txt
+jamestang ~/Desktop/kitchen/fridge/freezer
+$ cd ..
+jamestang ~/Desktop/kitchen/fridge
+$ ls
+crisper-drawer/  freezer/  milk.txt
+jamestang ~/Desktop/kitchen/fridge
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ cd pantry/
+jamestang ~/Desktop/kitchen/pantry
+$ ls
+cans.txt  cereal.txt
+jamestang ~/Desktop/kitchen/pantry
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ cd sink/
+jamestang ~/Desktop/kitchen/sink
+$ ls
+dirty-dishes.txt  drying-rack/
+jamestang ~/Desktop/kitchen/sink
+$ cd drying-rack/
+jamestang ~/Desktop/kitchen/sink/drying-rack
+$ ls
+clean-dishes.txt
+jamestang ~/Desktop/kitchen/sink/drying-rack
+$ cd ..
+jamestang ~/Desktop/kitchen/sink
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ cd trashcan/
+jamestang ~/Desktop/kitchen/trashcan
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+jamestang ~/Desktop/kitchen/trashcan
+$ cd ..
+jamestang ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+jamestang ~/Desktop/kitchen
+$ 
