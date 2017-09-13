@@ -1,0 +1,159 @@
+Hawxaw@Tacos MINGW64 ~
+$ cd Desktop/
+
+Hawxaw@Tacos MINGW64 ~/Desktop
+$ cd HOMEWORK/kitchen
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls
+cans.txt  fridge/  pantry/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ cd fridge.
+bash: cd: fridge.: No such file or directory
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ cd fridge/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ mv trashcan/ ../
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ cd ..
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls
+cans.txt  fridge/  pantry/  trashcan/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ cd trashcan
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/trashcan
+$ mv sink ../
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/trashcan
+$ cd ..
+l
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ cd fridge
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+diapers.txt  freezer/  milk.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ c ..
+bash: c: command not found
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ cd ..
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mv pantry/crisper-drawer/ fridge/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ cd fridge
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/  milk.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ cd crisper-drawer
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/crisper-drawer
+$ ls
+apples.txt  lettuce.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/crisper-drawer
+$ cd ..
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/  milk.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ cd freezer
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/freezer
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/freezer
+$ rm couch.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge/freezer
+$ cd ..
+l
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ ls
+crisper-drawer/  diapers.txt  freezer/  milk.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ rm diapers.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen/fridge
+$ cd ..
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls
+cans.txt  fridge/  pantry/  sink/  trashcan/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mv cants.txt pantry/
+mv: cannot stat 'cants.txt': No such file or directory
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mv cans.txt pantry/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls pantry/
+cans.txt  cereal.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls sink/
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ rm sink/delete-me.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls sink/
+clean-dishes.txt  dirty-dishes.txt
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mkdir sink/drying-rack/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls sink/
+clean-dishes.txt  dirty-dishes.txt  drying-rack/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mv clean-dishes.txt drying-rack/
+mv: cannot stat 'clean-dishes.txt': No such file or directory
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ mv sink/clean-dishes.txt sink/drying-rack/
+
+Hawxaw@Tacos MINGW64 ~/Desktop/HOMEWORK/kitchen
+$ ls trashcan
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
