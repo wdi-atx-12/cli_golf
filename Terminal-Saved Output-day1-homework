@@ -1,0 +1,89 @@
+$ ls
+fundamentals/  kitchen/
+user ~/Documents/GA-Projects
+$ cd kitchen
+user ~/Documents/GA-Projects/kitchen
+$ ls -a
+./  ../  cans.txt  fridge/  pantry/
+user ~/Documents/GA-Projects/kitchen
+$ rm cans.txt
+removed 'cans.txt'
+user ~/Documents/GA-Projects/kitchen
+$ rm fridge/diapers.txt
+removed 'fridge/diapers.txt'
+user ~/Documents/GA-Projects/kitchen
+$ mvdir pantry/crisper-drawer fridge/crisper-drawer
+-bash: mvdir: command not found
+user ~/Documents/GA-Projects/kitchen
+$ mv pantry/crisper-drawer fridge/crisper-drawer
+renamed 'pantry/crisper-drawer' -> 'fridge/crisper-drawer'
+user ~/Documents/GA-Projects/kitchen
+$ ls
+fridge/  pantry/
+user ~/Documents/GA-Projects/kitchen
+$ mv fridge/trashcan trashcan
+renamed 'fridge/trashcan' -> 'trashcan'
+user ~/Documents/GA-Projects/kitchen
+$ ls
+fridge/  pantry/  trashcan/
+user ~/Documents/GA-Projects/kitchen
+$ mv trashcan/sink sink
+renamed 'trashcan/sink' -> 'sink'
+user ~/Documents/GA-Projects/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+user ~/Documents/GA-Projects/kitchen
+$ rm fridge/freezer/couch.txt
+removed 'fridge/freezer/couch.txt'
+user ~/Documents/GA-Projects/kitchen
+$ ls
+fridge/  pantry/  sink/  trashcan/
+user ~/Documents/GA-Projects/kitchen
+$ cd fridge/crisper-drawer
+user ~/Documents/GA-Projects/kitchen/fridge/crisper-drawer
+$ ls
+lettuce.txt
+user ~/Documents/GA-Projects/kitchen/fridge/crisper-drawer
+$ touch apples.txt
+user ~/Documents/GA-Projects/kitchen/fridge/crisper-drawer
+$ cd ../../
+user ~/Documents/GA-Projects/kitchen
+$ rm sink/delete-me.txt
+removed 'sink/delete-me.txt'
+user ~/Documents/GA-Projects/kitchen
+$ mkdir sink/drying-rack
+gmkdir: created directory 'sink/drying-rack'
+user ~/Documents/GA-Projects/kitchen
+$ touch sink/drying-rack/clean-dishes.txt
+user ~/Documents/GA-Projects/kitchen
+$ ls -a
+./  ../  fridge/  pantry/  sink/  trashcan/
+user ~/Documents/GA-Projects/kitchen
+$ rm sink/clean-dishes.txt
+removed 'sink/clean-dishes.txt'
+user ~/Documents/GA-Projects/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+user ~/Documents/GA-Projects/kitchen
+$ 
