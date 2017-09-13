@@ -1,0 +1,85 @@
+Last login: Mon Sep 11 20:50:28 on ttys000
+maffly ~
+$ cd Desktop/kitchen/
+maffly ~/Desktop/kitchen
+$ rm fridge/diapers.txt 
+removed 'fridge/diapers.txt'
+maffly ~/Desktop/kitchen
+$ rm fridge/freezer/couch.txt 
+removed 'fridge/freezer/couch.txt'
+maffly ~/Desktop/kitchen
+$ rm fridge/trashcan/sink/delete-me.txt 
+removed 'fridge/trashcan/sink/delete-me.txt'
+maffly ~/Desktop/kitchen
+$ mv fridge/trashcan/ trashcan/
+renamed 'fridge/trashcan/' -> 'trashcan/'
+maffly ~/Desktop/kitchen
+$ mv trashcan/sink/ sink/
+renamed 'trashcan/sink/' -> 'sink/'
+maffly ~/Desktop/kitchen
+$ mv sink/clean-dishes.txt sink/drying-rack/clean-dishes.txt
+gmv: cannot move 'sink/clean-dishes.txt' to 'sink/drying-rack/clean-dishes.txt': No such file or directory
+maffly ~/Desktop/kitchen
+$ mkdir sink/drying-rack/
+gmkdir: created directory 'sink/drying-rack/'
+maffly ~/Desktop/kitchen
+$ mv sink/clean-dishes.txt sink/drying-rack/clean-dishes.txt
+renamed 'sink/clean-dishes.txt' -> 'sink/drying-rack/clean-dishes.txt'
+maffly ~/Desktop/kitchen
+$ tree
+.
+├── cans.txt
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+maffly ~/Desktop/kitchen
+$ rm cans.txt 
+removed 'cans.txt'
+maffly ~/Desktop/kitchen
+$ mv pantry/crisper-drawer/ fridge/crisper-drawer/
+renamed 'pantry/crisper-drawer/' -> 'fridge/crisper-drawer/'
+maffly ~/Desktop/kitchen
+$ touch fridge/crisper-drawer/apples.txt
+maffly ~/Desktop/kitchen
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+maffly ~/Desktop/kitchen
+$ 
