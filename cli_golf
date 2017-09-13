@@ -1,0 +1,570 @@
+Last login: Tue Sep 12 14:42:00 on ttys001
+andrewchavez ~ on master[?]
+$ cd desktop
+andrewchavez ~/desktop on master[?]
+$ ls
+11_seripoppefiga.jpg		TomorrowNight.terminal
+11_seripoppefigadetail2_v2.jpg	kitchen/
+andrewchavez ~/desktop on master[?]
+$ cd kitchen
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+cans.txt  fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ pwd
+/Users/andrewchavez/desktop/kitchen/fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+cans.txt  fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ mv cans.txt pantry/
+renamed 'cans.txt' -> 'pantry/cans.txt'
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd pantry
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ mv crisper-drawer kitchen/crisper-drawer
+gmv: cannot move 'crisper-drawer' to 'kitchen/crisper-drawer': No such file or directory
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ cd ~
+andrewchavez ~ on master[?]
+$ ls
+2		   Labrynth/  README.md		 excercises/	 package.json
+Applications/	   Library/   World/		 expansions.txt  test/
+Desktop/	   Movies/    applications-	 fundamentals/	 test-code/
+Documents/	   Music/     applications-.pub  funny_things/
+Downloads/	   Pictures/  build.js		 gapractice/
+General_Assembly/  Public/    code/		 git.txt
+andrewchavez ~ on master[?]
+$ clear
+
+andrewchavez ~ on master[?]
+$ ls
+2		   Labrynth/  README.md		 excercises/	 package.json
+Applications/	   Library/   World/		 expansions.txt  test/
+Desktop/	   Movies/    applications-	 fundamentals/	 test-code/
+Documents/	   Music/     applications-.pub  funny_things/
+Downloads/	   Pictures/  build.js		 gapractice/
+General_Assembly/  Public/    code/		 git.txt
+candrewchavez ~ on master[?]
+$ cd desktop
+andrewchavez ~/desktop on master[?]
+$ ls
+11_seripoppefiga.jpg		TomorrowNight.terminal
+11_seripoppefigadetail2_v2.jpg	kitchen/
+andrewchavez ~/desktop on master[?]
+$ cd kitchen
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv freezer../kitchen
+gmv: missing destination file operand after 'freezer../kitchen'
+Try 'gmv --help' for more information.
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ --help
+-bash: --help: command not found
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ gmv--help
+-bash: gmv--help: command not found
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ clear
+
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ~
+andrewchavez ~ on master[?]
+$ cd desktop
+andrewchavez ~/desktop on master[?]
+$ ls
+11_seripoppefiga.jpg		TomorrowNight.terminal
+11_seripoppefigadetail2_v2.jpg	kitchen/
+andrewchavez ~/desktop on master[?]
+$ cd kitchen
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv freezer/ kitchen/
+renamed 'freezer/' -> 'kitchen/'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  kitchen/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv kitchen/ freezer/
+renamed 'kitchen/' -> 'freezer/'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd freezer
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ ls
+couch.txt  frozenpeas.txt  icecream.txt
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ rm couch.txt
+removed 'couch.txt'
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ ls
+frozenpeas.txt	icecream.txt
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+diapers.txt  freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv diapters.txt trashcan/
+gmv: cannot stat 'diapters.txt': No such file or directory
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv diapers.txt trashcan/
+renamed 'diapers.txt' -> 'trashcan/diapers.txt'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd trashcan
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  sink/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ cd sink
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ ls
+clean-dishes.txt  delete-me.txt  dirty-dishes.txt
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ rm delete-me.txt 
+removed 'delete-me.txt'
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd pantry
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ pwd
+/Users/andrewchavez/desktop/kitchen/pantry
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ la
+-bash: la: command not found
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ move freezer kitchen/
+-bash: move: command not found
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv freezer kitchen/
+renamed 'freezer' -> 'kitchen/'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+kitchen/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv kitchen freezer
+renamed 'kitchen' -> 'freezer'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ clear
+
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd desktop
+-bash: cd: desktop: No such file or directory
+andrewchavez ~/desktop/kitchen on master[?]
+$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridg
+-bash: cd: fridg: No such file or directory
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ la
+-bash: la: command not found
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ la
+-bash: la: command not found
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv fridge/freezer/ desktop/kitchen/
+gmv: cannot stat 'fridge/freezer/': No such file or directory
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv trashcan kitchen/
+renamed 'trashcan' -> 'kitchen/'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  kitchen/  milk.txt
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv kitchen trashcan/
+renamed 'kitchen' -> 'trashcan/'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd trashcan
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  sink/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ cd sink
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ pwd
+/Users/andrewchavez/desktop/kitchen/fridge/trashcan/sink
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ mv sink /desktop/kitchen/
+gmv: cannot stat 'sink': No such file or directory
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ mv sink desktop/kitchen/
+gmv: cannot stat 'sink': No such file or directory
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+andrewchavez ~/desktop/kitchen/fridge/trashcan/sink on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  sink/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ mv sink desktop/kitchen/
+gmv: cannot move 'sink' to 'desktop/kitchen/': No such file or directory
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  sink/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ mv sink kitchen/
+renamed 'sink' -> 'kitchen/'
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  kitchen/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ mv kitchen sink
+renamed 'kitchen' -> 'sink'
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt  sink/
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ pwd
+/Users/andrewchavez/desktop/kitchen/fridge/trashcan
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ mv sink ../
+renamed 'sink' -> '../sink'
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt
+andrewchavez ~/desktop/kitchen/fridge/trashcan on master[?]
+$ cd ..
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  sink/  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv sink ../
+renamed 'sink' -> '../sink'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd kitchen
+-bash: cd: kitchen: No such file or directory
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt  trashcan/
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mv trashcan ../
+renamed 'trashcan' -> '../trashcan'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd kitchen
+-bash: cd: kitchen: No such file or directory
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+freezer/  milk.txt
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd freezer
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ ls
+frozenpeas.txt	icecream.txt
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ tree
+.
+├── frozenpeas.txt
+└── icecream.txt
+
+0 directories, 2 files
+andrewchavez ~/desktop/kitchen/fridge/freezer on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   ├── cereal.txt
+│   └── crisper-drawer
+│       └── lettuce.txt
+├── sink
+│   ├── clean-dishes.txt
+│   └── dirty-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── diapers.txt
+    └── egg-shells.txt
+
+6 directories, 12 files
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd fridge
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ mkdir crisper-drawer
+gmkdir: created directory 'crisper-drawer'
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ ls
+crisper-drawer/  freezer/  milk.txt
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd crisper-drawer
+andrewchavez ~/desktop/kitchen/fridge/crisper-drawer on master
+$ touch apples.txt
+andrewchavez ~/desktop/kitchen/fridge/crisper-drawer on master[?]
+$ ls
+apples.txt
+andrewchavez ~/desktop/kitchen/fridge/crisper-drawer on master[?]
+$ touch lettuce.txt
+andrewchavez ~/desktop/kitchen/fridge/crisper-drawer on master[?]
+$ ls
+apples.txt  lettuce.txt
+andrewchavez ~/desktop/kitchen/fridge/crisper-drawer on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen/fridge on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd pantry
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ rmdir -r crisper-drawer/
+rmdir: illegal option -- r
+usage: rmdir [-p] directory ...
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ ls
+cans.txt  cereal.txt  crisper-drawer/
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ rm crisper-drawer/
+grm: cannot remove 'crisper-drawer/': Is a directory
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ rm -r crisper-drawer/
+removed 'crisper-drawer/lettuce.txt'
+removed directory 'crisper-drawer/'
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ ls
+cans.txt  cereal.txt
+andrewchavez ~/desktop/kitchen/pantry on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd sink
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ ls
+clean-dishes.txt  dirty-dishes.txt
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ mkdir drying-rack
+gmkdir: created directory 'drying-rack'
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ ls
+clean-dishes.txt  dirty-dishes.txt  drying-rack/
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ mv clean-dishes.txt drying-rack/
+renamed 'clean-dishes.txt' -> 'drying-rack/clean-dishes.txt'
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ ls
+dirty-dishes.txt  drying-rack/
+andrewchavez ~/desktop/kitchen/sink on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    ├── diapers.txt
+    └── egg-shells.txt
+
+7 directories, 13 files
+andrewchavez ~/desktop/kitchen on master[?]
+$ cd trashcan/
+andrewchavez ~/desktop/kitchen/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  diapers.txt  egg-shells.txt
+andrewchavez ~/desktop/kitchen/trashcan on master[?]
+$ rm diapers.txt 
+removed 'diapers.txt'
+andrewchavez ~/desktop/kitchen/trashcan on master[?]
+$ ls
+banana-peels.txt  chicken-bones.txt  egg-shells.txt
+andrewchavez ~/desktop/kitchen/trashcan on master[?]
+$ cd ../
+andrewchavez ~/desktop/kitchen on master[?]
+$ ls
+fridge/  pantry/  sink/  trashcan/
+andrewchavez ~/desktop/kitchen on master[?]
+$ tree
+.
+├── fridge
+│   ├── crisper-drawer
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+andrewchavez ~/desktop/kitchen on master[?]
+$ 
