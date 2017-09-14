@@ -1,0 +1,115 @@
+Last login: Mon Sep 11 23:42:51 on ttys001
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ mkdir -p kitchen/{fridge/{freezer,trashcan/{sink}},pantry}
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ ls
+kitchen
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ cd kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+fridge	pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ touch cans.txt
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ touch diapers.txt
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd freezer
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ cd freezer
+-bash: cd: freezer: No such file or directory
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge/freezer
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ touch {couch.txt,frozenpeas.txt,icecream.txt}
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ cd trashcan
+-bash: cd: trashcan: No such file or directory
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ cd fridge
+-bash: cd: fridge: No such file or directory
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ touch {couch.txt,frozenpeas.txt,icecream.txt}
+Ulrikes-MacBook-Pro:freezer ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd fridge
+-bash: cd: fridge: No such file or directory
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+diapers.txt	freezer		trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd trashcan
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ touch {bana-peels.txt,chicken-bones.txt,egg-shells.txt}
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd sink
+-bash: cd: sink: No such file or directory
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ ls
+diapers.txt	freezer		trashcan
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd trashcan
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ ls
+bana-peels.txt		chicken-bones.txt	egg-shells.txt		{sink}
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd sink
+-bash: cd: sink: No such file or directory
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd {sink}
+Ulrikes-MacBook-Pro:{sink} ulrikebernheisel$ touch {clean-dishes.txt,delete-me.txt,dirty-dishes.txt}
+Ulrikes-MacBook-Pro:{sink} ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ ls
+bana-peels.txt		chicken-bones.txt	egg-shells.txt		{sink}
+Ulrikes-MacBook-Pro:trashcan ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/fridge
+Ulrikes-MacBook-Pro:fridge ulrikebernheisel$ cd ..
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ ls
+cans.txt	fridge		pantry
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ cd pantry
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ touch {cans.txt,cereal.txt}
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ mkdir crisper-drawer
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ pwd
+/Users/ulrikebernheisel/Documents/kitchen/pantry
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ cd crip=sper-drawer
+-bash: cd: crip=sper-drawer: No such file or directory
+Ulrikes-MacBook-Pro:pantry ulrikebernheisel$ cd crisper-drawer
+Ulrikes-MacBook-Pro:crisper-drawer ulrikebernheisel$ touch lettuce.txt
+Ulrikes-MacBook-Pro:crisper-drawer ulrikebernheisel$ cd ~
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ pwd
+/Users/ulrikebernheisel
+Ulrikes-MacBook-Pro:~ ulrikebernheisel$ cd Documents
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ ls
+kitchen
+Ulrikes-MacBook-Pro:Documents ulrikebernheisel$ cd kitchen
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Ulrikes-MacBook-Pro:kitchen ulrikebernheisel$ 
